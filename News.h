@@ -14,6 +14,8 @@ struct News
     std::string url;        // 原链接（唯一ID）
 
     std::string source;     // 来源
+
+    std::string image;      // 图片
 };
 
 #endif
