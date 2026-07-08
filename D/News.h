@@ -5,11 +5,15 @@
 
 struct News
 {
+    std::string id;         // 新闻ID
+    
     std::string title;      // 标题
 
     std::string time;       // 发布时间
 
     std::string content;    // 正文
+    
+    std::string abstract;   // 摘要 
 
     std::string url;        // 原链接（唯一ID）
 
