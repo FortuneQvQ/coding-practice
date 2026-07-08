@@ -169,17 +169,17 @@ body {
 
 .news-image {
 
-
     width:100%;
 
-    max-height:400px;
+    max-height:300px;
 
     object-fit:cover;
 
     border-radius:15px;
 
-    margin-bottom:30px;
+    display: block;
 
+    margin: 0 auto 20px;
 
 }
 
@@ -198,6 +198,7 @@ body {
 
     text-indent:2em;
 
+    margin-bottom: 25px;
 
 }
 
@@ -329,18 +330,6 @@ Campus News Hub · 新闻详情
 
 
 
-
-<!-- 新闻图片 -->
-
-<img 
-class="news-image"
-src="{{image}}"
-alt="新闻图片">
-
-
-
-
-
 <!-- 正文 -->
 
 
@@ -351,6 +340,14 @@ alt="新闻图片">
 
 
 </div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+{{imageBlock}}
 
 
 
