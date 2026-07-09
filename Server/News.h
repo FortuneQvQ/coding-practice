@@ -5,7 +5,7 @@
 
 struct News
 {
-    std::string id;         // 新闻ID
+    int id;         // 新闻ID
     
     std::string title;      // 标题
 
@@ -20,6 +20,8 @@ struct News
     std::string source;     // 来源
 
     std::string image;      // 图片
+
+    std::string topic;      // 主题
 };
 
 #endif
