@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demonstrator", "Demonstrato
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdParty", "ThirdParty", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server\Server.vcxproj", "{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -63,6 +65,14 @@ Global
 		{A7AE929C-2CE3-4051-8614-9C50845F3B44}.Release|x64.Build.0 = Release|x64
 		{A7AE929C-2CE3-4051-8614-9C50845F3B44}.Release|x86.ActiveCfg = Release|Win32
 		{A7AE929C-2CE3-4051-8614-9C50845F3B44}.Release|x86.Build.0 = Release|Win32
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Debug|x64.ActiveCfg = Debug|x64
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Debug|x64.Build.0 = Debug|x64
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Debug|x86.Build.0 = Debug|Win32
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Release|x64.ActiveCfg = Release|x64
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Release|x64.Build.0 = Release|x64
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Release|x86.ActiveCfg = Release|Win32
+		{4FC46045-B2E0-46AD-9AF9-12B1453BBF78}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

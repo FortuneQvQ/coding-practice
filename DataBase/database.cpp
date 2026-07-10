@@ -6,7 +6,6 @@ void database::addNews(News news)
 	string sql = "INSERT INTO news (title,time,content,abstract,url,source,image,topic) "
 		"VALUES ('"+ news.title + "','" + news.time + "','" + news.content + "','" + news.abstract + "','" + news.url + "','" + news.source + "','" + news.image + "','" + news.topic + "');";
 	sqlite3_exec(db, sql.c_str(), nullptr, nullptr, nullptr);
-	sqlite3_close(db);
 }
 
 int callback(void* data,int argc, char** argv,char** colName)
@@ -110,7 +109,7 @@ vector<News> database::getNewsByTitle(string title)
 {
     vector<News> result;
     string sql = "SELECT * FROM news "
-        "WHERE title LIKE'*"+title+"*'"
+        "WHERE title LIKE'%"+title+"%'"
         "ORDER BY time DESC;";
     sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
     return result;
@@ -120,17 +119,7 @@ vector<News> database::getNewsBySource(string source)
 {
     vector<News> result;
     string sql = "SELECT * FROM news "
-        "WHERE source LIKE'*" + source + "*'"
-        "ORDER BY time DESC;";
-    sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
-    return result;
-}
-
-vector<News> database::getNewsBySource(string source)
-{
-    vector<News> result;
-    string sql = "SELECT * FROM news "
-        "WHERE source LIKE'*" + source + "*'"
+        "WHERE source LIKE'%" + source + "%'"
         "ORDER BY time DESC;";
     sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
     return result;
@@ -140,7 +129,7 @@ vector<News> database::getNewsByTopic(string topic)
 {
     vector<News> result;
     string sql = "SELECT * FROM news "
-        "WHERE topic LIKE'*" + topic + "*'"
+        "WHERE topic LIKE'%" + topic + "%'"
         "ORDER BY time DESC;";
     sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
     return result;
