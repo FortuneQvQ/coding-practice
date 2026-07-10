@@ -115,3 +115,33 @@ vector<News> database::getNewsByTitle(string title)
     sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
     return result;
 }
+
+vector<News> database::getNewsBySource(string source)
+{
+    vector<News> result;
+    string sql = "SELECT * FROM news "
+        "WHERE source LIKE'*" + source + "*'"
+        "ORDER BY time DESC;";
+    sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
+    return result;
+}
+
+vector<News> database::getNewsBySource(string source)
+{
+    vector<News> result;
+    string sql = "SELECT * FROM news "
+        "WHERE source LIKE'*" + source + "*'"
+        "ORDER BY time DESC;";
+    sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
+    return result;
+}
+
+vector<News> database::getNewsByTopic(string topic)
+{
+    vector<News> result;
+    string sql = "SELECT * FROM news "
+        "WHERE topic LIKE'*" + topic + "*'"
+        "ORDER BY time DESC;";
+    sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
+    return result;
+}
