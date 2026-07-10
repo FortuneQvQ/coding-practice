@@ -76,7 +76,7 @@ void generateNewsDetailPage(const News& news) {
 }
 
 
-//生成最新新闻卡片HTML(数量由count决定)
+//生成最新新闻卡片HTML(数量由count决定）（用于生成新闻主页）
 string generateLatestNewsCards(const vector<News>& newsList)
 {
 
@@ -123,7 +123,7 @@ string generateLatestNewsCards(const vector<News>& newsList)
 }
 
 
-//生成所有新闻卡片HTML
+//生成所有新闻卡片HTML（用于生成分类详情页）
 string generateAllNewsCards(const vector<News>& newsList)
 {
 
@@ -150,7 +150,7 @@ string generateAllNewsCards(const vector<News>& newsList)
         newsBlock += news.abstract;
         newsBlock += "</div>";
         //详情按钮
-        newsBlock += "<a class=\"detail-btn\" href=\"detail/";
+        newsBlock += "<a class=\"detail-btn\" href=\"../detail/";
         newsBlock += to_string(news.id);
         newsBlock += ".html\">";
         newsBlock += u8"查看详情";

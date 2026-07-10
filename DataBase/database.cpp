@@ -1,6 +1,8 @@
 #include <chrono>
 #include "database.h"
 
+sqlite3* database::db = nullptr;
+
 void database::addNews(News news)
 {
 	string sql = "INSERT INTO news (title,time,content,abstract,url,source,image,topic) "
