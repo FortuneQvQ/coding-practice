@@ -55,8 +55,8 @@ public:
 	static vector<News> getAllNews();
 
 	//��Դ��������Щ�����ô�����࣬�ݸ���
-	//static vector<News> getNewsBySource(string source);//����Դ����
-	//static vector<News> getNewsByTopic(string topic);//���������
+	static vector<News> getNewsBySource(string source);//����Դ����
+	static vector<News> getNewsByTopic(string topic);//���������
 
 	static vector<News> getNewsByTitle(string title);
 };
