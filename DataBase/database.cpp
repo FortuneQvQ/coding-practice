@@ -1,7 +1,7 @@
 #include <chrono>
 #include "database.h"
 
-void database::addNews(news news)
+void database::addNews(News news)
 {
 	string sql = "INSERT INTO news (title,time,content,abstract,url,source,image,topic) "
 		"VALUES ('"+ news.title + "','" + news.time + "','" + news.content + "','" + news.abstract + "','" + news.url + "','" + news.source + "','" + news.image + "','" + news.topic + "');";
@@ -11,9 +11,9 @@ void database::addNews(news news)
 
 int callback(void* data,int argc, char** argv,char** colName)
 {
-    vector<news>* newsList = static_cast<vector<news>*>(data);
+    vector<News>* newsList = static_cast<vector<News>*>(data);
 
-    news news;
+    News news;
 
     for (int i = 0; i < argc; i++)
     {
@@ -67,9 +67,9 @@ int callback(void* data,int argc, char** argv,char** colName)
     return 0;
 }
 
-vector<news> database::getTodayNews()
+vector<News> database::getTodayNews()
 {
-    vector<news> result;
+    vector<News> result;
 	string sql = "SELECT * FROM news "
 		"WHERE time>= datetime('now','-1 day','localtime') "
 		"ORDER BY time DESC;";
@@ -77,9 +77,9 @@ vector<news> database::getTodayNews()
     return result;
 }
 
-vector<news> database::getWeekNews()
+vector<News> database::getWeekNews()
 {
-    vector<news> result;
+    vector<News> result;
     string sql = "SELECT * FROM news "
         "WHERE time>= datetime('now','-7 day','localtime') "
         "ORDER BY time DESC;";
@@ -87,9 +87,9 @@ vector<news> database::getWeekNews()
     return result;
 }
 
-vector<news> database::getMonthNews()
+vector<News> database::getMonthNews()
 {
-    vector<news> result;
+    vector<News> result;
     string sql = "SELECT * FROM news "
         "WHERE time>= datetime('now','-1 month','localtime') "
         "ORDER BY time DESC;";
@@ -97,18 +97,18 @@ vector<news> database::getMonthNews()
     return result;
 }
 
-vector<news> database::getAllNews()
+vector<News> database::getAllNews()
 {
-    vector<news> result;
+    vector<News> result;
     string sql = "SELECT * FROM news "
         "ORDER BY time DESC;";
     sqlite3_exec(db, sql.c_str(), callback, &result, nullptr);
     return result;
 }
 
-vector<news> database::getNewsByTitle(string title)
+vector<News> database::getNewsByTitle(string title)
 {
-    vector<news> result;
+    vector<News> result;
     string sql = "SELECT * FROM news "
         "WHERE title LIKE'*"+title+"*'"
         "ORDER BY time DESC;";
