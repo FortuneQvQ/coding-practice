@@ -18,14 +18,14 @@ struct News
 	string topic;
 };
 
-static class database
+class database
 {
 private:
 	static sqlite3* db;
 public:
 	static void openDb()
 	{
-		int code = sqlite3_open("news.db", &db);
+		int code = sqlite3_open("../DataBase/data/news.db", &db);
 		if (code != SQLITE_OK)
 		{
 			cout << "���ݿ��ʧ�ܣ�������" << to_string(code) << 

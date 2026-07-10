@@ -71,16 +71,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)DataBase</IncludePath>
+    <IncludePath>$(SolutionDir)DataBase;$(SolutionDir)DataBase\ThirdParty\SQLite;%(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)DataBase</IncludePath>
+    <IncludePath>$(SolutionDir)DataBase;$(SolutionDir)DataBase\ThirdParty\SQLite;%(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)DataBase</IncludePath>
+    <IncludePath>$(SolutionDir)DataBase;$(SolutionDir)DataBase\ThirdParty\SQLite;%(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)DataBase</IncludePath>
+    <IncludePath>$(SolutionDir)DataBase;$(SolutionDir)DataBase\ThirdParty\SQLite;%(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -135,6 +135,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Category.h" />
+    <ClInclude Include="..\DataBase\database.h" />
+    <ClInclude Include="..\DataBase\ThirdParty\SQLite\sqlite3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\DataBase\database.cpp" />
+    <ClCompile Include="..\DataBase\ThirdParty\SQLite\sqlite3.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
