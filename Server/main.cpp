@@ -279,6 +279,7 @@ void generateCategoryResultPage(const vector<News>& result, const Category& cate
 
 int main()
 {
+    database::openDb();
 
     //生成新闻详情页
     vector<News> newsList = database::getAllNews();
@@ -384,6 +385,8 @@ int main()
         generateCategoryResultPage(result, category);
     }
     cout << "Category pages generated successfully!" << endl;
+
+    database::closeDb();
     
     return 0;
 }
