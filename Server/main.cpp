@@ -4,7 +4,7 @@
 #include<vector>
 #include<filesystem>
 
-#include "News.h"
+#include "../DataBase/database.h"
 #include "Category.h"
 
 using namespace std;
