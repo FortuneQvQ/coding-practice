@@ -9,8 +9,10 @@
 
 using namespace std;
 
+
 //获取HTML模板
 string readTemplate(const string& templateFile) {
+
     ifstream file(templateFile, ios::binary);
     if (!file.is_open()) {
         cerr << "Failed to open template file: " << templateFile << endl;
@@ -20,18 +22,24 @@ string readTemplate(const string& templateFile) {
     buffer << file.rdbuf();
     file.close();
     return buffer.str();
+
 }
+
 
 //字符串替换函数
 void replace(string &html, string key, string value){
+
     size_t pos;
     while((pos = html.find(key)) != string::npos){
         html.replace(pos, key.length(), value);
     }
+
 }
+
 
 //生成单个新闻详情页
 void generateNewsDetailPage(const News& news) {
+
     //读取HTML模板
     string html = readTemplate("templates/news_detail.html");
     if (html.empty()) {
@@ -46,7 +54,7 @@ void generateNewsDetailPage(const News& news) {
     replace(html, "{{url}}", news.url);
     replace(html, "{{source}}", news.source);
     string imageBlock;
-    if(!news.image.empty() &&filesystem::exists("output/" + news.image)){
+    if(!news.image.empty() && filesystem::exists("output/" + news.image)){
         imageBlock = "<img class=\"news-image\" src=\"../" + news.image + "\">";
     }
     else{
@@ -64,14 +72,16 @@ void generateNewsDetailPage(const News& news) {
     } else {
         cerr << "Failed to open output file: " << filename << endl;
     }
+
 }
+
 
 //生成最新新闻卡片HTML(数量由count决定)
 string generateLatestNewsCards(const vector<News>& newsList)
 {
 
     string newsBlock;
-	
+
     int count = 0;
 
     for(auto& news : newsList)
@@ -112,6 +122,7 @@ string generateLatestNewsCards(const vector<News>& newsList)
 
 }
 
+
 //生成所有新闻卡片HTML
 string generateAllNewsCards(const vector<News>& newsList)
 {
@@ -151,6 +162,7 @@ string generateAllNewsCards(const vector<News>& newsList)
 
 }
 
+
 //生成新闻首页
 void generateNewsIndexPage(const vector<News>& newsList) {
 
@@ -175,16 +187,20 @@ void generateNewsIndexPage(const vector<News>& newsList) {
     } else {
         cerr << "Failed to open output file: output/index.html" << endl;
     }
+
 }
+
 
 //生成分类首页
 void generateCategoryIndexPage(){
+
     //读取模板
     string html = readTemplate("templates/category_index.html");
     if (html.empty()) {
         cerr << "category_index is empty. Cannot generate category index page." << endl;
         return;
     }
+
     //生成HTML文件
     ofstream outFile("output/category_index.html", ios::binary);
     if (outFile.is_open()) {
@@ -193,7 +209,9 @@ void generateCategoryIndexPage(){
     } else {
         cerr << "Failed to open output file: output/category_index.html" << endl;
     }
+
 }
+
 
 //获得新闻筛选结果
 vector<News> getCategoryNews(const Category& category){
@@ -201,18 +219,23 @@ vector<News> getCategoryNews(const Category& category){
     return result;
 }
 
+
 //生成分类详细页
 void generateCategoryResultPage(const vector<News>& result, const Category& category){
+
     //读取模板
     string html = readTemplate("templates/category_result.html");
     if (html.empty()) {
         cerr << "category_result is empty. Cannot generate category page." << endl;
         return;
     }
+
     //替换标题
     replace(html, "{{category_title}}", category.title);
+
     //替换新闻列表
     replace(html, "{{news_list}}", generateAllNewsCards(result));
+
     //生成HTML文件
     ofstream outFile("output/categories/" + category.filename + ".html", ios::binary);
     if (outFile.is_open()) {
@@ -221,7 +244,9 @@ void generateCategoryResultPage(const vector<News>& result, const Category& cate
     } else {
         cerr << "Failed to open output file: " << category.filename + ".html" << endl;
     }
+    
 }
+
 
 int main()
 {

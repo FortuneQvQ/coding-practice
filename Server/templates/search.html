@@ -5,11 +5,12 @@
 
 <meta charset="UTF-8">
 
-<title>分类新闻</title>
+<title>搜索结果</title>
 
 
 <style>
 
+/* 全局 */
 
 * {
 
@@ -29,7 +30,6 @@ body {
 
     min-height:100vh;
 
-
     background:linear-gradient(
         135deg,
         #d8f3dc,
@@ -37,8 +37,6 @@ body {
     );
 
 }
-
-
 
 
 
@@ -74,14 +72,10 @@ body {
 
 
 
-
-
-
-/* 搜索框 */
+/* 搜索区域 */
 
 
 .search-box {
-
 
     width:60%;
 
@@ -89,18 +83,15 @@ body {
 
     display:flex;
 
-
 }
 
 
 
 .search-form {
 
-
     width:100%;
 
     display:flex;
-
 
 }
 
@@ -111,20 +102,13 @@ body {
 
     flex:1;
 
-
     padding:16px;
-
 
     border:none;
 
-
     border-radius:20px 0 0 20px;
 
-
-    box-shadow:
-
-    0 3px 10px rgba(0,0,0,0.1);
-
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
 
 }
 
@@ -135,35 +119,23 @@ body {
 
     width:90px;
 
-
     border:none;
-
 
     background:#40916c;
 
-
     color:white;
 
-
     border-radius:0 20px 20px 0;
-    
 
-    cursor: pointer;
-
+    cursor:pointer;
 
     user-select: none;  
-
 
 }
 
 
 
-
-
-
-
 /* 主体 */
-
 
 .container {
 
@@ -172,41 +144,82 @@ body {
 
     margin:auto;
 
-
 }
 
+
+
+/* 搜索结果标题 + 排序按钮 */
+
+.result-header {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
 
 
 
 .section-title {
 
 
-    font-size:24px;
-
-    margin-bottom:20px;
-
+    font-size:26px;
 
 }
 
 
 
+/* 排序按钮 */
+
+.sort-box {
+
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.sort-btn {
+
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 22px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+}
 
 
 
 /* 新闻卡片 */
-
 
 .news-card {
 
 
     background:white;
 
-
     padding:25px;
 
-
     margin-bottom:20px;
-
 
     border-radius:15px;
 
@@ -220,16 +233,12 @@ body {
 
 
 
-
-
 .news-source {
 
 
     color:#40916c;
 
-
     font-size:14px;
-
 
 }
 
@@ -240,12 +249,9 @@ body {
 
     font-size:22px;
 
-
     margin:10px 0;
 
-
 }
-
 
 
 
@@ -254,12 +260,9 @@ body {
 
     color:#888;
 
-
     font-size:14px;
 
-
 }
-
 
 
 
@@ -268,13 +271,9 @@ body {
 
     margin-top:15px;
 
-
     line-height:1.7;
 
-
 }
-
-
 
 
 
@@ -283,27 +282,19 @@ body {
 
     display:inline-block;
 
-
     margin-top:15px;
-
 
     padding:8px 18px;
 
-
     background:#40916c;
-
 
     color:white;
 
-
     text-decoration:none;
-
 
     border-radius:20px;
 
-
     cursor: pointer;
-
 
     user-select: none;  
 
@@ -312,70 +303,61 @@ body {
 
 
 
+/* 关键词高亮 */
+
+.highlight {
+
+
+    color:red;
+
+    font-weight:bold;
+
+}
 
 
 
-/* 底部按钮 */
+/* 返回按钮 */
 
 
-.bottom-buttons {
+.back-box {
 
 
     display:flex;
 
-
     justify-content:center;
 
-
-    gap:80px;
-
-
-    margin:40px auto;
+    margin:40px 0;
 
 
 }
 
 
 
-.button {
-
-
-    display:block;
-
-
-    padding:10px 30px;
+.back-btn {
 
 
     background:#40916c;
 
-
     color:white;
 
+    padding:10px 25px;
 
     border-radius:20px;
 
-
     text-decoration:none;
 
-    
-    cursor: pointer;
-
+    cursor:pointer;
 
     user-select: none;  
 
 
 }
-
-
-
 
 
 </style>
 
 
 </head>
-
-
 
 
 
@@ -394,10 +376,9 @@ body {
 </h1>
 
 
-
 <p>
 
-Campus News Hub · 分类结果浏览
+Campus News Hub · 搜索结果
 
 </p>
 
@@ -408,7 +389,9 @@ Campus News Hub · 分类结果浏览
 
 
 <form class="search-form"
-action="search.html"
+
+action="search_result.html"
+
 method="get">
 
 
@@ -416,7 +399,8 @@ method="get">
 
 name="keyword"
 
-placeholder="在分类结果中进行搜索">
+placeholder="继续在所有新闻中进行搜索">
+
 
 
 <button type="submit">
@@ -432,10 +416,7 @@ placeholder="在分类结果中进行搜索">
 </div>
 
 
-
 </div>
-
-
 
 
 
@@ -446,12 +427,48 @@ placeholder="在分类结果中进行搜索">
 
 
 
+<!-- 搜索结果标题和排序 -->
 
 
-<div class="section-title">
+<div class="result-header">
 
 
-{{category_title}}
+    <div class="section-title">
+
+
+        搜索结果：
+
+        <span>
+
+        {{keyword}}
+
+        </span>
+
+
+    </div>
+
+
+
+    <div class="sort-box">
+
+
+        <a class="sort-btn">
+
+            时间降序
+
+        </a>
+
+
+
+        <a class="sort-btn">
+
+            时间升序
+
+        </a>
+
+
+    </div>
+
 
 
 </div>
@@ -461,8 +478,7 @@ placeholder="在分类结果中进行搜索">
 
 
 
-<!-- C++动态生成新闻列表 -->
-
+<!-- 新闻列表 -->
 
 <div class="news-list">
 
@@ -478,43 +494,26 @@ placeholder="在分类结果中进行搜索">
 
 
 
-<div class="bottom-buttons">
+<!-- 返回主页 -->
+
+<div class="back-box">
 
 
-
-<a class="button"
-
-href="category_index.html">
-
-返回分类主页
-
-
-</a>
-
-
-
-
-
-<a class="button"
+<a class="back-btn"
 
 href="index.html">
 
 返回新闻主页
 
-
 </a>
 
 
-
 </div>
 
 
 
 
-
 </div>
-
-
 
 
 </body>
