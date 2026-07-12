@@ -67,41 +67,50 @@ body {
 
 /* 搜索区域 */
 
+
 .search-box {
 
-    width: 60%;
+    width:60%;
 
-    margin: 20px auto 10px;
+    margin:20px auto 10px;
+
+    display:flex;
 
 }
+
+
 
 .search-form {
 
     width:100%;
 
-    display: flex;
+    display:flex;
 
 }
+
+
 
 .search-box input {
 
-    flex: 1;
 
-    padding: 16px;
+    flex:1;
 
-    border-radius: 20px 0 0 20px;
+    padding:16px;
 
-    border: none;
+    border:none;
 
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius:20px 0 0 20px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
 
 }
+
 
 
 .search-box button {
 
 
-    width: 90px;
+    width:90px;
 
     border:none;
 
@@ -111,7 +120,7 @@ body {
 
     border-radius:0 20px 20px 0;
 
-    cursor: pointer;
+    cursor:pointer;
 
     user-select: none;  
 
@@ -272,19 +281,16 @@ Campus News Hub · 一站式校园信息平台
 
 <div class="search-box">
 
-<form class="search-form" action="search.html" method="get">
-
-<input 
-name="keyword"
+<input
+id="search-input"
 placeholder="在所有新闻中进行搜索">
 
 
-<button type="submit">
+<button
+id="search-button"
+type="button">
 搜索
 </button>
-
-
-</form>
 
 </div>
 
@@ -303,8 +309,8 @@ placeholder="在所有新闻中进行搜索">
 
 </div>
 
-    <!-- C++动态生成新闻列表 -->
-     <div class="newslist">
+    <!-- C++生成新闻列表 -->
+     <div class="news-list">
 
         <div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 21:00</div><div class="news-abstract">测试新闻摘要 69</div><a class="detail-btn" href="detail/74.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 19:00</div><div class="news-abstract">测试新闻摘要 19</div><a class="detail-btn" href="detail/24.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 17:00</div><div class="news-abstract">测试新闻摘要 89</div><a class="detail-btn" href="detail/94.html">查看详情</a></div>
 
@@ -325,6 +331,28 @@ placeholder="在所有新闻中进行搜索">
     </div>
 
 </div>
+
+<script>
+
+let input = document.getElementById("search-input");
+let button = document.getElementById("search-button");
+
+button.addEventListener("click", function(){
+
+    let keyword = input.value;
+
+    if(keyword.trim() === ""){
+        alert("请输入搜索关键词");
+        return;
+    }
+
+    window.location.href =
+    "search.html?keyword=" 
+    + encodeURIComponent(keyword);
+
+});
+
+</script>
 
 </body>
 

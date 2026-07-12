@@ -255,7 +255,7 @@ void generateCategoryResultPage(const vector<News>& result, const Category& cate
     //读取模板
     string html = readTemplate("templates/category_result.html");
     if (html.empty()) {
-        cerr << "category_result is empty. Cannot generate category page." << endl;
+        cerr << "category_result.html is empty. Cannot generate category page." << endl;
         return;
     }
 
@@ -277,6 +277,61 @@ void generateCategoryResultPage(const vector<News>& result, const Category& cate
 }
 
 
+//生成新闻JSON文件
+void generateNewJson(const vector<News>& newslist){
+
+    ofstream file("output/news.json", ios::binary);
+    if(!file.is_open()){
+        cout<<"Failed to create news.json"<<endl;
+        return;
+    }
+    file<<"[\n";
+    for(int i = 0; i < newslist.size(); i++){
+        const News& news = newslist[i];
+        file<<"{\n";
+        file<<"\"id\":\""<<news.id<<"\",\n";
+        file<<"\"title\":\""<<news.title<<"\",\n";
+        file<<"\"time\":\""<<news.time<<"\",\n";
+        file<<"\"content\":\""<<news.content<<"\",\n";
+        file<<"\"abstract\":\""<<news.abstract<<"\",\n";
+        file<<"\"url\":\""<<news.url<<"\",\n";
+        file<<"\"source\":\""<<news.source<<"\",\n";
+        file<<"\"image\":\""<<news.image<<"\",\n";
+        file<<"\"topic\":\""<<news.topic<<"\"\n";
+        file<<"}";
+        if(i < newslist.size() - 1){
+            file<<",";
+        }
+        file<<"\n";
+    }
+    file<<"]";
+    file.close();
+
+}
+
+
+//生成搜索页
+void generateSearchPage(){
+
+    //读取模板
+    string html = readTemplate("templates/search.html");
+    if (html.empty()) {
+        cerr << "search.html is empty. Cannot generate search page." << endl;
+        return;
+    }
+
+    //生成HTML文件
+    ofstream outFile("output/search.html", ios::binary);
+    if (outFile.is_open()) {
+        outFile << html;
+        outFile.close();
+    } else {
+        cerr << "Failed to open output file: output/search.html" << endl;
+    }
+
+}
+
+
 int main()
 {
     database::openDb();
@@ -288,6 +343,10 @@ int main()
         generateNewsDetailPage(news);
     }
     cout << "News detail pages generated successfully!" << endl;
+
+    //生成新闻JSON文件
+    generateNewJson(newsList);
+    cout << "News JSON file generated successfully!" << endl;
 
     //生成新闻首页
     generateNewsIndexPage(newsList);
@@ -385,6 +444,10 @@ int main()
         generateCategoryResultPage(result, category);
     }
     cout << "Category pages generated successfully!" << endl;
+
+    //生成搜索页
+    generateSearchPage();
+    cout << "Search page generated successfully!" << endl;
 
     database::closeDb();
     

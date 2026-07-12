@@ -67,41 +67,50 @@ body {
 
 /* 搜索区域 */
 
+
 .search-box {
 
-    width: 60%;
+    width:60%;
 
-    margin: 20px auto 10px;
+    margin:20px auto 10px;
+
+    display:flex;
 
 }
+
+
 
 .search-form {
 
     width:100%;
 
-    display: flex;
+    display:flex;
 
 }
+
+
 
 .search-box input {
 
-    flex: 1;
 
-    padding: 16px;
+    flex:1;
 
-    border-radius: 20px 0 0 20px;
+    padding:16px;
 
-    border: none;
+    border:none;
 
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius:20px 0 0 20px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
 
 }
+
 
 
 .search-box button {
 
 
-    width: 90px;
+    width:90px;
 
     border:none;
 
@@ -111,7 +120,7 @@ body {
 
     border-radius:0 20px 20px 0;
 
-    cursor: pointer;
+    cursor:pointer;
 
     user-select: none;  
 
@@ -272,19 +281,16 @@ Campus News Hub · 一站式校园信息平台
 
 <div class="search-box">
 
-<form class="search-form" action="search.html" method="get">
-
-<input 
-name="keyword"
+<input
+id="search-input"
 placeholder="在所有新闻中进行搜索">
 
 
-<button type="submit">
+<button
+id="search-button"
+type="button">
 搜索
 </button>
-
-
-</form>
 
 </div>
 
@@ -303,8 +309,8 @@ placeholder="在所有新闻中进行搜索">
 
 </div>
 
-    <!-- C++动态生成新闻列表 -->
-     <div class="newslist">
+    <!-- C++生成新闻列表 -->
+     <div class="news-list">
 
         {{news_list}}
 
@@ -325,6 +331,28 @@ placeholder="在所有新闻中进行搜索">
     </div>
 
 </div>
+
+<script>
+
+let input = document.getElementById("search-input");
+let button = document.getElementById("search-button");
+
+button.addEventListener("click", function(){
+
+    let keyword = input.value;
+
+    if(keyword.trim() === ""){
+        alert("请输入搜索关键词");
+        return;
+    }
+
+    window.location.href =
+    "search.html?keyword=" 
+    + encodeURIComponent(keyword);
+
+});
+
+</script>
 
 </body>
 
