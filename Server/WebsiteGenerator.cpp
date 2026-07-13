@@ -334,8 +334,6 @@ void generateSearchPage(){
 }
 
 void generateNewsWebsite(){
-     database::openDb();
-
     //生成新闻详情页
     vector<News> newsList = database::getAllNews();
     for(auto& news : newsList)
@@ -449,6 +447,19 @@ void generateNewsWebsite(){
     generateSearchPage();
     cout << "Search page generated successfully!" << endl;
 
-    database::closeDb();
-    
 }
+
+void generateNewsWebsite(const string& dbPath)
+{
+    database::openDb();
+    generateNewsWebsite();
+    database::closeDb();
+}
+
+#ifdef WEBSITE_GENERATOR_STANDALONE
+int main()
+{
+    generateNewsWebsite("../DataBase/data/news.db");
+    return 0;
+}
+#endif

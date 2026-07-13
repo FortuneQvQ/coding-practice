@@ -18,6 +18,9 @@
     <ClInclude Include="Category.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="WebsiteGenerator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="..\DataBase\database.h">
       <Filter>头文件</Filter>
     </ClInclude>
