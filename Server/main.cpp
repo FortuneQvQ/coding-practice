@@ -333,10 +333,8 @@ void generateSearchPage(){
 
 }
 
-
-int main()
-{
-    database::openDb();
+void generateNewsWebsite(){
+     database::openDb();
 
     //生成新闻详情页
     vector<News> newsList = database::getAllNews();
@@ -453,5 +451,8 @@ int main()
 
     database::closeDb();
     
+}
+int main(){
+    generateNewsWebsite();
     return 0;
 }
