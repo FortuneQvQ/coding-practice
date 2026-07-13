@@ -110,7 +110,7 @@ string generateLatestNewsCards(const vector<News>& newsList)
         //详情按钮
         newsBlock += "<a class=\"detail-btn\" href=\"detail/";
         newsBlock += to_string(news.id);
-        newsBlock += ".html\">";
+        newsBlock += ".html?from=index\">";
         newsBlock += u8"查看详情";
         newsBlock += "</a>";
         newsBlock += "</div>";
@@ -124,7 +124,7 @@ string generateLatestNewsCards(const vector<News>& newsList)
 
 
 //生成所有新闻卡片HTML（用于生成分类详情页）
-string generateAllNewsCards(const vector<News>& newsList)
+string generateAllNewsCards(const vector<News>& newsList, const Category& category)
 {
 
     string newsBlock;
@@ -152,7 +152,9 @@ string generateAllNewsCards(const vector<News>& newsList)
         //详情按钮
         newsBlock += "<a class=\"detail-btn\" href=\"../detail/";
         newsBlock += to_string(news.id);
-        newsBlock += ".html\">";
+        newsBlock += ".html?from=";
+        newsBlock += category.filename;
+        newsBlock += "\">";
         newsBlock += u8"查看详情";
         newsBlock += "</a>";
         newsBlock += "</div>";
@@ -263,7 +265,7 @@ void generateCategoryResultPage(const vector<News>& result, const Category& cate
     replace(html, "{{category_title}}", category.title);
 
     //替换新闻列表
-    replace(html, "{{news_list}}", generateAllNewsCards(result));
+    replace(html, "{{news_list}}", generateAllNewsCards(result, category));
 
     //生成HTML文件
     ofstream outFile("output/categories/" + category.filename + ".html", ios::binary);
