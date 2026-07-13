@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>分类新闻</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    color:#333;
+
+    min-height:100vh;
+
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+}
+
+
+
+
+
+/* 顶部 */
+
+.header {
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+
+.header h1 {
+
+    font-size:36px;
+
+    color:#2d6a4f;
+
+}
+
+
+
+.header p {
+
+    margin-top:10px;
+
+    color:#666;
+
+}
+
+
+
+
+
+
+/* 搜索框 */
+
+
+.search-box {
+
+
+    width:60%;
+
+    margin:20px auto 10px;
+
+    display:flex;
+
+
+}
+
+
+
+.search-form {
+
+
+    width:100%;
+
+    display:flex;
+
+
+}
+
+
+
+.search-box input {
+
+
+    flex:1;
+
+
+    padding:16px;
+
+
+    border:none;
+
+
+    border-radius:20px 0 0 20px;
+
+
+    box-shadow:
+
+    0 3px 10px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.search-box button {
+
+
+    width:90px;
+
+
+    border:none;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:0 20px 20px 0;
+    
+
+    cursor: pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+
+
+
+
+/* 主体 */
+
+
+.container {
+
+
+    width:70%;
+
+    margin:auto;
+
+
+}
+
+
+
+
+.section-title {
+
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+/* 新闻卡片 */
+
+
+.news-card {
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    margin-bottom:20px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+
+
+.news-source {
+
+
+    color:#40916c;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.news-title {
+
+
+    font-size:22px;
+
+
+    margin:10px 0;
+
+
+}
+
+
+
+
+.news-time {
+
+
+    color:#888;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+.news-abstract {
+
+
+    margin-top:15px;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+.detail-btn {
+
+
+    display:inline-block;
+
+
+    margin-top:15px;
+
+
+    padding:8px 18px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    border-radius:20px;
+
+
+    cursor: pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+
+
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+    
+    cursor: pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+<div class="header">
+
+
+<h1>
+
+校园资讯聚合系统
+
+</h1>
+
+
+
+<p>
+
+Campus News Hub · 分类结果浏览
+
+</p>
+
+
+
+
+<div class="search-box">
+
+
+<form class="search-form"
+action="search.html"
+method="get">
+
+
+<input
+
+name="keyword"
+
+placeholder="在分类结果中进行搜索">
+
+
+<button type="submit">
+
+搜索
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<div class="section-title">
+
+
+按时间分类：最近一周
+
+
+</div>
+
+
+
+
+
+
+<!-- C++动态生成新闻列表 -->
+
+
+<div class="news-list">
+
+
+<div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 21:00</div><div class="news-abstract">测试新闻摘要 69</div><a class="detail-btn" href="../detail/74.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 19:00</div><div class="news-abstract">测试新闻摘要 19</div><a class="detail-btn" href="../detail/24.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 17:00</div><div class="news-abstract">测试新闻摘要 89</div><a class="detail-btn" href="../detail/94.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 15:00</div><div class="news-abstract">测试新闻摘要 39</div><a class="detail-btn" href="../detail/44.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 11:00</div><div class="news-abstract">测试新闻摘要 59</div><a class="detail-btn" href="../detail/64.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 09:00</div><div class="news-abstract">测试新闻摘要 9</div><a class="detail-btn" href="../detail/14.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 07:00</div><div class="news-abstract">测试新闻摘要 79</div><a class="detail-btn" href="../detail/84.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 05:00</div><div class="news-abstract">测试新闻摘要 29</div><a class="detail-btn" href="../detail/34.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 03:00</div><div class="news-abstract">测试新闻摘要 99</div><a class="detail-btn" href="../detail/104.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">未来科技展望</div><div class="news-time">发布时间：2026-07-10 01:00</div><div class="news-abstract">测试新闻摘要 49</div><a class="detail-btn" href="../detail/54.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 20:00</div><div class="news-abstract">测试新闻摘要 68</div><a class="detail-btn" href="../detail/73.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 18:00</div><div class="news-abstract">测试新闻摘要 18</div><a class="detail-btn" href="../detail/23.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 16:00</div><div class="news-abstract">测试新闻摘要 88</div><a class="detail-btn" href="../detail/93.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 14:00</div><div class="news-abstract">测试新闻摘要 38</div><a class="detail-btn" href="../detail/43.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 10:00</div><div class="news-abstract">测试新闻摘要 58</div><a class="detail-btn" href="../detail/63.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 08:00</div><div class="news-abstract">测试新闻摘要 8</div><a class="detail-btn" href="../detail/13.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 06:00</div><div class="news-abstract">测试新闻摘要 78</div><a class="detail-btn" href="../detail/83.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 04:00</div><div class="news-abstract">测试新闻摘要 28</div><a class="detail-btn" href="../detail/33.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 02:00</div><div class="news-abstract">测试新闻摘要 98</div><a class="detail-btn" href="../detail/103.html">查看详情</a></div><div class="news-card"><div class="news-source">环球新闻</div><div class="news-title">芯片技术进展</div><div class="news-time">发布时间：2026-07-09 00:00</div><div class="news-abstract">测试新闻摘要 48</div><a class="detail-btn" href="../detail/53.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 23:00</div><div class="news-abstract">测试新闻摘要 47</div><a class="detail-btn" href="../detail/52.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 19:00</div><div class="news-abstract">测试新闻摘要 67</div><a class="detail-btn" href="../detail/72.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 17:00</div><div class="news-abstract">测试新闻摘要 17</div><a class="detail-btn" href="../detail/22.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 15:00</div><div class="news-abstract">测试新闻摘要 87</div><a class="detail-btn" href="../detail/92.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 13:00</div><div class="news-abstract">测试新闻摘要 37</div><a class="detail-btn" href="../detail/42.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 09:00</div><div class="news-abstract">测试新闻摘要 57</div><a class="detail-btn" href="../detail/62.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 07:00</div><div class="news-abstract">测试新闻摘要 7</div><a class="detail-btn" href="../detail/12.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 05:00</div><div class="news-abstract">测试新闻摘要 77</div><a class="detail-btn" href="../detail/82.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 03:00</div><div class="news-abstract">测试新闻摘要 27</div><a class="detail-btn" href="../detail/32.html">查看详情</a></div><div class="news-card"><div class="news-source">体育频道</div><div class="news-title">互联网行业动态</div><div class="news-time">发布时间：2026-07-08 01:00</div><div class="news-abstract">测试新闻摘要 97</div><a class="detail-btn" href="../detail/102.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 22:00</div><div class="news-abstract">测试新闻摘要 46</div><a class="detail-btn" href="../detail/51.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 18:00</div><div class="news-abstract">测试新闻摘要 66</div><a class="detail-btn" href="../detail/71.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 16:00</div><div class="news-abstract">测试新闻摘要 16</div><a class="detail-btn" href="../detail/21.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 14:00</div><div class="news-abstract">测试新闻摘要 86</div><a class="detail-btn" href="../detail/91.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 12:00</div><div class="news-abstract">测试新闻摘要 36</div><a class="detail-btn" href="../detail/41.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 08:00</div><div class="news-abstract">测试新闻摘要 56</div><a class="detail-btn" href="../detail/61.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 06:00</div><div class="news-abstract">测试新闻摘要 6</div><a class="detail-btn" href="../detail/11.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 04:00</div><div class="news-abstract">测试新闻摘要 76</div><a class="detail-btn" href="../detail/81.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 02:00</div><div class="news-abstract">测试新闻摘要 26</div><a class="detail-btn" href="../detail/31.html">查看详情</a></div><div class="news-card"><div class="news-source">财经日报</div><div class="news-title">科技产业发展</div><div class="news-time">发布时间：2026-07-07 00:00</div><div class="news-abstract">测试新闻摘要 96</div><a class="detail-btn" href="../detail/101.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 23:00</div><div class="news-abstract">测试新闻摘要 95</div><a class="detail-btn" href="../detail/100.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 21:00</div><div class="news-abstract">测试新闻摘要 45</div><a class="detail-btn" href="../detail/50.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 17:00</div><div class="news-abstract">测试新闻摘要 65</div><a class="detail-btn" href="../detail/70.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 15:00</div><div class="news-abstract">测试新闻摘要 15</div><a class="detail-btn" href="../detail/20.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 13:00</div><div class="news-abstract">测试新闻摘要 85</div><a class="detail-btn" href="../detail/90.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 11:00</div><div class="news-abstract">测试新闻摘要 35</div><a class="detail-btn" href="../detail/40.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 07:00</div><div class="news-abstract">测试新闻摘要 55</div><a class="detail-btn" href="../detail/60.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 05:00</div><div class="news-abstract">测试新闻摘要 5</div><a class="detail-btn" href="../detail/10.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 03:00</div><div class="news-abstract">测试新闻摘要 75</div><a class="detail-btn" href="../detail/80.html">查看详情</a></div><div class="news-card"><div class="news-source">科技日报</div><div class="news-title">人工智能应用</div><div class="news-time">发布时间：2026-07-06 01:00</div><div class="news-abstract">测试新闻摘要 25</div><a class="detail-btn" href="../detail/30.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">量子计算突破</div><div class="news-time">发布时间：2026-07-05 22:00</div><div class="news-abstract">测试新闻摘要 94</div><a class="detail-btn" href="../detail/99.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">量子计算突破</div><div class="news-time">发布时间：2026-07-05 20:00</div><div class="news-abstract">测试新闻摘要 44</div><a class="detail-btn" href="../detail/49.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">量子计算突破</div><div class="news-time">发布时间：2026-07-05 16:00</div><div class="news-abstract">测试新闻摘要 64</div><a class="detail-btn" href="../detail/69.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">量子计算突破</div><div class="news-time">发布时间：2026-07-05 14:00</div><div class="news-abstract">测试新闻摘要 14</div><a class="detail-btn" href="../detail/19.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">量子计算突破</div><div class="news-time">发布时间：2026-07-05 12:00</div><div class="news-abstract">测试新闻摘要 84</div><a class="detail-btn" href="../detail/89.html">查看详情</a></div><div class="news-card"><div class="news-source">城市日报</div><div class="news-title">量子计算突破</div><div class="news-time">发布时间：2026-07-05 10:00</div><div class="news-abstract">测试新闻摘要 34</div><a class="detail-btn" href="../detail/39.html">查看详情</a></div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="bottom-buttons">
+
+
+
+<a class="button"
+
+href="../category_index.html">
+
+返回分类主页
+
+
+</a>
+
+
+
+
+
+<a class="button"
+
+href="../index.html">
+
+返回新闻主页
+
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+</html>

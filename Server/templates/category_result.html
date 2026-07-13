@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>分类新闻</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    color:#333;
+
+    min-height:100vh;
+
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+}
+
+
+
+
+
+/* 顶部 */
+
+.header {
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+
+.header h1 {
+
+    font-size:36px;
+
+    color:#2d6a4f;
+
+}
+
+
+
+.header p {
+
+    margin-top:10px;
+
+    color:#666;
+
+}
+
+
+
+
+
+
+/* 搜索框 */
+
+
+.search-box {
+
+
+    width:60%;
+
+    margin:20px auto 10px;
+
+    display:flex;
+
+
+}
+
+
+
+.search-form {
+
+
+    width:100%;
+
+    display:flex;
+
+
+}
+
+
+
+.search-box input {
+
+
+    flex:1;
+
+
+    padding:16px;
+
+
+    border:none;
+
+
+    border-radius:20px 0 0 20px;
+
+
+    box-shadow:
+
+    0 3px 10px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.search-box button {
+
+
+    width:90px;
+
+
+    border:none;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:0 20px 20px 0;
+    
+
+    cursor: pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+
+
+
+
+/* 主体 */
+
+
+.container {
+
+
+    width:70%;
+
+    margin:auto;
+
+
+}
+
+
+
+
+.section-title {
+
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+/* 新闻卡片 */
+
+
+.news-card {
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    margin-bottom:20px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+
+
+.news-source {
+
+
+    color:#40916c;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.news-title {
+
+
+    font-size:22px;
+
+
+    margin:10px 0;
+
+
+}
+
+
+
+
+.news-time {
+
+
+    color:#888;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+.news-abstract {
+
+
+    margin-top:15px;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+.detail-btn {
+
+
+    display:inline-block;
+
+
+    margin-top:15px;
+
+
+    padding:8px 18px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    border-radius:20px;
+
+
+    cursor: pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+
+
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+    
+    cursor: pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+<div class="header">
+
+
+<h1>
+
+校园资讯聚合系统
+
+</h1>
+
+
+
+<p>
+
+Campus News Hub · 分类结果浏览
+
+</p>
+
+
+
+
+<div class="search-box">
+
+
+<form class="search-form"
+action="search.html"
+method="get">
+
+
+<input
+
+name="keyword"
+
+placeholder="在分类结果中进行搜索">
+
+
+<button type="submit">
+
+搜索
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<div class="section-title">
+
+
+{{category_title}}
+
+
+</div>
+
+
+
+
+
+
+<!-- C++动态生成新闻列表 -->
+
+
+<div class="news-list">
+
+
+{{news_list}}
+
+
+</div>
+
+
+
+
+
+
+
+<div class="bottom-buttons">
+
+
+
+<a class="button"
+
+href="../category_index.html">
+
+返回分类主页
+
+
+</a>
+
+
+
+
+
+<a class="button"
+
+href="../index.html">
+
+返回新闻主页
+
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+</html>
