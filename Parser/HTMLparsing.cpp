@@ -1,6 +1,5 @@
 #define PUGIXML_HEADER_ONLY
 #include "HTMLparsing.h"
-#include "database.h"
 using json = nlohmann::json;
 
 void parser(const std::string& url, std::string& html) 
