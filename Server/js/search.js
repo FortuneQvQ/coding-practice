@@ -1,20 +1,14 @@
 let input = document.getElementById("search-input");
-
 let keyword = "";
 let keywords = [];
-
 let newsList = [];
 let result = [];
 
 
-// ===============================
 // 生成新闻列表
-// ===============================
-
 function printNewsList(result){
 
     let html = "";
-
 
     // 无搜索结果
     if(result.length === 0){
@@ -31,59 +25,46 @@ function printNewsList(result){
         return;
     }
 
-
     result.forEach(news=>{
-
 
         html +=
         `
         <div class="news-card">
 
-
             <div class="news-source">
                 ${highlight(news.source, keywords)}
             </div>
-
 
             <div class="news-title">
                 ${highlight(news.title, keywords)}
             </div>
 
-
             <div class="news-time">
                 ${highlight(news.time, keywords)}
             </div>
-
 
             <div class="news-abstract">
                 ${highlight(news.abstract, keywords)}
             </div>
 
-
             <a class="detail-btn"
-            href="detail/${news.id}.html?from=search">
+            href="detail/${news.id}.html?from=search&keyword=${keyword}">
 
                 查看详情
 
             </a>
-
 
         </div>
         `;
 
     });
 
-
     document.getElementById("news-list").innerHTML = html;
 
 }
 
 
-
-// ===============================
 // 正则特殊字符转义
-// ===============================
-
 function escapeRegExp(string){
 
     return string.replace(
@@ -94,11 +75,7 @@ function escapeRegExp(string){
 }
 
 
-
-// ===============================
 // 关键词高亮
-// ===============================
-
 function highlight(text, keywords){
 
 
@@ -108,23 +85,16 @@ function highlight(text, keywords){
 
     }
 
-
     if(keywords.length===0){
 
         return text;
 
     }
 
-
-
     // 长关键词优先
-    let keys = [...keywords]
-    .sort((a,b)=>b.length-a.length);
-
-
+    let keys = [...keywords].sort((a,b)=>b.length-a.length);  //...将keywords展开，生成一个新数组
 
     keys.forEach(key=>{
-
 
         if(key.trim()===""){
 
@@ -132,14 +102,11 @@ function highlight(text, keywords){
 
         }
 
-
-
         let reg =
         new RegExp(
             escapeRegExp(key),
             "g"
         );
-
 
         text =
         text.replace(
@@ -148,23 +115,15 @@ function highlight(text, keywords){
             `<span class="highlight">${match}</span>`
         );
 
-
     });
-
-
 
     return text;
 
 }
 
 
-
-// ===============================
 // 搜索函数
-// ===============================
-
 function search(newsList){
-
 
 
     let params =
@@ -172,15 +131,12 @@ function search(newsList){
         window.location.search
     );
 
-
     keyword =
     input.value.trim()
     ||
     params.get("keyword")
     ||
     "";
-
-
 
     keywords =
     keyword
@@ -191,8 +147,6 @@ function search(newsList){
     );
 
 
-
-
     // 空关键词显示全部
     if(keywords.length===0){
 
@@ -201,7 +155,6 @@ function search(newsList){
     }
 
     else{
-
 
         result =
         newsList.filter(news=>{
@@ -280,11 +233,7 @@ function search(newsList){
 }
 
 
-
-// ===============================
 // 初始化
-// ===============================
-
 
 fetch("json/news.json")
 
@@ -301,7 +250,7 @@ fetch("json/news.json")
     }
 
 
-    return response.json();
+    return response.json();  //把JSON文件转换成JavaScript对象
 
 
 })

@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "database.h"
-#include "other/Category.h"
+#include "other/category.h"
 
 void generateNewsWebsite();
 void generateNewsWebsite(const std::string& dbPath);

@@ -6,7 +6,6 @@
 struct Category
 {
     std::string title;      // 页面显示标题
-    std::string filename;   // 生成文件名
     std::string type;       // 分类类型
     std::string value;      // 分类条件
 };

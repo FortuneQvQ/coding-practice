@@ -367,6 +367,74 @@ body {
 }
 
 
+.highlight{
+
+    color:rgb(255, 45, 45);
+
+    font-weight: bold;
+
+}
+
+
+.result-header {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.section-title {
+
+
+    font-size:26px;
+
+}
+
+
+
+/* 排序按钮 */
+
+.sort-box {
+
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.sort-btn {
+
+    border:none;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 22px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+}
+
 
 
 
@@ -404,32 +472,26 @@ Campus News Hub · 分类结果浏览
 
 
 
-<!-- <div class="search-box">
-
-
-<form class="search-form"
-action="search.html"
-method="get">
+<div class="search-box">
 
 
 <input
 
-name="keyword"
+id="search-input"
 
-placeholder="在分类结果中进行搜索">
+placeholder="继续在分类结果中进行搜索">
 
+<button 
+id="search-button"
 
-<button type="submit">
+type="button">
 
 搜索
 
 </button>
 
 
-</form>
-
-
-</div> -->
+</div>
 
 
 
@@ -446,28 +508,37 @@ placeholder="在分类结果中进行搜索">
 
 
 
+<div class="result-header">
 
-
-<div class="section-title">
-
-
-{{category_title}}
+<div id="category-title" class="section-title">
 
 
 </div>
 
+<div class="sort-box">
+
+
+        <button id="sort-desc" class="sort-btn">
+
+            时间降序
+
+        </button>
 
 
 
+        <button id="sort-asc" class="sort-btn">
+
+            时间升序
+
+        </button>
 
 
-<!-- C++动态生成新闻列表 -->
+</div>
+
+</div>
 
 
-<div class="news-list">
-
-
-{{news_list}}
+<div id="news-list" class="news-list">
 
 
 </div>
@@ -484,7 +555,7 @@ placeholder="在分类结果中进行搜索">
 
 <a class="button"
 
-href="../category_index.html">
+href="category_index.html">
 
 返回分类主页
 
@@ -497,7 +568,7 @@ href="../category_index.html">
 
 <a class="button"
 
-href="../index.html">
+href="index.html">
 
 返回新闻主页
 
@@ -514,7 +585,7 @@ href="../index.html">
 
 </div>
 
-
+<script src="../js/category.js"></script>
 
 
 </body>

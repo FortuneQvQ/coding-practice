@@ -5,7 +5,7 @@
 #include<filesystem>
 
 #include "database.h"
-#include "other/Category.h"
+#include "other/category.h"
 
 using namespace std;
 
@@ -76,7 +76,7 @@ void generateNewsDetailPage(const News& news) {
 }
 
 
-//生成最新新闻卡片HTML(数量由count决定）（用于生成新闻主页）
+//生成最新新闻卡片HTML(数量由count决定）
 string generateLatestNewsCards(const vector<News>& newsList)
 {
 
@@ -116,48 +116,6 @@ string generateLatestNewsCards(const vector<News>& newsList)
         newsBlock += "</div>";
 
         count++;
-    }
-
-    return newsBlock;
-
-}
-
-
-//生成所有新闻卡片HTML（用于生成分类详情页）
-string generateAllNewsCards(const vector<News>& newsList, const Category& category)
-{
-
-    string newsBlock;
-
-    for(auto& news : newsList)
-    {
-        newsBlock += "<div class=\"news-card\">";
-         //来源
-        newsBlock += "<div class=\"news-source\">";
-        newsBlock += news.source;
-        newsBlock += "</div>";
-        //标题
-        newsBlock += "<div class=\"news-title\">";
-        newsBlock += news.title;
-        newsBlock += "</div>";
-        //时间
-        newsBlock += "<div class=\"news-time\">";
-        newsBlock += u8"发布时间：";
-        newsBlock += news.time;
-        newsBlock += "</div>";
-        //摘要
-        newsBlock += "<div class=\"news-abstract\">";
-        newsBlock += news.abstract;
-        newsBlock += "</div>";
-        //详情按钮
-        newsBlock += "<a class=\"detail-btn\" href=\"../detail/";
-        newsBlock += to_string(news.id);
-        newsBlock += ".html?from=";
-        newsBlock += category.filename;
-        newsBlock += "\">";
-        newsBlock += u8"查看详情";
-        newsBlock += "</a>";
-        newsBlock += "</div>";
     }
 
     return newsBlock;
@@ -215,44 +173,8 @@ void generateCategoryIndexPage(){
 }
 
 
-//获得新闻筛选结果
-vector<News> getCategoryNews(const Category& category){
-
-    vector<News> result;
-
-    //时间分类
-    if(category.type == "time"){
-        if(category.value == "today"){
-            result = database::getTodayNews();
-        }
-        else if(category.value == "week_ago"){
-            result = database::getWeekNews();
-        }
-        else if(category.value == "month_ago"){
-            result = database::getMonthNews();
-        }
-        else if(category.value == "history"){
-            result = database::getAllNews();
-        }
-    }
-
-    //来源分类
-    else if(category.type == "source"){
-        result = database::getNewsBySource(category.value);
-    }
-
-    //主题分类
-    else if(category.type == "topic"){
-        result = database::getNewsByTopic(category.value);
-    }
-
-    return result;
-
-}
-
-
 //生成分类详细页
-void generateCategoryResultPage(const vector<News>& result, const Category& category){
+void generateCategoryResultPage(){
 
     //读取模板
     string html = readTemplate("templates/category_result.html");
@@ -261,19 +183,13 @@ void generateCategoryResultPage(const vector<News>& result, const Category& cate
         return;
     }
 
-    //替换标题
-    replace(html, "{{category_title}}", category.title);
-
-    //替换新闻列表
-    replace(html, "{{news_list}}", generateAllNewsCards(result, category));
-
     //生成HTML文件
-    ofstream outFile("output/categories/" + category.filename + ".html", ios::binary);
+    ofstream outFile("output/category_result.html", ios::binary);
     if (outFile.is_open()) {
         outFile << html;
         outFile.close();
     } else {
-        cerr << "Failed to open output file: " << category.filename + ".html" << endl;
+        cerr << "Failed to open output file: output/category_result.html" << endl;
     }
     
 }
@@ -282,7 +198,7 @@ void generateCategoryResultPage(const vector<News>& result, const Category& cate
 //生成新闻JSON文件
 void generateNewJson(const vector<News>& newslist){
 
-    ofstream file("output/news.json", ios::binary);
+    ofstream file("output/json/news.json", ios::binary);
     if(!file.is_open()){
         cout<<"Failed to create news.json"<<endl;
         return;
@@ -334,6 +250,7 @@ void generateSearchPage(){
 }
 
 void generateNewsWebsite(){
+	
     //生成新闻详情页
     vector<News> newsList = database::getAllNews();
     for(auto& news : newsList)
@@ -355,93 +272,8 @@ void generateNewsWebsite(){
     cout << "Category index page generated successfully!" << endl;
 
     //生成分类详情页
-    vector<Category> categories =
-    {
-        {
-            u8"按时间分类：今日新闻",
-            "time_today",
-            "time",
-            "today"
-        },
-        {
-            u8"按时间分类：最近一周",
-            "time_weekago",
-            "time",
-            "week_ago"
-        },
-        {
-            u8"按时间分类：最近一个月",
-            "time_monthago",
-            "time",
-            "month_ago"
-        },
-        {
-            u8"按时间分类：历史咨询",
-            "time_history",
-            "time",
-            "history"
-        },
-        {
-            u8"按来源分类：教务处",
-            "source_jwc",
-            "source",
-            "jwc"
-        },
-        {
-            u8"按来源分类：学生会",
-            "source_xsh",
-            "source",
-            "xsh"
-        },
-        {
-            u8"按来源分类：学院通知",
-            "source_xy",
-            "source",
-            "xy"
-        },
-        {
-            u8"按来源分类：学生社团",
-            "source_club",
-            "source",
-            "club"
-        },
-        {
-            u8"按主题分类：教学通知",
-            "topic_teach",
-            "topic",
-            "teach"
-        },
-        {
-            u8"按主题分类：校园活动",
-            "topic_activity",
-            "topic",
-            "activity"
-        },
-        {
-            u8"按主题分类：竞赛比赛",
-            "topic_competition",
-            "topic",
-            "competition"
-        },
-        {
-            u8"按主题分类：考试安排",
-            "topic_exam",
-            "topic",
-            "exam"
-        },
-        {
-            u8"按主题分类：科研创新",
-            "topic_research",
-            "topic",
-            "research"
-        }
-    };
-    for(auto& category : categories)
-    {
-        vector<News> result = getCategoryNews(category);
-        generateCategoryResultPage(result, category);
-    }
-    cout << "Category pages generated successfully!" << endl;
+    generateCategoryResultPage();
+    cout << "Category result page generated successfully!" << endl;
 
     //生成搜索页
     generateSearchPage();
