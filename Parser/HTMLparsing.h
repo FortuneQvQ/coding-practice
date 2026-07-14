@@ -11,8 +11,8 @@
 #include <tidybuffio.h>
 #include "nlohmann/json.hpp"
 #include <set>
+#include "database.h"
 
-struct News;
 // 辅助函数：根据网页源URL获取基准URL
 std::string get_baseUrl(const std::string& url);
 // 辅助函数：将相对路径转换为绝对路径
