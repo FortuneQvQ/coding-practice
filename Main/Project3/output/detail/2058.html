@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+四川大学学术讲座、活动通告（2025年12月12日——2025年12月21日）
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-12-15
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+一、学术讲座论坛 主 题 时 间 地 点 主讲人 主办单位 敦煌俗文学的全球史考察： 以“海中有神龟”一诗为例 12 月 13 日 15:00-17:00 江安校区文科楼一区 311 会议室 陈明 文学与新闻学院 交融思想，碰撞智慧 电子科大 - 四川大学物理学科竞赛与科创项目经验交流会 12 月 13 日 10:00-12:00 望江校区物理馆 103 会议室 张修明、王焕文 物理学院 面向锂电池回收的电膜科学与技术 12 月 13 日 10:30-12:00 望江校区化学工程学院办公楼 235 会议室 赵严 化学工程学院 【明远大讲堂】法学研究如何发问 12 月 14 日 10:00-12:00 江安校区法学院办公楼 2023 会议室 尤陈俊 社科处、法学院 Survivability for Power Grid Communication Network: From Classical Networks to Quantum Networks （电力通信网生存能力：从经典网络到量子网络） 12 月 14 日 10:00-11:30 望江校区研究生院一区 102 会议室 张侨伦 电气工程学院 从细胞代谢到群落代谢：通量调控、分泌和相互影响关系 12 月 15 日 15:00-16:00 望江校区化学工程学院办公楼 313 会议室 Orkun · S · Soyer （奥尔昆· S ·索耶） 化学工程学院 中国式现代化与人类命运共同体学术沙龙 12 月 15 日全天 江安校区喜马拉雅学会报告厅 Christos · Papatheodorou （克里斯托斯·帕帕西奥多罗）等 马克思主义学院 Multi-polarity and Chinese Modernization: New Pathways and Challenges （多极世界与中国现代化：新路径与新挑战 ） 12 月 16 日 9:00-12:00 望江校区文科楼 200 会议室 David · Matters （大卫·曼特斯）等 国际关系学院 OceanBase seekdb ——开源 AI 原生混合搜索数据库的创新与实践 12 月 16 日 15:00-16:15 望江校区基础教学楼 B302 教室 徐泉清 计算机学院 粒球计算驱动的智能数据库 12 月 16 日 16:15-17:30 望江校区基础教学楼 B302 教室 乔少杰 计算机学院 社会转型作为现代化的障碍或释放 12 月 16 日 14:30 望江校区文科楼 448 会议室 David · Matters （大卫·曼特斯） 马克思主义学院 Searching for long-lived heavy neutral leptons in effective field theory 12 月 17 日 15:00-17:00 望江校区物理馆 323 会议室 王泽人 物理学院 计算机辅助过程仿真工具在教学和科研中的应用 12 月 17 日 10:00-12:00 江安校区综合楼 C408 教室 Chwan · Yee · Foo （符传艺） 化学工程学院 经纬讲坛：金融科技如何抑制企业文本信息操纵——基于大语言模型与神经网络模型的分析 12 月 18 日 16:00-17:00 望江校区经济学院四楼咖啡厅 401 李仲飞 经济学院 The EW Portal to Composite Dark Matter 12 月 18 日 15:00-17:00 望江校区物理馆 323 会议室 李凌风 物理学院 主 题 时 间 地 点 主讲人 主办单位 人工智能与出版业的转型 12 月 19 日 10:00-11:30 江安校区文学与新闻学院办公楼 311 会议室 乔卫兵 文学与新闻学院 人工智能创业者的知行之路：技术深耕与商业修行 12 月 19 日 19:00-21:00 望江校区商学院办公楼 103 会议室 何欣 商学院 国家烟气脱硫工程技术研究中心和四川省碳中和技术创新中心年会暨 2025 碳中和未来技术国际会议 12 月 20 日 9:00-18:00 望江校区明德楼四楼一会议室 黄成杭 碳中和未来技术学院 云南西归抗衰老新用途——食、妆、药应用研究 12 月 20 日 16:30-17:30 华西校区华西药学院办公楼康弘报告厅 李剑 华西药学院 二、校园文化活动 活动名称 时 间 地 点 主办单位 “感动川大” 2025 年度人物颁奖典礼 12 月 12 日 19 ： 00-21 ： 00 江安校区多学科交叉融合平台及艺术教育中心多功能厅 校团委 第 52 期“青春与梦想”草坪音乐会——校园深呼吸活动 12 月 14 日 19 ： 00-20 ： 30 望江校区东区校史馆前草坪 学工部 解码大厂：腾讯的组织活力与人才战略 12 月 16 日 19:00-20:30 望江校区文化活动中心一楼报告厅 校团委 “开心农场”劳动实践 12 月 18 、 19 日 10:00-12:00 14:00-17:00 江安校区“开心农场”劳动实践基地 学工部 “匠心蜀味·厨艺学堂”劳动实践课 12 月 19 日 15:00-18:00 江安校区东园食堂 学工部、后保部 冬韵乐章 -2026 年学生管乐团新年音乐会 12 月 20 日 19:30 – 20:30 文华活动中心二楼音乐厅 学工部 交响之约 -2026 年学生交响乐团新年音乐会 12 月 21 日 19:30 – 21:00 文华活动中心二楼音乐厅 学工部
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://lj.scu.edu.cn/info/1035/7894.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

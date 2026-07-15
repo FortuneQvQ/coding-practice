@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+我校138人获批2023年度国家资助博士后研究人员计划（B档、C档）
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+发布时间：2023-12-22来源：编辑：浏览量： _showDynClicks(&quot;wbnews&quot;, 1843323552, 2471)<br>
+近日，全国博士后管委会办公室 中国博士后科学基金会公布了2023年度国家资助博士后研究人员计划（B档、C档）获选人员名单。我校共138名博士后获选，其中B档获选39人，C档获选99人，总获选数位列全国第五。<br>
+此前，我校11人入选国家“博新计划”（即国家资助博士后研究人员计划A档），入选人数创新高，位列全国第九。<br>
+自2023年起，国家资助博士后研究人员计划不再按照向博士后科研流动站设站单位分配指标的方式进行资助，实行分类分档资助，共分为A、B、C三档。其中，A档为国家“博新计划”，资助标准为每人每年28万元生活补助并配套8万元科研启动经费，每年资助人数约500人，获选名单前期已公布；B档资助标准为每人每年18万元，每年资助人数约1000人（其中，国家“博新计划”通过函评进入会评但未获得资助的可自动获得B档资助）；C档资助标准为每人每年12万元，资助人数根据年度经费预算情况确定；资助期均为2年。<br>
+值得注意的是，此次国家资助博士后研究人员计划（B档、C档）不仅包括理学、工学和医学等自然科学领域，还涵盖了文学、管理学、法学等多个社会科学领域。<br>
+2023年度国家资助博士后研究人员计划（B档、C档）<br>
+获选结果排名<br>
+学校名称<br>
+清华大学<br>
+北京大学<br>
+上海交通大学<br>
+浙江大学<br>
+四川大学<br>
+复旦大学<br>
+中山大学<br>
+西安交通大学<br>
+郑州大学<br>
+中国科学技术大学<br>
+2023年度国家资助博士后研究人员计划（B档、C档）<br>
+四川大学获选人员名单<br>
+B档获选人员名单<br>
+一级学科<br>
+资助编号<br>
+闫丽伟<br>
+材料科学与工程<br>
+GZB20230457<br>
+黄子窈<br>
+工商管理<br>
+GZB20230458<br>
+王苏桐<br>
+管理科学与工程<br>
+GZB20230459<br>
+赵文辉<br>
+管理科学与工程<br>
+GZB20230460<br>
+王志国<br>
+护理学<br>
+GZB20230461<br>
+GZB20230462<br>
+曹光梅<br>
+环境科学与工程<br>
+GZB20230463<br>
+环境科学与工程<br>
+GZB20230464<br>
+陈自敏<br>
+基础医学<br>
+GZB20230465<br>
+基础医学<br>
+GZB20230466<br>
+巨兴兴<br>
+控制科学与工程<br>
+GZB20230467<br>
+李松航<br>
+口腔医学<br>
+GZB20230468<br>
+李政毅<br>
+口腔医学<br>
+GZB20230469<br>
+马文娟<br>
+口腔医学<br>
+GZB20230470<br>
+孙思露<br>
+口腔医学<br>
+GZB20230471<br>
+张雨欣<br>
+口腔医学<br>
+GZB20230472<br>
+刘福林<br>
+GZB20230473<br>
+顾一敏<br>
+临床医学<br>
+GZB20230474<br>
+郭礼妍<br>
+临床医学<br>
+GZB20230475<br>
+韩佳杞<br>
+临床医学<br>
+GZB20230476<br>
+黄先洲<br>
+临床医学<br>
+GZB20230477<br>
+刘怡钒<br>
+临床医学<br>
+GZB20230478<br>
+临床医学<br>
+GZB20230479<br>
+申思远<br>
+临床医学<br>
+GZB20230480<br>
+吴奕君<br>
+临床医学<br>
+GZB20230481<br>
+赵长健<br>
+临床医学<br>
+GZB20230482<br>
+侯德隆<br>
+轻工技术与工程<br>
+GZB20230483<br>
+生物学<br>
+GZB20230484<br>
+何苗苗<br>
+生物医学工程<br>
+GZB20230485<br>
+夏许寒<br>
+食品科学与工程<br>
+GZB20230486<br>
+吴孟桃<br>
+土木工程<br>
+GZB20230487<br>
+新闻传播学<br>
+GZB20230488<br>
+黄诗琪<br>
+GZB20230489<br>
+GZB20230490<br>
+王文婧<br>
+GZB20230491<br>
+医学技术<br>
+GZB20230492<br>
+朱己祥<br>
+艺术学（艺术理论）<br>
+GZB20230493<br>
+刘纪琪<br>
+GZB20230494<br>
+中国语言文学<br>
+GZB20230495<br>
+C档获选人员名单<br>
+一级学科<br>
+资助编号<br>
+曾富容<br>
+材料科学与工程<br>
+GZC20231760<br>
+材料科学与工程<br>
+GZC20231761<br>
+刘焕岩<br>
+材料科学与工程<br>
+GZC20231762<br>
+聂闰盼<br>
+材料科学与工程<br>
+GZC20231763<br>
+材料科学与工程<br>
+GZC20231764<br>
+地球物理学<br>
+GZC20231765<br>
+何忠奇<br>
+电子科学与技术<br>
+GZC20231766<br>
+GZC20231767<br>
+孙合林<br>
+工商管理<br>
+GZC20231768<br>
+杨金玉<br>
+工商管理<br>
+GZC20231769<br>
+吴思琦<br>
+管理科学与工程<br>
+GZC20231770<br>
+王瑞阳<br>
+光学工程<br>
+GZC20231771<br>
+化学工程与技术<br>
+GZC20231772<br>
+王静禹<br>
+化学工程与技术<br>
+GZC20231773<br>
+化学工程与技术<br>
+GZC20231774<br>
+周昶安<br>
+化学工程与技术<br>
+GZC20231775<br>
+环境科学与工程<br>
+GZC20231776<br>
+环境科学与工程<br>
+GZC20231777<br>
+贺裕鹏<br>
+机械工程<br>
+GZC20231778<br>
+王剑宇<br>
+机械工程<br>
+GZC20231779<br>
+基础医学<br>
+GZC20231780<br>
+佘天山<br>
+基础医学<br>
+GZC20231781<br>
+周登成<br>
+基础医学<br>
+GZC20231782<br>
+游星星<br>
+计算机科学与技术<br>
+GZC20231783<br>
+丁羽帆<br>
+考古学<br>
+GZC20231784<br>
+考古学<br>
+GZC20231785<br>
+丁张帆<br>
+口腔医学<br>
+GZC20231786<br>
+郭陟永<br>
+口腔医学<br>
+GZC20231787<br>
+李奇文<br>
+口腔医学<br>
+GZC20231788<br>
+王沛棋<br>
+口腔医学<br>
+GZC20231789<br>
+口腔医学<br>
+GZC20231790<br>
+朱冠印<br>
+口腔医学<br>
+GZC20231791<br>
+唐鹏飞<br>
+GZC20231792<br>
+临床医学<br>
+GZC20231793<br>
+陈晓航<br>
+临床医学<br>
+GZC20231794<br>
+陈宣明<br>
+临床医学<br>
+GZC20231795<br>
+陈月云<br>
+临床医学<br>
+GZC20231796<br>
+程扬帆<br>
+临床医学<br>
+GZC20231797<br>
+临床医学<br>
+GZC20231798<br>
+代昕雨<br>
+临床医学<br>
+GZC20231799<br>
+邸星澎<br>
+临床医学<br>
+GZC20231800<br>
+董一丹<br>
+临床医学<br>
+GZC20231801<br>
+窦翊愷<br>
+临床医学<br>
+GZC20231802<br>
+临床医学<br>
+GZC20231803<br>
+高映雪<br>
+临床医学<br>
+GZC20231804<br>
+临床医学<br>
+GZC20231805<br>
+临床医学<br>
+GZC20231806<br>
+蒋林宏<br>
+临床医学<br>
+GZC20231807<br>
+李高伟<br>
+临床医学<br>
+GZC20231808<br>
+李鸿帅<br>
+临床医学<br>
+GZC20231809<br>
+临床医学<br>
+GZC20231810<br>
+刘晓银<br>
+临床医学<br>
+GZC20231811<br>
+临床医学<br>
+GZC20231812<br>
+临床医学<br>
+GZC20231813<br>
+临床医学<br>
+GZC20231814<br>
+临床医学<br>
+GZC20231815<br>
+临床医学<br>
+GZC20231816<br>
+临床医学<br>
+GZC20231817<br>
+万谦益<br>
+临床医学<br>
+GZC20231818<br>
+王梦琦<br>
+临床医学<br>
+GZC20231819<br>
+王学辉<br>
+临床医学<br>
+GZC20231820<br>
+临床医学<br>
+GZC20231821<br>
+吴泉佑<br>
+临床医学<br>
+GZC20231822<br>
+吴斯文<br>
+临床医学<br>
+GZC20231823<br>
+临床医学<br>
+GZC20231824<br>
+临床医学<br>
+GZC20231825<br>
+许子寒<br>
+临床医学<br>
+GZC20231826<br>
+闫力维<br>
+临床医学<br>
+GZC20231827<br>
+临床医学<br>
+GZC20231828<br>
+张嘉鹏<br>
+临床医学<br>
+GZC20231829<br>
+临床医学<br>
+GZC20231830<br>
+临床医学<br>
+GZC20231831<br>
+张松柏<br>
+临床医学<br>
+GZC20231832<br>
+临床医学<br>
+GZC20231833<br>
+临床医学<br>
+GZC20231834<br>
+临床医学<br>
+GZC20231835<br>
+周裕文<br>
+临床医学<br>
+GZC20231836<br>
+朱昱州<br>
+临床医学<br>
+GZC20231837<br>
+段文健<br>
+马克思主义理论<br>
+GZC20231838<br>
+柴芳妮<br>
+生物学<br>
+GZC20231839<br>
+刘华康<br>
+生物学<br>
+GZC20231840<br>
+生物学<br>
+GZC20231841<br>
+生物学<br>
+GZC20231842<br>
+生物医学工程<br>
+GZC20231843<br>
+张勃庆<br>
+生物医学工程<br>
+GZC20231844<br>
+石油与天然气工程<br>
+GZC20231845<br>
+世界史<br>
+GZC20231846<br>
+廖中华<br>
+GZC20231847<br>
+特种医学<br>
+GZC20231848<br>
+张丽婷<br>
+GZC20231849<br>
+孙文飞<br>
+政治学<br>
+GZC20231850<br>
+刘益民<br>
+中国史<br>
+GZC20231851<br>
+马明宗<br>
+中国史<br>
+GZC20231852<br>
+侯建科<br>
+中国语言文学<br>
+GZC20231853<br>
+李乐乐<br>
+中国语言文学<br>
+GZC20231854<br>
+蒲柏林<br>
+中国语言文学<br>
+GZC20231855<br>
+中国语言文学<br>
+GZC20231856<br>
+滕胜霖<br>
+中国语言文学<br>
+GZC20231857<br>
+中国语言文学<br>
+GZC20231858<br>
+上一条：学校召开促进青年教师成长座谈会<br>
+下一条：四川大学2023年度博士后工作总结交流会成功举办<br>
+我校138人获批2023年度国家资助博士后研究人员计划（B档、C档）发布时间：2023-12-22来源：编辑：浏览量： _showDynClicks(&quot;wbnews&quot;, 1843323552, 2471)<br>
+近日，全国博士后管委会办公室 中国博士后科学基金会公布了2023年度国家资助博士后研究人员计划（B档、C档）获选人员名单。我校共138名博士后获选，其中B档获选39人，C档获选99人，总获选数位列全国第五。此前，我校11人入选国家“博新计划”（即国家资助博士后研究人员计划A档），入选人数创新高，位列全国第九。 自2023年起，国家资助博士后研究人员计划不再按照向博士后科研流动站设站单位分配指标的方式进行资助，实行分类分档资助，共分为A、B、C三档。其中，A档为国家“博新计划”，资助标准为每人每年28万元生活补助并配套8万元科研启动经费，每年资助人数约500人，获选名单前期已公布；B档资助标准为每人每年18万元，每年资助人数约1000人（其中，国家“博新计划”通过函评进入会评但未获得资助的可自动获得B档资助）；C档资助标准为每人每年12万元，资助人数根据年度经费预算情况确定；资助期均为2年。 值得注意的是，此次国家资助博士后研究人员计划（B档、C档）不仅包括理学、工学和医学等自然科学领域，还涵盖了文学、管理学、法学等多个社会科学领域。2023年度国
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://rsc.scu.edu.cn/info/1101/2471.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

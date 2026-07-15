@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+【温馨提示】居住证办理热点问题解答
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2023-06-11
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+想办居住证却不知道是否符合条件？需要提供什么材料？ …… 来看成都市公安局微户政关于几个问题的回答！ 问：我要满足什么条件才能办理居住证？ 答： 来蓉人员自办理居住登记之日起至申领居住证之日止，连续居住满6个月且符合下列条件之一的，可以向居住地公安派出所申领居住证： 1 、合法稳定就业； 2 、合法稳定住所； 3 、连续就读； 4 、符合本市人才落户规定，尚未迁移户口的； 5 、共同生活的直系亲属具有本市户籍的。 问：我在成都已购住房，居住登记已满半年，办理居住证需要提供哪些材料？ 答： 请带上本人居民身份证（未满16周岁可提供居民户口簿），房管部门颁发的房屋所有权证、或国土部门颁发的不动产权证书、或房屋信息查询记录，近期相片（白底1寸2张）。 问：我在成都一家企业工作并租赁住房，现在居住登记已满半年，连续缴纳城镇职工社会保险满6个月，办理居住证需要提供哪些材料？ 答： 请带上本人居民身份证，近6个月的连续缴纳城镇职工社会保险费的清单，社保清单无法反映工作单位的，需要同时提供下列证明材料之一：劳动合同、企业或个体工商户营业执照副本、《成都市工商灵活就业（营业）辅导证》，并提供房屋租赁登记备案信息摘要，或房屋租赁合同和住址佐证材料，或房屋租赁合同和房主与派出所签订的治安责任书，近期相片（白底1寸2张）。 问：我在成都全日制职高就读，居住在学校，办理居住证需要提供哪些材料？ 答： 请带上本人居民身份证（未满16周岁可提供居民户口簿），学校教务部门出具并填写学籍编号的学籍证明，提供学校出具的住宿证明，近期相片（白底1寸2张）。 问：我的居住证有效期快到期了，应该怎么办？ 答： 您应当于期满前1个月内，持居民身份证等有效身份证明、居住证及合法住所证明等，到现居住地公安派出所办理签注手续。 问：我还没做居住登记，应该在哪儿做居住登记？ 答： 您可通过以下几种方式申报居住登记： 1 、现场申报（到居住地公安派出所申报）； 2 、采集点申报（到社区、居（村）民委员会流动人口信息采集点申报）； 3 、网络自主申报（通过微信公众号“成都公安微户政”中“居住登记申报”进行自主申报）。 温馨提示：居住登记情况可以在“成都公安微户政”中“居住登记信息查询”中查询哦。
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://bwc.scu.edu.cn/info/1004/2761.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+四川大学艺术学院诚邀全球英才来我院工作
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2023-03-17
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+四川大学简介 四川大学地处“天府之国”成都，是教育部直属高水平研究型综合大学、国家“双一流”建设A类高校，是全国学科门类最齐全、办学规模最大的高校之一。学校现有37个学科型学院（系）及海外教育学院等学院，覆盖了文、理、工、医、经、管、法、史、哲、农、教、艺等12个门类，博士学位授权一级学科52个，博士交叉学位授权点3个，硕士专业学位授权点37个，博士专业学位授权点11个，博士后流动站39个。 艺术学院简介 四川大学艺术学院现有 3个一级学科博士授权点和2个艺术专业硕士（MFA）授权点。学院是西南地区首个拥有艺术类博士授权点的单位，同时与历史文化学院共建了文物学与艺术史博士点；拥有3个国家级一流专业建设点和4个省级一流专业建设点。2009年获批成为教育部创新型艺术人才培养模式实验区。学院现有在校本科生近1600人，硕士研究生330人左右，博士研究生近60人。 项目介绍 1 特聘正（副）研究员项目 1.1申报条件 1.一般应具有国内外高水平大学博士学位。在国（境）外著名大学、科研机构担任相当于副教授及以上职务，具有较强科研水平和创新能力，条件特别优秀者或4 0 周岁以下（出生日期在1 983 年1月1日之后）的青年人才可适当放宽学历要求； 2.特聘正研究员的科研成果及条件须基本达到四川大学正高级职称评聘要求，特聘副研究员的研究成果及条件须基本达到四川大学副高级职称评聘要求（年龄一般不超过35岁，最多40岁）； 3.引进后须全职在我院工作。 1.2相关待遇 1.特聘正研究员待遇为每年3 3 万元（含基本薪酬+奖励薪酬），特聘副研究员为每年 22 万元（含基本薪酬+奖励薪酬），标志性重大成果按学校及学院有关文件另行奖励； 2.针对特聘正研究员，入职后提供不超过2 0 万元科研经费（特聘副研究员不超过 15 万元科研经费）； 3.针对从国外回国（来华）来我校工作的特聘正研究员，入职后提供最多4 5 万元住房及购房补贴（为特聘副研究员提供1 4 万元住房及购房补贴）； 4.针对国（境）内来我校工作的特聘正研究员，入职后提供最多 40 万元住房及购房补贴（为特聘副研究员提供1 2 万元住房及购房补贴）； 5.根据学校政策协助解决子女入学、配偶工作等问题； 6.文化艺术领域领军人才或特别优秀者，一人一议。 2 专职博士后项目 2.1申报条件 1.拥有较强科研创作创新潜力； 2.具有国内外高水平大学博士学位； 3.年龄一般不超过3 5 周岁（1 988 年1月1日以后出生）。如已在国内外知名高校、科研机构、企业从事博士后研究不少于两年，且在国内外知名期刊发表过高水平学术论文或取得其他高质量的科研创作成果者，年龄一般不超过4 0 周岁（ 1983年1月1日以后出生）； 4.须全职在我院工作。 2.2相关待遇 1.待遇为每年 16 . 5 万元以上（含基本薪酬+奖励薪酬）； 2.租房补贴1 .5 万元/年； 3.外籍博士后每年提供不超过1万元国际差旅费； 4.博士学位所属学科为业内公认的世界一流学科，或博士（合作）导师为国际公认一流专家，且个人成果特别优秀者，一人一议。 联系及咨询方式 联系电话：（+ 86 ）028-85998100 联系人：王老师 简历投递及咨询邮箱：ysdzb@scu.edu.cn
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+<img class="news-image" src="../images/2843.png" alt="新闻图片" loading="lazy">
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://art.scu.edu.cn/info/1048/9551.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

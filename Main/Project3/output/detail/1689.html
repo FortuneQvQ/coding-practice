@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 竞赛比赛
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于开展2025年第十三届全国大学生光电设计竞赛的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-05-27
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各参赛学生： 由中国光学学会主办，中国光学学会光学教育专业委员会代表主办机构、全国大学生光电设计竞赛委员会（以下称“光电竞赛委”）具体负责、浙江大学承办的第十三届全国大学生光电设计竞赛将于 2025 年 8 月 19 日至 22 日在浙江省杭州市举行，现将相关事项通知如下。 一、参赛对象 参赛队队员应为 2025 年暑期前在校的具有四川大学正式学籍的全日制本科生、留学生及研究生。鼓励跨学科专业组队参赛。每支参赛队由 3 名学生组成，每名学生在一个赛道只能参加一支参赛队；每支参赛队中研究生人数不能多于 1 名，且不能担任队长；每支参赛队中指导教师人数不能多于 2 名；允许学生同时报名参加本届全国光电竞赛实物竞赛主赛道和光学设计赛道。 二、选题要求 （ 1 ）赛题 1 ：智能车的激光对抗 竞赛要点： 利用光电方法实现行驶轨迹智能车避“雷”的同时，快速识别对方车体并对其进行快速跟踪和激光打击。 竞赛内容： 设计一套具有激光对抗功能的智能小车，小车包括激光照射器和对抗过程记录用摄像头。基于光电技术，小车可准确确定自身和对方车辆位置，进行激光瞄准、照射，并具有躲避场地中“雷区”的功能。摄像头记录整个对抗（激光照射）过程，用来作为出现裁判争议时的判断依据。小车长宽高 3 维均在 15cm 到 30cm 之间，侧面涂装高 5cm 的白色漫反射区作为激光照射的目标区。场地设置如图 1 所示。场地为方形，中间设有分界线，分界线处均布 3 颗地雷，地雷外围有圆环形的雷区标识线。比赛过程中小车不可触碰地雷。比赛时，裁判启动信号灯亮起，双方车辆摄像头记录信号灯点亮时间，作为比赛开始时间。参赛车从场地两个对角处的蓝色区域出发，整个车体跨过分界线后即可对对方车辆发起激光对抗打击。率先照射到对方车辆，并连续追踪照射 2s 以上的车队获胜。 所用的对抗照射激光为可见光，目视连续，功率等参数符合激光安全标准 GB7247 ，场地内任何位置光斑直径不大于 2cm 。 （ 2 ）赛题 2 ：大深径比微孔参数的光学无损测量 竞赛要点： 在微电子、微纳光学、集成光学、微流控技术等多个领域，常常需要在金属、半导体、玻璃等不同材料上加工具有大深度直径比（简称：深径比）的微孔。加工过程中会产生各种加工误差，比如孔的加工深度、直径、孔轴的垂直度、不同深度小孔直径的一致性、孔壁的表面光滑度、孔的不圆度等等，如图 2 所示。精确测量大深径比微孔的各项参数是获得高质量微孔的重要前提。 竞赛内容： 开发一种测量装置：至少能够测量直径小于 0.3mm ，深径比大于 3 的微孔的深径比。微孔直径为微孔沿深度方向最大和最小直径的平均值。 鼓励各赛区探索解决实际生产实践中的技术问题，并根据需要确定测量对象的基底材料，通孔或盲孔、单孔或阵列以及是否测量除深径比之外，更加全面的微孔技术参数。 赛题的主要评分要素为：深径比测量精度，可测量的最大深径比，可测量的最小微孔直径等。 三、比赛赛制 第十三届全国大学生光电设计竞赛仍采用“区赛晋级国赛制”，即全国七大赛区先举办区赛，再推荐各区赛获胜队参与国赛。 四、参赛项目要求 参赛项目不得侵犯他人知识产权，所涉及的发明创造、专利技术、资源等必须拥有清晰合法的知识产权或物权。凡抄袭、盗用、提供虚假材料或违反相关法律者，一经发现即刻取消其参赛相关权益并自负一切法律责任。 五、报名方式 我校报名同学请加入竞赛 QQ 群（群号 853794432 ），竞赛后续通知、资料和相关事宜将在群内发布，加群后请务必修改群昵称为自己的真名加学号，例如“张三 -2020141451234 ”。 六、其他 其它具体细则请参见附件 1 《关于公布第十三届全国大学生光电设计竞赛赛题和优秀应征赛题奖的通知》和附件 2 《关于公布第十三届全国大学生光电设计竞赛实物赛道竞赛细则（区赛参考细则）的通知》。 电子信息学院 2025 年 5 月 27 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://eie.scu.edu.cn/info/1019/13799.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

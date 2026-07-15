@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于开展2025年暑期“大川视界”｜世界名校加拿大不列颠哥伦比亚大学暑期课程项目报名工作的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-02-21
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各学院（系）、全校同学： 为拓展学生国际视野，提高全球胜任力，学校现开展“大川视界” 2025 年世界名校加拿大不列颠哥伦比亚大学暑期非学分项目的报名工作，校内报名时间：即日起至 2025 年 3 月 7 日 18:00 。现就有关事项通知如下： 一、项目介绍 加拿大不列颠哥伦比亚大学 （ University of British Columbia, 简称 UBC ） 始建于 1908 年，位于温哥华市海边，是加拿大著名的公立医博类研究型大学，是全球教育、学习与研究中心之一。 UBC 培养了 8 位诺贝尔奖得主以及三位加拿大总理。 UBC 在 2024 年 QS 世界大学排名中位列 34 名。 UBC 温哥华暑期课程项目 （ University of British Columbia-Vancouver Summer Program ，以下简称 VSP ） 为期四周，提供超过 50 个课程包让学生选择，包括理科、工科、商科、文科、医科、教育学、建筑学、人体运动学、牙医学、护理学等。同学们在学习高水平专业课程知识的同时，还将收获在世界顶尖名校的学习体验，增强跨学科学习能力，培养自身的综合素养。同时，同学们也可以通过丰富的课外文化活动体验，与来自全球各地的本科生互动，提升自身跨文化交流的能力，并领略到加拿大本土的多元文化。每个课程包包括两门约 39 课时的课程，在成功完成课程并达到指定要求后，可以获得 VSP 项目证书和所学课程成绩单。 详情请登陆 VSP 官网查看： https://vancouversummerprogram.ubc.ca/ 二、项目时间和费用 （一）项目时间： 2025 年 7 月 11 日 -8 月 11 日 （实际课程 7 月 14 号开始） （二）项目费用： 三、报名条件： 1. 思想政治：拥护中国共产党的领导、热爱祖国、品德优良、身心健康，遵守国家法律法规、学校规章制度，无纪律处分； 2 、具有较强的学习能力的全日制非毕业年级本科生，年满 18 岁，大一新生时间不得与军训冲突。部分课程可接受研究生。详情请查询课程安排： https://vancouversummerprogram.ubc.ca/course-packages/ 3 、对语言成绩无硬性要求，但须具备良好的英语听说读写能力，能适应全英文授课。 4 、学生在课程修读期间，应遵守相关的法律法规和双方学校规章制度，尊重当地风俗文化，愿意服从两校的统一管理， 自觉维护国家利益、民族尊严和学校荣誉。 四、报名时间和流程： （一）校内申请时间： 截止 2025 年 3 月 7 日 18:00 （二） 本科生 校内申请流程： 1. 填写附件 1 （本科生“大川视界”非学分项目申请表），经学院审核签字盖章后，将申报表电子档（扫描件） 及 GPA 和相关英语成绩支撑材料发送至 xgb-fzzx1@scu.edu.cn 。 2. 外方学校选课、报名和缴费（未在我校报名只在外方学校报名的同学将不能申请大川视界资助）： https://vancouversummerprogram.ubc.ca/apply-now/ 五、特别提醒： （一）为保证出行顺利，请在报名成功后及时告知学院辅导员，并在出境前登录四川大学学生出国（境）网上备案系统完成备案，流程见 https://global.scu.edu.cn/?channel/490/504/564/595 。 （二）护签办理：报名期间可先同步办理护照，待报名缴费成功后持 UBC 出具的邀请材料办理签证。因加拿大签证办理时间约 5 个月，建议有意参加的同学请尽早报名缴费。 六、项目和报名咨询： 国际合作与交流处 85401551 （项目咨询） 党委学生工作部 85460907/85461977 （本科生报名咨询） 外方学校项目咨询： vsp.ubc@ubc.ca 附件 1 ：本科生“大川视界”非学分项目申请表 附件 2 ： UBC Vancouver Summer Program Brochure_2025
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+<img class="news-image" src="../images/2218.png" alt="新闻图片" loading="lazy">
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://xgb.scu.edu.cn/info/1003/4642.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

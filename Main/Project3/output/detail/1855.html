@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 考试安排
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+2026年四川大学体育学院硕士研究生考试成绩公示
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-03-31
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+报名号 姓名 初试 总分 复试 总分 备注 专项 / 笔试 面试 复试总分 体育教学 510198035 简浩宇 375 97.83 95.29 193.12 85.78 510199802 王紫婷 393 93.25 92.25 185.50 85.68 321297443 殷齐翊 391 91.50 90.75 182.25 84.66 510196078 蒲诗煜 388 91.13 89.40 180.53 83.93 510199102 张文彦 371 94.00 92.13 186.13 83.63 421699800 潘诗遥 373 91.00 92.83 183.83 83.26 513899773 罗吉怡 383 90.17 89.25 179.42 83.15 510197838 徐一心齐 380 90.71 86.43 177.14 82.29 510199932 黄慧婷 367 91.33 89.71 181.05 81.96 510198057 王健臣 375 88.00 88.57 176.57 81.64 510197487 陈凤丫 361 91.75 90.33 182.08 81.62 510199104 刘琬妮 383 86.83 85.86 172.69 81.47 515499946 严腾飞 380 84.67 87.75 172.42 81.10 910190034 张毅豪 81.63 80.50 162.13 81.06 立功表彰 910190019 缪智聪 81.63 80.43 162.05 81.03 立功表彰 510198189 胡思 363 （含加分） 87.86 91.00 178.86 81.01 士兵计划 510199291 丁乐山 358 91.33 88.00 179.33 80.63 513399628 何越 363 87.43 88.00 175.43 80.16 510198159 刘照南 355 89.14 86.17 175.31 79.33 512299654 熊洋 350 86.00 86.88 172.88 78.22 112796073 张馨月 373 缺 缺 0 37.30 体育学 510197649 刘珈旗 361 92.00 92.57 184.57 82.24 112999908 吕艾珈 362 87.00 89.67 176.67 80.37 510195325 易宇 313 83.00 83.71 166.71 72.98
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://pe.scu.edu.cn/info/1060/5271.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

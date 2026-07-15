@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+第八次政治学习通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-06-11
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各系（中心）、科室： 5 月 25 日，新华网发布了文章《党的十八大以来深入贯彻中央八项规定精神的成效和经验》。文章指出，党的十八大以来深入贯彻中央八项规定精神之所以能够取得显著成效，根本在于有习近平总书记领航掌舵，有习近平新时代中国特色社会主义思想科学指引。作风建设永远在路上，全面从严治党永远在路上，党的自我革命永远在路上。 5 月 26 日，中共中央总书记、国家主席、中央军委主席习近平致信祝贺复旦大学建校 120 周年。他指出，新起点上，希望复旦大学坚持不懈用新时代中国特色社会主义思想铸魂育人，深化教育科研改革，不断提升服务国家重大战略和区域经济社会发展能力，为以中国式现代化全面推进强国建设、民族复兴伟业不断作出新贡献。 6 月 1 日出版的第 11 期《求是》杂志发表了习近平的重要文章《加快建设教育强国》。文章强调，教育是强国建设、民族复兴之基。我们要建成的教育强国，是中国特色社会主义教育强国，应当具有强大的思政引领力、人才竞争力、科技支撑力、民生保障力、社会协同力、国际影响力，为以中国式现代化全面推进强国建设、民族复兴伟业提供有力支撑。 6 月是全国第 24 个安全生产月，本次主题是“人人讲安全、个个会应急——查找身边安全隐患”。习近平总书记高度重视安全生产工作，作出一系列关于安全生产的重要论述。习近平总书记强调，要健全风险防范化解机制，坚持从源头上防范化解重大安全风险，真正把问题解决在萌芽之时、成灾之前。 6 月 5 日晚，国家主席习近平应约同美国总统特朗普通电话。习近平指出，校正中美关系这艘大船的航向，需要我们把好舵、定好向，尤其是排除各种干扰甚至破坏，这尤为重要。美国应当慎重处理台湾问题，避免极少数“台独”分裂分子把中美两国拖入冲突对抗的危险境地。两国元首同意双方团队继续落实好日内瓦共识，尽快举行新一轮会谈。 6 月 6 日，习近平在中南海接受班禅额尔德尼·确吉杰布拜见。习近平勉励他以十世班禅大师为楷模，努力成为佛学造诣精深、受僧俗信众爱戴的藏传佛教活佛，在促进民族团结、宗教和顺、西藏稳定发展进步中作出更大贡献；希望班禅继承藏传佛教爱国爱教光荣传统，坚决维护祖国统一和民族团结。 6 月 1 日出版的第 11 期《求是》杂志发表了教育部党组书记、部长怀进鹏的署名文章《把教育强国的宏伟蓝图变为美好现实》。文章指出，我们要把学习习近平总书记重要讲话精神作为一项重要政治任务，全面落实《纲要》各项任务举措，扎实推进教育强国建设，为以中国式现代化全面推进强国建设、民族复兴伟业作出更大贡献。 各党支部要组织认真学习以上材料，要学习习近平总书记关于深入贯彻中央八项规定精神的重要论述，坚定落实中央八项规定精神；要学习习近平总书记重要讲话精神，推进社会主义精神文明建设；要健全风险防范化解机制，坚持从源头上防范化解重大安全风险。各党支部要组织认真学习以上材料，要学习习近平总书记关于深入贯彻中央八项规定精神的重要论述，坚定落实中央八项规定精神；要学习习近平总书记重要讲话精神，推进社会主义精神文明建设；要健全风险防范化解机制，坚持从源头上防范化解重大安全风险。 学习时间： 2025 年 6 月 13 日（星期五）下午，请各单位采取多种方式组织学习。 学习材料： 1. 党的十八大以来深入贯彻中央八项规定精神的成效和经验 2. 习近平致复旦大学建校 120 周年的贺信 3. 习近平：加快建设教育强国 4. 习近平总书记关于安全生产的重要论述和重要指示批示精神 5. 习近平同美国总统特朗普通电话 6. 习近平接受班禅额尔德尼·确吉杰布拜见 7. 把教育强国的宏伟蓝图变为美好现实 8. 安全生产月视频资料 华西药学院党政办公室 2025 年 6 月 11 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://pharmacy.scu.edu.cn/info/1013/7076.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

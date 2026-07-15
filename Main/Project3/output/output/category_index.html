@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻分类浏览</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    color:#333;
+
+    min-height:100vh;
+
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+}
+
+
+
+
+/* 顶部 */
+
+
+.header {
+
+
+    padding:40px;
+
+    text-align:center;
+
+
+}
+
+
+
+.header h1 {
+
+
+    font-size:36px;
+
+    color:#2d6a4f;
+
+
+}
+
+
+
+.header p {
+
+
+    margin-top:10px;
+
+    color:#666;
+
+
+}
+
+
+
+
+
+/* 主体 */
+
+
+.container {
+
+
+    width:70%;
+
+    margin:auto;
+
+
+}
+
+
+
+.section-title {
+
+
+    font-size:24px;
+
+    margin:20px 0;
+
+
+}
+
+
+
+
+/* 分类卡片 */
+
+
+.category-card {
+
+
+    background:white;
+
+
+    padding:30px;
+
+
+    margin-bottom:25px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+
+    0 5px 15px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.category-title {
+
+
+    font-size:25px;
+
+    color:#2d6a4f;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+/* 分类按钮 */
+
+
+.tag {
+
+
+    display:inline-block;
+
+
+    padding:10px 20px;
+
+
+    margin:8px;
+
+
+    background:#d8f3dc;
+
+
+    color:#2d6a4f;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+    transition:0.3s;
+
+    
+    cursor:pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+.tag:hover {
+
+
+    background:#40916c;
+
+    color:white;
+
+
+}
+
+
+
+
+
+/* 返回按钮 */
+
+
+.back {
+
+
+    display:block;
+
+
+    width:fit-content;
+
+
+    margin:40px auto;
+
+
+    padding:10px 25px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+    cursor:pointer;
+
+
+    user-select: none;  
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="header">
+
+
+<h1>
+
+新闻分类浏览
+
+</h1>
+
+
+<p>
+
+Campus News Hub · Browse Categories
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+选择分类方式
+
+</div>
+
+
+
+
+
+<!-- 时间分类 -->
+
+
+<div class="category-card">
+
+
+<div class="category-title">
+
+📅 按时间分类
+
+</div>
+
+
+
+<a class="tag"
+href="category_result.html?title=按时间分类：今日新闻&type=time&value=today">
+
+今日新闻
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按时间分类：最近一周&type=time&value=weekago">
+
+最近一周
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按时间分类：最近一个月&type=time&value=monthago">
+
+最近一个月
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按时间分类：历史资讯&type=time&value=history">
+
+历史资讯
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- 来源分类 -->
+
+
+<div class="category-card">
+
+
+<div class="category-title">
+
+🏫 按来源分类
+
+</div>
+
+
+
+<a class="tag"
+href="category_result.html?title=按来源分类：教务处&type=source&value=jwc">
+
+教务处
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按来源分类：学生会&type=source&value=xsh">
+
+学生会
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按来源分类：学院通知&type=source&value=xy">
+
+学院通知
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按来源分类：学生社团&type=source&value=club">
+
+学生社团
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- 主题分类 -->
+
+
+<div class="category-card">
+
+
+<div class="category-title">
+
+📚 按主题分类
+
+</div>
+
+
+
+<a class="tag"
+href="category_result.html?title=按主题分类：教学通知&type=topic&value=teach">
+
+教学通知
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按主题分类：校园活动&type=topic&value=activity">
+
+校园活动
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按主题分类：竞赛比赛&type=topic&value=competition">
+
+竞赛比赛
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按主题分类：考试安排&type=topic&value=exam">
+
+考试安排
+
+</a>
+
+
+
+<a class="tag"
+href="category_result.html?title=按主题分类：科研创新&type=topic&value=research">
+
+科研创新
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<a class="back"
+href="index.html">
+
+返回新闻主页
+
+</a>
+
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
