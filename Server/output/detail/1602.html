@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+art.scu.edu.cn
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+四川大学艺术学院博士后2025年招聘公告 Postdoctoral Program, College of Arts, SCU
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-04-23
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+四川大学简介 四川大学是教育部直属全国重点大学，是国家布局在中国西部的重点建设的高水平研究型综合大学，是国家“双一流”建设高校（A类）。 四川大学地处中国历史文化名城——“天府之国”成都，有望江、华西和江安三个校区，占地面积7050亩，校舍建筑面积281.66万平方米。 学校正与眉山市合作共建四川大学眉山校区。 校园环境幽雅，文化底蕴浓郁，是读书治学的理想园地。 Sichuan University is a national key university directly under the Ministry of Education, a high-level research-oriented comprehensive university prioritized for development in China's western region, and a Class A institution under China's "Double First-Class" Initiative. Located in Chengdu, a renowned historical and cultural city known as the "Land of Abundance," the university comprises three campuses—Wangjiang, Huaxi, and Jiang'an—covering an area of 7,050 mu (approximately 470 hectares) with a total floor space of 2.8166 million square meters. The university is currently collaborating with Meishan City to establish the Sichuan University Meishan Campus. With its serene environment and rich cultural heritage, the campus provides an ideal setting for academic pursuits. 四川大学艺术学院简介 四川大学艺术学院现有艺术学、设计学、美术与书法3个一级学科博士学位授权点和艺术学博士后科研流动站。学院秉持“发挥综合优势，崇尚人文精神，倡导艺术创新，培养一流人才”的办学理念，坚持艺术人才培养、艺术创作与艺术研究并重的办学思路，依托多学科的支撑，立足西南、面向全国，以创建国内综合大学一流艺术学院和培养具有创新精神、创造能力的高素质艺术人才为学院的办学目标。 The College of Arts, Sichuan University has three first-level doctoral degree programs in Art Studies, Design Studies, and Fine Arts & Calligraphy, along with a postdoctoral research station in Art Studies.Guided by the educational philosophy of "leveraging multidisciplinary strengths, upholding humanistic spirit, promoting artistic innovation, and cultivating top-tier talent," the college adheres to an approach that equally emphasizes artistic talent development, creative practice, and academic research. Supported by a multidisciplinary foundation, the college is committed to serving as a regional hub in Southwest China while maintaining a national outlook. Its mission is to become a top-tier art college among comprehensive universities in China and to cultivate high-caliber artistic talents with innovative vision and creative ability. 招收条件 1、年龄在35周岁及以下； 2、博士学位； 3、身体健康； 4、申请人进站后须全职来我院从事博士后研究工作，聘期结束时须达到博士后出站要求； 5、符合我校流动站的其他招收条件。 Recruitment Requirements 1.Age: 35 years or younger. 2.Education: Hold a doctoral degree (Ph.D. or equivalent). 3.Health: In good physical condition. 4.Employment Commitment: The applicant must engage in full-time postdoctoral research at our institute and meet the postdoctoral completion requirements by the end of the appointment period. 5.Additional Criteria: Must satisfy other recruitment conditions set by the university’s postdoctoral research station. 相关待遇及政策 1、参照学校相关文件执行，可根据博士后资历、学术水平、急需程度等条件合理浮动；获批中国博士后科学基金、四川省相关人才计划项目者，享受额外资助。按规定发放四川省、成都市博士后生活补助； 2、支持申报各类博士后人才计划、基金或博士后专项； 3、聘期结束后，条件优秀者可竞聘学院相应岗位； 4、其他相关待遇一人一议。 Compensation and Benefits Salary & Funding: Compensation will be determined in accordance with university policies, with adjustments based on the candidate’s postdoctoral qualifications, academic achievements, and disciplinary priorities. Additional funding will be granted to those awarded the China Postdoctoral Science Fund or Sichuan Province Talent Programs. Eligible candidates will receive living allowances from Sichuan Province and Chengdu Municipality as per regulations. Career Development Support: Supports applications for various postdoctoral talent programs, grants, or special projects. P ost-Appointment Opportunities: Outstanding candidates may compete for faculty positions at the school upon completion of the postdoctoral term. Other Benefits: Additional terms are negotiable on a case-by-case basis. 招收程序 全年招收博士后研究人员，随时接收报名并组织考察遴选。 1、申请人将应聘材料（个人简历+学术成果证明材料）发送至学院的联系邮箱（详见“联系及咨询方式”）； 2、应聘人员通过四川大学人才招聘网站在线应聘，填写个人应聘申请；注册时请提供准确的个人信息，因个人信息不实造成的后果由应聘者本人承担； 3、学校人事处进行资格初审； 4、单位招聘工作领导小组对初审通过的应聘人员进行甄选，确定参加面试人员名单； 5、单位招聘工作小组、相关部处人员对候选人进行面试，党政联席会择优确定拟聘人员； 6、拟聘人员进行体检、公示，无异议后上报学校； 拟聘人员报学校审批，审批通过后转移档案、签订博士后培养协议、办理进站/报到手续。 Recruitment Process Year-round recruitment of postdoctoral researchers with rolling admissions and structured evaluation processes. 1.Application Submission: Applicants must submit the following materials to the school's designated email (see Contact Information for details): Curriculum Vitae (CV); Proof of academic achievements (publications, projects, awards, etc.) . 2.Online Application: Candidates must apply online via Sichuan University’s Talent Recruitment Portal and complete the personal application form. Important: Provide accurate personal information during registration. Any consequences arising from false information shall be borne by the applicant. 3.Preliminary Review: The university’s Human Resources Department conducts an initial qualification review. 4.Shortlisting: The c ollege ’s recruitment committee evaluates preliminarily qualified candidates and selects interviewees. 5.Interview & Selection: A panel comprising the recruitment committee and relevant university departments conducts interviews. The c ollege ’s Executive and Party Committee Joint Meeting determines the final candidate(s) based on merit. 6.Post-Selection Formalities: Selected candidates undergo: Medical examination; Public announcement (no objections allowed). The proposed candidate will be submitted to the university for approval. Upon approval, the personnel file will be transferred, the postdoctoral training agreement will be signed, and the station entry/registration procedures will be completed. 联系及咨询方式 联系电话： （+86）028-85998100 联系人 ：王老师 简历投递及咨询邮箱 ysdzb@scu.edu.cn 招聘启事请关注网站 https://recruitment.scu.edu.cn/#/ Contact Information Tel : (+86) 028-85998100 Contact Person: Mr. Wang Application & Inquiry Email: ysdzb@scu.edu.cn For full recruitment details, please visit: https://recruitment.scu.edu.cn/#/
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://art.scu.edu.cn/info/1048/10695.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../../js/back.js"></script>
+
+</body>
+
+
+</html>

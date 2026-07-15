@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+xgb.scu.edu.cn
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于推荐参加四川省第十一届大学生艺术展演活动高校美育改革创新优秀成果的公示
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-07-03
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+校内相关单位： 按照《教育部关于举办全国第八届大学生艺术展演活动的通知》（教体艺函〔 2026 〕 2 号）、《四川省教育厅关于举办四川省第十一届大学生艺术展演活动的通知》相关要求，我校于近日通过定向征集的方式面向相关单位开展美育改革创新优秀成果的作品征集、遴选工作。经学校美育工作办公室、美育教指委会商评审，现将我校高校美育改革创新优秀成果推荐情况公示如下： 一、 教学改革案例推荐意见 教学改革案例选题 案例名称 报送单位及完成人 高校美育课程与教材建设 向美而行 全域育人 ： 四川大学艺术学院“五位一体”美育体系创新实践 艺术学院 / 张令伟、何宇、李嘉璐 高校学生艺术社团及实践工作坊建设 价值引领 资源融汇 平台支撑 评价牵引：综合性大学艺术社团美育体系创新与实践 校团委 / 周宁、戴睿、陈维操 高校跨学科美育实践 览艺蓉城 启智润心：四川大学“蓉城艺术之旅”系列实践活动探索美育浸润新路径 研工部 / 钱祉祺、吴宇、贾瑞琪 中华优秀传统文化艺术传承基地建设 巴蜀问道 青年传新：四川大学中华优秀传统文化艺术传承基地“课展践研”四位一体美育教学模式创新与实践 学工部 / 黄菲娅、郭一璇、李竹梅 艺术展演育人实践 以展育美 以美育人：以“衣秀杯”为载体的高校艺术展演育人教学改革实践 轻工科学与工程学院 / 杨璐铭、王巍、时昱 高校美育资源与社会艺术资源共建共享 破壁与融通：高校博物馆美育资源社会共享的路径探索与实践 博物馆 / 梁英梅 、赵怡、邓宽宇 二、学术论文推荐意见 学术论文选题 论文名称 推荐单位及作者 中华美育精神的内在意蕴与时代价值 中华优秀传统文化赋能高校美育路径探究——以苏轼黄州生命美学实践为例 哲学系 / 舒星、史冰川 学校美育浸润行动的实践路径 场景化美育：高校美育浸润行动的实践路径与实证研究——以四川大学“青春与梦想”草坪音乐会为例 学工部 / 陈可可 学校美育浸润行动的实践路径 高校学生艺术团驱动全校美育育人的模式研究——四川大学学生艺术团的实践探索 学工部 / 杨禾 “五育并举”视域下高校美育育人模式创新 以美润心，以剧促行：高校心理情景剧 赋能协同育人模 式— - 以四川大学为例 学工部 / 王月琳 中华优秀传统文化融入高校美育的策略与路径 中华优秀传统文化融入学校美育的策略与路径 哲学系 / 曾怡 高校数字美育新生态构建 具身交互 神与物游—— AI 时代构建高校数字美育新生态的“川大方案” 艺术学院 / 支宇、王莉莉 公示期为 5 个工作日，如有异议请以实名方式发送邮件到邮箱： xgb_ysjyzx@163.com ，联系电话： 028-85466625 。 四川大学美育工作办公室 四川大学党委学生工作部（处） 2026 年 7 月 3 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://xgb.scu.edu.cn/info/1003/5734.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../../js/back.js"></script>
+
+</body>
+
+
+</html>

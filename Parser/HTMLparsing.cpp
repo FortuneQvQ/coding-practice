@@ -2,19 +2,6 @@
 #include "HTMLparsing.h"
 using json = nlohmann::json;
 
-struct News
-{
-    std::string id; // 新闻ID
-    std::string title; // 标题
-    std::string time; // 发布时间
-    std::string content; // 正文
-    std::string abstract; // 摘要
-    std::string url; // 原链接
-    std::string source; // 来源
-    std::string image; // 图片URL
-    std::string topic; // 主题
-};
-
 void parser(const std::string& url, std::string& html) 
 {
     SetConsoleOutputCP(65001);
