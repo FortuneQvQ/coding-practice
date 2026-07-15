@@ -6,6 +6,7 @@
 
 #include "database.h"
 #include "other/category.h"
+#include "../Crawler/json.hpp"
 
 using namespace std;
 
@@ -203,26 +204,30 @@ void generateNewJson(const vector<News>& newslist){
         cout<<"Failed to create news.json"<<endl;
         return;
     }
-    file<<"[\n";
-    for(int i = 0; i < newslist.size(); i++){
-        const News& news = newslist[i];
-        file<<"{\n";
-        file<<"\"id\":\""<<news.id<<"\",\n";
-        file<<"\"title\":\""<<news.title<<"\",\n";
-        file<<"\"time\":\""<<news.time<<"\",\n";
-        file<<"\"content\":\""<<news.content<<"\",\n";
-        file<<"\"abstract\":\""<<news.abstract<<"\",\n";
-        file<<"\"url\":\""<<news.url<<"\",\n";
-        file<<"\"source\":\""<<news.source<<"\",\n";
-        file<<"\"image\":\""<<news.image<<"\",\n";
-        file<<"\"topic\":\""<<news.topic<<"\"\n";
-        file<<"}";
-        if(i < newslist.size() - 1){
-            file<<",";
-        }
-        file<<"\n";
+
+    nlohmann::ordered_json jsonNewsList = nlohmann::ordered_json::array();
+    for(const auto& news : newslist){
+        jsonNewsList.push_back({
+            {"id", to_string(news.id)},
+            {"title", news.title},
+            {"time", news.time},
+            {"content", news.content},
+            {"abstract", news.abstract},
+            {"url", news.url},
+            {"source", news.source},
+            {"image", news.image},
+            {"topic", news.topic}
+        });
     }
-    file<<"]";
+
+    // Escape quotes, backslashes and control characters correctly. Invalid
+    // UTF-8 bytes from legacy data are replaced instead of corrupting JSON.
+    file << jsonNewsList.dump(
+        2,
+        ' ',
+        false,
+        nlohmann::ordered_json::error_handler_t::replace
+    );
     file.close();
 
 }

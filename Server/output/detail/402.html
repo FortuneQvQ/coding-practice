@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+global.scu.edu.cn
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+项目发布 | 关于选派学生赴美国德州大学奥斯汀分校参加“大川视界”2026年暑假学分课程项目的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-03-10
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+为适应高等教育国际化的新趋势，提升学生国际视野，推进我校人才培养国际化战略，学校现启动选派本科生和研究生赴美参加2026年&ldquo;德州大学奥斯汀分校暑假学分课程项目&rdquo;的工作。为保证此项工作的顺利进行，现就有关事项通知如下： 一、项目简介 （一）学校简介 德州大学奥斯汀分校（The University of Texas at Austin，简称UT Austin）成立于1883年，位于美国德克萨斯州奥斯汀市，是全世界最好的大学之一。在2026年U.S. NEWS & World Report美国大学综合排名中位列第30名，公立大学第7名，QS世界大学排名第68位。学校师资卓越，拥有包括13位诺贝尔奖得主、2位图灵奖得主在内的众多知名学者。UT Austin提供丰富多样的学术课程，开设156个本科学位课程和237个研究生及博士学位课程，共有76个专业包括会计学排名全美国前10位。 （二）项目介绍 国际学术课程 (Global Summer Institute) 是德州大学奥斯汀分校每年为来自全世界大学生及研究生定制的暑期学术专业课程。2026年，Global Summer Institute暑期课程将有3门语言课程+12门学术专业课程可供选择： 学生必须报读共三门课程，至少有一门是英语课。另外2门可以是下面12个学术专业中选择2门，也可以选择3门英语课中的另外2门。每个时间段只能选择一门，选课示例： 1 门英语课+2门专业课 2 门英语课+1门专业课 3 门英语课 专业方向 课程 必选一门英语课 English Language (Intermediate and Advanced) 英语(中高级) Academic Writing 学术写作 Oral Communication 口头交流 Reading, Note-taking, and Vocabulary Development 阅读，做笔记，和词汇拓展 任选两门专业课（可跨专业） Business & Accounting 商务&会计 Marketing Fundamentals 市场营销基本原理 Principles of Finance 金融学概论 Introduction to Accounting 会计学概论 Computer science 计算机科学 Introduction to Big Data & Data Mining (prerequisite: basic Python programming 大数据和数据挖掘概论（先修课程要求：有基础的python编程经验） Java Programming Java 编程 Python Programming Python 编程 Engineering 工程 Engineering Design 工程设计 Engineering Physics 工程物理学 Social Science & Humanities 社会科学与人文科学 Cognition and Human Learning 认知与人类学习 Western Culture and Communication Strategies 西方文化与传播策略 Introduction to Advertising 广告学概论 Public Health 公共卫生 Global Health and Epidemiology 全球卫生和流行病学 （三）课程特色与优势 【顶尖专业】提供全美顶尖专业课程：3门语言课程+12门专业课程可供选择 【互动授课】互动授课，每周5天，每周约30小时 【质量保证】知名教授上课，获得动手、实践经验和体验顶尖美国式教育 【世界名校】2026年世界排名：QS 68; U.S.NEWS & World Report 2026综合30， 公立大学第7位 【共享设施】学生获得的Student ID可以免费获得图书馆的使用权限 【文化体验】当地文化探索和教育基地参观 【项目权威】合格完成项目的学生，获得UT颁发的正式结业证书和成绩单 更多项目详情，请见附件1。 二、项目时间与费用 （一）项目时间 2026 年7月13日&mdash;8月7日 （4周） （二）项目费用 学费 6000 美元 ( 共120个学时，可获得共9个美国学分) 包含 学费，材料费，食宿费，教学旅行和活动费，录取信和I20签发，医疗保险费，课程证书，成绩单等 不包含 机票费用，如有教授特别要求的书本费，签证申请费用，SEVIS费及其他个人消费 三、报名条件 1 、热爱祖国、品德优良；遵章守纪，无纪律处分； 2 、我校全日制在校非毕业年级本科生和研究生，专业不限（出发前须年满18周岁）； 3 、具有较强的学习能力和语言能力，能适应全英文授课（无硬性分数要求，可提供各类英语考试成绩供参考）； 4 、综合素质较高，具备开放包容的交流心态和团队合作精神；身心健康，具有海外独立生活能力和抗压能力； 5 、学生在国外学习期间，尊重当地风俗，遵守双方的法律法规和规章制度，愿意服从双方学校的统一管理。 四、报名时间与报名方式 （一）校内申请时间： 即日起至3月26日（学院审核截止日期为3月27日中午12点） （二）校内申请流程： 1. 本科生 登录教务处国内国际合作交流管理系统 http://jxyw.scu.edu.cn:8081/gjjl/ ， 选择 相应项目进行在线申请。 特别提醒： （1）请下载登录界面操作手册后进行操作，若遇技术问题，可打电话13183867686 或QQ：1134372115咨询。 （2）为实现项目报名工作流程化、信息化，学院、学校将通过系统完成项目审批（报名学生无需再交纸质材料），请学生在线报名后及时告知学院教务办，请学院相关人员在系统中于截止日期前完成学院审核。 （3）川大所修课程中文成绩以系统计算为准。若有疑问，请持成绩单原件与教务处合作与交流科联系。 2. 研究生 在研究生院申请： （1）申请人：登录四川大学研究生管理系统&mdash;&mdash;国际学术交流申请应用，选择&ldquo;寒暑假访学项目申请&rdquo;，选择相应的访学项目，填写申请，提交并打印出纸质《申请表》，将纸质《申请表》递交导师、学院审核，附上合格的、有效期内的语言成绩。 （2）导师：登录四川大学研究生管理系统&mdash;&mdash;国际学术交流应用，在&ldquo;寒暑假访学项目&rdquo;中审核并在纸质版《申请表》上签署意见、签字。 （3）学院：学院研究生教务老师登录四川大学研究生管理系统&mdash;&mdash;国际学术交流应用，在&ldquo;寒暑假访学项目&rdquo;中审核，并由学院主管领导在纸质版《申请表》上签署意见、签字、盖公章。 （4）学院审核后，纸质《申请表》以学院为单位报研究生院3-325培养办公室。 （5）申请人回国后，登录四川大学研究生管理系统&mdash;&mdash;国际学术交流应用，在&ldquo;寒暑假访学项目&rdquo;申请页面中填写并提交回国总结及以下材料： ①回校证明（包含项目名称、访学开始和结束时间并由辅导员老师签字） ②官方颁发的项目证书或成绩单 （三）校内报名截止后，请在三个工作日内查收电子邮件，加入微信群，后续事宜将在群里通知。 （四）外方院校申请流程： 符合报名条件的同学提交校内申请后，填写附件2表格，发送至邮箱: michelle_utexas@qq.com 并抄送 michelle.zhou@austin.utexas.edu 。 只在外方院校报名而未在校内报名的同学将不能申请大川资助和学分转换。 五、外方院校官方宣讲会 时间：3月13日19:00点 腾讯会议：769 118 438 宣讲人：Michelle Zhou （TEXAS GLOBAL） 宣讲会内容：大学介绍、研究生院介绍、暑期课程介绍、答疑 六、特别提醒 （一）为保障出行安全，至少8人成团。如报名人数少于8人，项目则取消。 （二）为保证出行顺利，请在报名成功后及时告知学院辅导员，并在出境前登录四川大学学生出国（境）网上备案系统完成备案，流程见 https://global.scu.edu.cn/?channel/490/504/564/595 。未完成备案的同学将不能申请资助。 （三）护照和签证办理：报名期间可先同步办理护照。待报名缴费成功后持I20表和护照办理F1学生签证。因美签预约时间较长，有意参加的同学请尽早报名。签证至少留够3个月申请时间。 七、咨询电话： 国际合作与交流处 85401551 （项目咨询） 教务处合作交流科 85402398 （本科生
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://global.scu.edu.cn/?notice/_/4260">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../../js/back.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+global.scu.edu.cn
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+四川大学2026年国家留学基金委哥伦比亚互换奖学金项目实施通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-05-22
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+国家留学基金委（以下简称留基委）哥伦比亚互换奖学金项目现已启动，选派类别及留学期限为联合培养硕士生（10个月），留学单位由哥方安置，申请人须为正式注册在校的西班牙语专业在读硕士研究生。录取人员将于7&mdash;8月派出，在外承担约12小时/周的对外汉语教学和7小时/周的中国文化推广任务。项目细则、选拔对象、申请条件、申请材料等详见留基委网站通知（https://www.csc.edu.cn/chuguo/s/4209）。现将所涉项目的校内遴选工作通知如下。 培养单位应切实承担主体管理责任，制定本单位公派出国留学管理办法，统筹考虑&ldquo;选拔、派出、管理、回国、使用&rdquo;各环节，认真落实项目的申请、审核、推荐、派出等组织管理工作，对留学人员加强目标管理、过程管理和回国后考核： 1）对申请人的资格、综合素质、发展潜力、出国留学必要性、学习计划可行性、政治思想、道德品行、学术诚信及身心健康情况等方面严格审核把关； 2）在留学人员录取后，及时了解其思想动向，对存在问题的人员不予派出；对符合派出要求的留学人员，指导并协助其办理出国手续，同时加强行前培训； 3）建立日常联系管理服务机制，及时了解留学人员在外情况，督促其按期完成留学计划，在其遇到困难时予以扶助； 4）重视吸引优秀留学人员回国服务、回校任教；留学人员回国后应进行考核，确保留学效益。 即日起，培养单位根据项目要求及本单位实际情况，受理符合条件的报名申请。申请人在获有关单位同意和推荐后（附件1），及时登录国家公派留学管理信息平台（https://apply.csc.edu.cn）进行网上报名。网上报名时，&ldquo;申报项目名称&rdquo;选择&ldquo;与有关国家互换奖学金项目&rdquo;，可利用合作渠道选择&ldquo;哥伦比亚互换奖学金&rdquo;，&ldquo;受理单位名称&rdquo;选择四川大学。网申所需在读证明及成绩单的西班牙语翻译件，需提前报培养单位审核并加盖单位公章后再由申请人上传系统。申请人须在6月4日前完成网申，从网申系统中导出《国家留学基金管理委员会出国留学申请表》（申请者本人签字）和《出国留学申请单位推荐意见表》，同时按照所在单位规定的程序、时间和要求提交相关电子和纸质材料至所在单位汇总。所有申请材料须确保齐全、真实有效。如为委培或定向生，还须提交委培/定向协议书及委培/定向单位同意函。 培养单位对本单位申请人提交的材料进行审核，确定推荐人员名单，为被推荐人填写由其从国家公派留学管理信息平台导出的《出国留学申请单位推荐意见表》，表头填写培养单位负责本项工作的具体部门（科室）及工作人员信息，表格各栏目均需填写，仅&ldquo;上级主管部门复核意见&rdquo;一栏留空，并由培养单位负责人签字，加盖培养单位公章。6月5日下午15:00前，培养单位须将签章完成的以下①-④材料的PDF扫描件①《单位推荐函》（见附件2）、②《四川大学国家公派奖学金项目申请表》、③《出国留学申请单位推荐意见表》、④《国家留学基金管理委员会出国留学申请表》以及⑤《单位推荐人选信息汇总表》的Excel表格（见附件3）一并发送至邮箱gpyjs2012@163.com（邮件标题命名为&ldquo;XX单位推荐汇总+2026CSC哥伦比亚互换奖学金项目&rdquo;，请将每位申请人的资料整理成套，以申请人名字命名每套个人资料&ldquo;一人一档&rdquo;），同时将以上材料的纸质原件提交至国际合作与交流处出国派管科（望江校区行政楼511室）。国际处将根据培养单位的推荐情况，审核、接收网上报名信息，并推荐至留基委。 国际处不直接受理个人申请。 网申过程中，申请人如遇网络、账号、栏目下拉菜单等关于国家公派留学管理信息平台方面的问题，请直接咨询留基委信息部：010-66093975、 xxzy@csc.edu.cn 。 国际处联系人：程老师 电话：85405392 办公地点：四川大学望江校区行政楼511室 附件（点击下载）： 1、 四川大学国家公派奖学金项目申请表 2、单位推荐函（模板） 3、单位推荐人选信息汇总表 国际合作与交流处 2026年5月20日 <!--
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://global.scu.edu.cn/?notice/_/4321">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../../js/back.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+jwc.scu.edu.cn
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于开展2025-2026学年秋季学期本科生学业预警工作的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-09-29
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各学院： 为引导学生加强自我管理，自我约束，增强学生学习的积极性与主动性，根据《四川大学本科学生学籍管理规定（修订）》《四川大学本科生学业预警管理办法》的相关规定，现将本学期学业预警相关工作通知如下： 一、预警对象及标准 20 21 、 2022、2023、2024 级在校本科学生，有下列情况者，将受到学业预警并做相应学籍处理： 1.在校学习期间，平均每学期获得学分数低于 15 学分， 或不及格必 修课程（含缺考） 累计超过 10学分者（ 已经重修并且及格的课程不再计入）作初级预警。 2. 在校学习期间，平均每学期获得学分数低于 10 学分，或 不及格必 修课程（含缺考） 累计超过 20学分者 （ 已经重修并且及格的课程不再计入）作 中级预警 ，学院根据情况决定是否对学生做降级处理。 3. 在校学习期间， 不及格必 修课程（含缺考） 累计超过 30学分 （ 已经重修并且及格的课程不再计入）， 作退学处理。 有下列情况之一者，不纳入学业预警范围。 1. 休学期间的学生； 2. 合作项目交流期间的学生； 3. 中国人民解放军（含人民武装警察部队）服役期间的学生。 二、预警流程 1.第 4 周，教务处 提供 拟预警学生名单，学院进行核实并确认最终的学业预警名单。 2.第 5-6 周，学院将《四川大学本科生学业预警通知单》（附件 1），加盖学院公章后，送至被预警学生本人签收，并将学生学业情况通知学生家长。 3.学院分析 2024-2025春季 学期帮扶工作成效，总结帮扶经验，形成学业帮扶总结报告，连同《四川大学本科生学业帮扶效果汇总表》（附件 3） 和 2025-2026秋季学期 《四川大学本科生学业预警处理结果汇总表》（附件 2） ， 经分管教学工作的副院长审核签字并加盖学院公章后，于 202 5 年 10 月 20 日前 报教务处备案。 4.学院对预警学生进行学业帮扶。 三、学业帮扶 学院成立由分管教学工作的副院长任组长、分管学生工作的副书记任副组长，班主任、教务员、辅导员等为组员的学业帮扶工作小组，全面负责对本学院预警学生进行学业帮扶。 学业帮扶工作小组各成员应分工明确、密切配合。采取有效的针对性措施，及时约谈被预警学生，认真分析其学业落后的具体原因，与学生共同制定学业提升计划，为学生提供必要的指导和帮助。学院可设立学生互助小组，由优秀学生分享学习经验，带领被预警学生共同进步。 学院须为每位被预警学生建立学业帮扶档案，记录帮扶措施及效果。对帮扶效果不理想的学生，应分析原因，及时调整帮扶措施。 联系人： 张怡 、徐 仁 联系电话： 85996223、85406265 附件 : 1. 四川大学本科生学业预警通知单 2. 四川大学本科生学业预警处理结果汇总表 3. 四川大学本科生学业帮扶效果汇总表 教务处 202 5 年 9 月 29 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://jwc.scu.edu.cn/info/1069/10204.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../../js/back.js"></script>
+
+</body>
+
+
+</html>
