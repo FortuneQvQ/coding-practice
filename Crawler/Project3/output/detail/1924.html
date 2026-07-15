@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+2025博士生导师短期出国交流项目实施通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-01-13
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+有关博士生导师及相关单位： 为进一步推动国家建设高水平大学公派研究生项目实施工作，充分调动博士生导师积极性；加强对派出博士生专业学习方面的检查和指导；促进国内外学科交流及科研合作项目的建立与开展，国家留学基金管理委员会（以下简称留基委） 2025年博士生导师短期出国交流项目现已启动。项目的具体情况、选拔对象、申请条件、所需材料等，详见留基委网站通知（https://www.csc.edu.cn/article/3455）。现将该项目的校内遴选工作通知如下。 一、选派计划 1、选派类别：高级研究学者。 2、交流访问及资助期限：一个月。凡不足四周者，将追缴相关费用。 3、资助内容：一次往返国际旅费和资助期限内的奖学金。奖学金是用于资助留学人员在外学习期间的基本学习生活费用，可用于支付生活费、注册费、医疗保险费、书籍资料费、板凳费、签证延长费等。 二、申请条件 1、具有中国国籍，热爱社会主义祖国，具有良好的政治和业务素质。不包括已获得国外永久居留权人员。 2、 申请人应为 &amp;ldquo;国家建设高水平大学公派研究生项目&amp;rdquo;派出学生的国内博士生导师。 重点支持与留学院校国外导师有实质性合作、有较强国际交流能力的博士生导师。 3、身心健康，申请时年龄不超过60岁（1964年1月1日以后出生）。 4、应已获国外大学或机构正式邀请信，邀请方须为派出学生的外方指导教师或外方指导教师所在院校/科研机构。 三、工作安排 1、请申请人于2025年3月6日前，提交已签章的《四川大学博士生导师短期出国交流项目申请表》（见附件）至国际合作与交流处出国派管科（望江校区行政楼511室）。 2、经国际合作与交流处审核通过后，请申请人于 2025年3月10日&amp;mdash;31日 登陆http://apply.csc.edu.cn进行网上报名。网申时&amp;ldquo;申报项目名称&amp;rdquo;为&amp;ldquo;博士生导师短期出国交流项目&amp;rdquo;，&amp;ldquo;受理单位名称&amp;rdquo;为&amp;ldquo;四川大学&amp;rdquo;。 3、网申完成后，请申请人在2025年4月3日前，将《国家留学基金委管理委员会出国留学申请表》(需申请人签字)，以及从国家公派留学管理信息平台导出的《出国留学单位推荐意见表》（需申请人所在单位针对申请人具体情况填写并签字盖章）交至国际合作与交流处出国派管科（望江校区行政楼511室）。 4、录取结果预计于2025年5月公布。申请人可登陆国家公派留学管理信息平台（http://apply.csc.edu.cn）查询录取结果。 四、网上申报时应提交的材料 ： 1、正式邀请信； 邀请函应由派出学生的外方指导教师或指导教师所在院校 /机构主管部门签发，并使用邀请单位专用信纸 (文头纸) 。邀请函如由英语以外语种书写的，需另提供中文翻译件。 2、外方合作导师介绍； 主要包括国外合作导师的教育、学术背景；目前从事科研项目及近五年内科研、论文发表情况；在国外著名学术机构任职情况等，原则上不超过一页。 3、居民身份证复印件 请申请人将身份证正反面同时复印在一张 A4纸上。 网申过程中，申请人如遇网络、账号、栏目下拉菜单等关于国家公派留学管理信息平台方面的问题，请直接咨询留基委信息部： 010-66093975、xxzy@csc.edu.cn。 五、派出及管理 1、录取人员在派出前应按照学校因公出国（境）的相关要求办理派出手续。 2、录取人员一般应在当年派出，留学资格有效期至2026年12月31日。凡未按期派出者，其留学资格将自动取消。 3、留学人员免签《国家公派出国留学协议书》。 4、留学人员再次申请国家公派留学不受留学回国服务期限制。 5、教育部留学服务中心为留学人员预订往返国际机票。留学人员派出前，国家留学基金委将一个月奖学金生活费汇入留学人员个人国家公派留学奖学金专用银行卡（办理方式详见 https://www.csc.edu.cn/chuguo/s/1552 ）。 6、留学人员应自抵达留学所在国后10日内向中国驻外使（领）馆办理报到手续，在外期间应自觉接受推选单位和驻外使（领）馆的指导和管理。 7、留学人员在外交流访问时间不得少于四周。凡不足四周者将追缴相关费用。 8、录取人员应合理安排自己在我校的教学、科研工作，保证按期派出及回国。被选派人员回国后，应在回国后一个月内通过&amp;ldquo;国家公派留学管理信息平台&amp;rdquo;的&amp;ldquo;回国报到&amp;rdquo;界面填写相关信息，上传留学成果等材料。 国际处联系人：程老师 电话： 85405392 办公地点：望江校区行政楼 511 附件：四川大学博士生导师短期出国交流项目申请表 参考链接： 1、 2025年博士生导师短期出国交流项目指南 （ https://www.csc.edu.cn/article/3455 ） 2、2025博士生导师短期出国交流项目申请材料及说明 （ https://www.csc.edu.cn/article/3456 ） 3、2025年博士导师短期出国交流项目常见问题解答 （ https://www.csc.edu.cn/article/3457 ） 4、2025年国家建设高水平大学公派研究生项目专栏 （ https://www.csc.edu.cn/chuguo/s/3460 ） 国际合作与交流处 202 5 年 1月 10日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://global.scu.edu.cn/?notice/_/3983">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+2021年四川省、重庆市社科规划 “成渝地区双城经济圈建设”重大项目申报通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2021-04-16
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+文科各院、所： 根据四川省社科规划办 2021 年 4 月 15 日发布的《 2021 年四川省、重庆市社科规划 “成渝地区双城经济圈建设”重大项目申报通知》（附件 1 ）的要求，现将 2021 年四川省、重庆市社科规划 “成渝地区双城经济圈建设”重大项目申报工作有关事项通知如下，请各单位及时做好动员组织申报工作。 一、我校申报截止时间为： 2021 年 5 月 13 号 17:00 （申报截止后系统自动关闭，拒绝任何申报及修改），逾期不再受理。 二、申报资格： 1. 遵守中华人民共和国宪法和法律，遵守四川省、重庆市社科规划各项管理规定； 2. 在相关研究领域具有深厚的学术造诣和丰富的科研经验，社会责任感强，学风优良； 3. 具有正高级专业技术职称或厅局级以上（含）领导职务，能够承担实质性研究工作并担负科研组织指导职责； 4. 每个申报项目的负责人只能为一人，且不能参与本次申报的其他课题，课题组成员最多参与两个课题； 5. 在研的国家社科基金重大项目、省级社科规划重大项目首席专家不得作为负责人申请； 6. 曾经承担国家社科基金、省级社科规划项目被撤项未满 5 年或终止未满 3 年的不得申报。 三、申报要求： 1 、课题申报实行网上申报方式。申报人要登录四川省社科规划管理系统（ http://221.236.28.126/indexAction!to_index.action ）进行申报。 2 、申报流程见附件 3 。 3 、报送纸质材料要求： 2021 年 5 月 13 日 17:00 前为交正式表时间。要求 5 月 10 日前先交 1 份《申请书》初表到社科处 203# 接受审查。最后交《申请书》正式表一式 7 份（含原件一份）。申请书用 A3 纸双面打印，中缝装订；申请书右上角“项目编号”栏请务必按照四川省社科规划管理系统提示填写。 四、未尽事宜请到社科处咨询。联系人：刘孝利、龙慧拓；联系电话： 85401826 ；地址：行政楼 203# 。 社科处 2021 年 4 月 16 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://historytourism.scu.edu.cn/info/1036/2523.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

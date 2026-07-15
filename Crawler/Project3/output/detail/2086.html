@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+教务处 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+学术讲座论坛及校园文化活动预告 （2024年11月4日-11月10日）
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2024-11-01
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+一、学术讲座论坛 序号 主题 时间 地点 主讲人 主办方 1 欧洲皮革市场现况和发展趋势 11月5日上午 望江校区 皮革楼215报告厅 Annelies Janssen 轻工科学与工程学院 2 Catalytic functionalization of hydrocarbons 11月5日 化学馆321报告厅 Motomu Kanai 化学学院 3 C-H Amidation Reactions via Metal Nitrenoid Transfer: Reaction Developments and Validation of Key Intermediates 11月6日 化学馆321报告厅 Sukbok Chang 化学学院 4 新时代创新创业实践教育发展论坛暨中国机械工业教育协会高等院校创新创业教育专业委员会年会 11月9日 江安校区第一教学楼A座水上报告厅 中国机械工业教育协会副秘书长王保家 北京大学张海霞 华为技术有限公司许劲松 哈尔滨工业大学高继慧 四川大学李征 湖南大学汪忠 香港城市大学教授、韩国科学技术院客座教授孙洪义 西安电子科技大学尹鹏 北京邮电大学高德润 四川大学吴迪 温州大学施永川 广西师范大学蒙志明 黑龙江大学刘玉峰 云南大学杨舒然 四川大学（教务处）、机械工业出版社 二、校园文化活动 序号 活动名称 时间 地点 主办方 1 “讲述身边的党史故事”暨“你的故事·点亮中国” 短视频创作比赛 10月24日-12月31日18:00 线上：“川大学生”微信公众号 学工部 2 “科学家精神大家谈”全国研究生网络接力弘扬科学家精神主题展示活动 11月4日-11月10日 线上：“川大研究生”微信公众号 研工部 3 “动感时刻”健身操舞 11月4、6、8日18:30-19：30 望江校区体育馆前广场 校团委、体育学院 4 四川大学2024年大学生职业生涯体验活动 11月6日-11月8日9：00-17：30 江安校区青春广场 就业指导中心 5 留学咨询会 11月7日14:00 江安校区学生学业支持与发展中心个体咨询室 学工部 6 “芯原杯”四川大学首届研究生师生乒乓球联赛 11月8日-11月9日 望江校区体育馆底层风雨操场 研工部 7 “开心农场”劳动实践活动 11月8日-11月9日10:00-18:00 江安校区“开心农场” 学工部 8 “川大论坛”名师面对面系列讲座 11月8日 19:00-21:00 地点待定，届时见“川大研究生”微信公众号活动通知 研工部 9 清茶心语坊主题分享活动：国奖与你面对面 11月8日19：30 江安校区一站式学生服务大厅致远报告厅 学工部 10 第十七届全国大学生创新年会 11月8日-11月11日 江安校区体育馆、一教、知识广场、图书馆 四川大学（教务处） 11 四川大学2024中国象棋新生赛暨四川大学象棋队选拔赛初赛 11月9日 江安校区第一教学楼c座 体育学院、校团委 12 “创新启航 智汇i创”——交叉创新主题工坊互动体验活动 11月9日-11月10日9:00-22:00 江安校区青春广场 学工部 13 四川大学2024年“新生杯”足球赛1/4决赛 11月9日10:00-11月10日18:00 江安校区一号运动场 体育学院、四川大学足球协会 14 “实验室探索之旅”系列跨学科交流活动 11月9日14:00-18:00 地点待定，届时见“川大研究生”微信公众号活动通知 研工部 15 “红心有约”红色励志电影观影计划 11月9日19:00-21:30 望江校区体育馆前面和江安校区青春广场 学工部 16 “江安之夜”硕博素质拓展活动 11月9日19:00-22:00 地点待定，届时见“川大研究生”微信公众号活动通知 研工部 17 “中华天府文化行”系列研学实践活动 11月10日 专题讲座9:30-11:30；实地研学14:00-18:00 地点待定，届时见“川大研究生”微信公众号活动通知 研工部 18 大川小思“学长微课”第67期：保研早规划，升学之路不再迷茫 11月10日19:00 江安校区学生学业与发展支持中心致远报告厅一楼 学工部
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+<img class="news-image" src="https://art.scu.edu.cn/system/editor/ueditor_news/themes/default/images/spacer.gif" alt="新闻图片" loading="lazy" onerror="this.remove()">
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://art.scu.edu.cn/info/1048/10442.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

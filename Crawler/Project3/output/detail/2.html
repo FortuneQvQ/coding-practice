@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+教务处 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于开展2026-2027学年秋季学期本科教学助教岗位申报工作的通知-四川大学教务处
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+添加时间：2026-07-13点击次数： _showDynClicks(&quot;wbnews&quot;, 1937507957, 10736)<br>
+各学院/系：<br>
+为进一步推进“探究式”教学改革，经研究，决定开展2026-2027学年秋季学期本科教学助教岗位申报工作。为做好此项工作，现将有关事宜通知如下：<br>
+一、设置助教岗位基本原则、岗位类型和酬金<br>
+根据学校下发的《四川本科教学助教岗位实施管理办法》，请各学院/系（单位）将研究和制定的助教岗位配置原则、设置类型向本院教师和助教公布；并基于学校下学期助教申报工作流程和工作安排，根据自身实际情况，制定本院的具体时间表，确保课程的助教配备工作在规定的时段内完成。<br>
+二、工作流程<br>
+1.助教资格申请流程及事项<br>
+（1）导师审核<br>
+获得助教培训合格证书的研究生（包括推免生）方可参加助教工作，申报助教前须主动向指导教师沟通，并将他们同意的截图传给所在院系助教管理人员。<br>
+（2）助教申请<br>
+经指导教师同意的全日制研究生，进入“本科教学助教管理系统” (http://jxyw.scu.edu.cn:8081/yjszj/)填写申请助教资格相关内容。具体操作指南见（附件1：学生申请助教资格）<br>
+（3）单位审核<br>
+院系助教管理人员在系统中对学生申请进行审核，审核通过的助教方可参加院系的助教招聘。<br>
+2.助教岗位申报流程及事项<br>
+（1）教师申报岗位需求<br>
+课程负责人根据课程设计，在满足助教岗位申报条件的前提下，进入本科教学助教系统(http://jxyw.scu.edu.cn:8081/yjszj/)在线申报助教岗位。<br>
+具体操作指南见（附件2：教师申请助教岗位）<br>
+（2）单位审批、发布<br>
+院系管理人员完成在系统中的审批并发布。<br>
+（3）助教申请助教岗位<br>
+院系发布本院系助教招聘岗位后，具有助教资格的研究生进入“本科教学助教管理系统”申请助教岗位，院系根据课程改革的相关要求，进行审查。<br>
+三、工作安排<br>
+1.起止时间总体范围：2026年7月13日起至10月12日止<br>
+2.必修课程的助教配备工作在下学期开学第1周正式行课前完成；选修课程的助教配备工作在第4周内完成。<br>
+3.2026级新生的课程助教配备工作在下学期新生正式开学周次的前一周内完成。<br>
+为了保障此次本科教学助教申报工作有序进行，请各单位高度重视，精心组织，切实保证下学期课程高质量运行。<br>
+教师教学发展中心联系人：张老师联系电话：85401114<br>
+技术支持联系人：倪老师13183867686<br>
+各学院负责助教管理人员联系方式：见本科教学助教管理系统（http://jxyw.scu.edu.cn:8081/yjszj/）主页中的各学院联系电话中查看<br>
+附件：<br>
+1.学生申请助教资格<br>
+2.教师申请助教岗位<br>
+3.本科教学助教管理系统操作手册（包括学生用、教师用、院系管理人员用）<br>
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;教务处<br>
+2026年7月13日<br>
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;<br>
+附件【附件1学生操作手册2：学生申请助教资格.doc】<br>
+附件【附件2教师操作手册2：教师申请助教岗位.doc】<br>
+附件【附件3本科教学助教系统操作手册.rar】<br>
+上一条：关于开展四川大学第二批AI课程建设项目验收工作的通知<br>
+下一条：关于进一步加强实习实践教学管理工作的通知<br>
+关于开展2026-2027学年秋季学期本科教学助教岗位申报工作的通知添加时间：2026-07-13点击次数： _showDynClicks(&quot;wbnews&quot;, 1937507957, 10736) 各学院/系：为进一步推进“探究式”教学改革，经研究，决定开展2026-2027学年秋季学期本科教学助教岗位申报工作。为做好此项工作，现将有关事宜通知如下：一、设置助教岗位基本原则、岗位类型和酬金根据学校下发的《四川本科教学助教岗位实施管理办法》，请各学院/系（单位）将研究和制定的助教岗位配置原则、设置类型向本院教师和助教公布；并基于学校下学期助教申报工作流程和工作安排，根据自身实际情况，制定本院的具体时间表，确保课程的助教配备工作在规定的时段内完成。二、工作流程1.助教资格申请流程及事项（1）导师审核获得助教培训合格证书的研究生（包括推免生）方可参加助教工作，申报助教前须主动向指导教师沟通，并将他们同意的截图传给所在院系助教管理人员。（2）助教申请经指导教师同意的全日制研究生，进入“本科教学助教管理系统” (http://jxyw.scu.edu.cn:8081/yjszj/)填写申请助教资格相关内容。具体操作指南见（附件1：学生申请助教资格）（3）单位审核院系助教管理人员在系统中对学生申请进行审核，审核通过的助教方可参加院系的助教招聘。2.助教岗位申报流程及事项（1）教师申报岗位需求课程负责人根据课程设计，在满足助教岗位申报条件的前提下，进入本科教学助教系统(http://jxyw.scu.edu.cn:8081/yjszj/)在线申报助教岗位。具体操作指南见（附件2：教师申请助教岗位）（2）单位审批、发布院系管理人员完成在系统中的审批并发布。（3）助教申请助教岗位院系发布本院系助教招聘岗位后，具有助教资格的研究生进入“本科教学助教管理系统”申请助教岗位，院系根据课程改革的相关要求，进行审查。三、工作安排1.起止时间总体范围：2026年7月13日起至10月12日止2.必修课程的助教配备工作在下学期开学第1周正式行课前完成；选修课程的助教配备工作在第4周内完成。3.2026级新生的课程助教配备工作在下学期新生正式开学周次的前一周内完成。为了保障此次本科教学助教申报工作有序进行，请各单位高度重视，精心组织，切实保证下学期课程高质量运行。教师教学发展中心联系人：张老师联系电话：85401114技术支持联系人：倪老师13183867686各学院负责助教管理人员联系方式：见本科教学助教管理系统（http://jxyw.scu.edu.cn:8081/yjszj/）主页中的各学院联系电话中查看附件：1.学生申请助教资格2.教师申请助教岗位3.本科教学助教管理系统操作手册（包括学生用、教师用、院系管理人员用）&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;教务处2026年7月13日&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;附件【附件1学生操作手册2：学生申请助教资格.doc】附件【附件2教师操作手册2：教师申请助教岗位.doc】附件【附件3本科教学助教系统操作手册.rar】上一条：关于开展四川大学第二批AI课程建设项目验收工作的通知下一条：关于进一步加强实习实践教学管理工作的通知 返回列表<br>
+关于开展2026-2027学年秋季学期本科教学助教岗位申报工作的通知添加时间：2026-07-13点击次数： _showDynClicks(&quot;wbnews&quot;, 1937507957, 10736)<br>
+各学院/系：为进一步推进“探究式”教学改革，经研究，决定开展2026-2027学年秋季学期本科教学助教岗位申报工作。为做好此项工作，现将有关事宜通知如下：一、设置助教岗位基本原则、岗位类型和酬金根据学校下发的《四川本科教学助教岗位实施管理办法》，请各学院/系（单位）将研究和制定的助教岗
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://jwc.scu.edu.cn/info/1069/10736.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

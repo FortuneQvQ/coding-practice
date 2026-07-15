@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 校园活动
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+国图专家马学良做客川大图书馆，讲述古代藏书与读书之道
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-05-07 08:38:54
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+5月6日上午， 一场题为 “中国古代的藏书与读书”专题讲座 在四川大学典籍陈列馆（文理图书馆三楼）内顺利举行。 国家图书馆研究馆员马学良应邀主讲，古籍特藏中心副主任丁伟主持，吸引了校内18个院系师生 及 校外 不同 行业 的 读 者参加。 讲座伊始，丁伟对马学良 老师 的到来表示欢迎，并向现场师生介绍了其在古籍版本学、明清文献与藏书文化研究方面的学术 成果 。他表示，本次讲座是四川大学图书馆“书香盈帙·阅赏丹青——古籍 曝书暨书画共赏雅集”系列活动之“问学篇”，旨在引导师生从藏书、读书与护书的历史脉络中，理解古籍传承背后的文化精神，并为后续曝书雅集体验活动作知识铺垫。 马学良 老师 从中国古代藏书传统谈起，指出中华民族自古有爱书、藏书、护书的传统。古人所谓“饥读之以当肉，寒读之以当裘”，正体现了典籍在士人精神生活中的特殊位置。在讲座中， 他 以王世贞、钱谦益、曹溶等明清藏书家为例，生动呈现了古代藏书世界中的风雅、痴情与遗憾。从王世贞“以庄园换书”的掌故，到钱谦益绛云楼藏书的聚散，再到曹溶与钱谦益之间关于《九国志》《十国纪年》的借书故事，马学良 老师 将一部部古籍的流转置于具体人物与历史情境之中，使听众得以感受典籍传承并非抽象的文献史，而是与人的志趣、选择、命运紧密相连。 除藏书故事外，马学良 老师 还特别谈及古人对书籍的敬惜之心。他援引赵孟頫、徐时栋等人的护书训诫，指出古人读书、藏书并非只重占有，更重在敬书、护书与传书。从“勿卷脑，勿折角，勿以爪侵字，勿以唾揭幅”，到“子孙永宝之”等题记与藏书箴言，古代藏书家在一纸一页之间寄寓的，既是对文献本身的珍重，也是对文脉延续的自觉承担。 讲座内容史料丰富，语言生动，既有文献掌故的细节铺陈，也有对读书风尚与藏书心态的深入阐发。现场师生在一个个藏书故事中，感受到古籍从私人书斋、藏书楼到公共文化机构之间的流转轨迹，也进一步理解了图书馆在当代古籍保护、整理、利用与传播中的责任。 交流环节中，现场师生围绕古代藏书文化、 面向青少年的典籍阅读推广等 问题展开互动。马学良 老师 结合国家图书馆古籍工作实践和自身研究经验，对相关问题作了细致回应。 5月8日， 图书馆 还将在望江校区中华文化研究院 内举 办“古籍曝书暨书画共赏雅集”体验活动 ，设置古籍翻阅、曝书体验、防蠹本草识别、丹青寻印、残卷修复等环节，带领师生在可观、可感、可参与的活动中走近古籍，理解古籍保护与传承的时代意义。 文/古籍特藏中心 李佳玲
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+<img class="news-image" src="../images/1081.png" alt="新闻图片" loading="lazy">
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://lib.scu.edu.cn/engine2/d/75235345/12827113/0/12172124?t=-1&amp;p=1">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

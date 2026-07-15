@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+四川大学学术讲座、活动通告（2026年4月27日——2026年5月5日）
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-04-24
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+一、学术讲座论坛 主 题 时 间 地 点 主讲人 主办单位 【求是大讲堂】铁基费托合成催化剂选择性调控（银杏大讲堂） 4 月 27 日 9:00-11:00 望江校区化学馆一楼 321 会议室 马丁 科研院、化学学院 化工学术大讲堂 |Toward the efficient operation of an electrified chemical industry 4 月 27 日 14:00-17:00 望江校区化学工程学院 313 张祺 化学工程学院 视见无界 | 艺术设计与医学的商业创新之路——健康设计领域学生就业的企业视角探讨 4 月 27 日 14:00-16:00 江安校区艺术学院湖畔报告厅 周舒扬 艺术学院 张力分子的立体选择性构建及应用 4 月 27 日 14:30-15:30 望江校区化学馆 321 陆平 化学学院 德国哲学系列讲座 | 沉积与世代 4 月 27 日 15:00-17:00 望江校区文科楼 200 Saulius Geniusas 哲学系 张力分子的立体选择性构建及应用、配体调控的钯催化不对称偶联反应 4 月 28 日 10:00-12:00 华西校区药学科教楼康弘报告厅 陆平、张展鸣 华西药学院 人工智能与信息素养——新闻专业的挑战和机遇 4 月 28 日 13:00-15:00 江安校区文科楼一区 418 会议室 高轶军 文学与新闻学院 美国人类学发展史视域下的人类行为生态学 4 月 28 日 19:00-21:00 江安校区文科楼二区 704 会议室 Robert L. Kelly 历史文化学院 血管介入磁控软体机器人：建模、优化与控制 4 月 29 日 14:00-17:00 望江校区生物医学工程学院教育教学中心会议室 王柳 生物医学工程学院 最早的北美人 : 原住民祖先抵达时间的研究进展 4 月 29 日 14:30-16:30 江安校区文科楼二区 704 会议室 Robert L. Kelly 历史文化学院 二、校园文化活动 活动名称 时 间 地 点 主办单位 “开心农场”古法榨油特色劳动实践活动 4 月 29 日 -4 月 30 日 10:00-12:00 14:00-17:00 江安校区 &quot; 开心农场”劳动实践基地 学工部 “红心有约”红色励志电影放映计划 5 月 1 日 -5 月 5 日 19:00-21:00 望江校区体育馆前面、江安校区青春广场 学工部
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://lj.scu.edu.cn/info/1035/7964.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+教务处 · 竞赛比赛
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于举办2025年中国大学生机械工程创新创意大赛（物流技术创意赛）四川大学校内选拔赛的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-04-11
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各学院、各位同学： 为更好地促进人才培养模式的改革，探索“以赛促建、以赛促教、以赛促学、赛学结合”的人才培养新模式。经研究，四川大学机械工程学院决定举办 2025 年大学生机械工程创新创意大赛 “ 创新赛道 ” 赛项四：物流技术创意赛 ( 以下简称“大赛” ) 四川大学校内选拔赛，并择优推荐参加省赛和全国总决赛，希望各位同学积极报名参加。 现将有关事项通知如下： 一、 大赛简介 中国大学生机械工程创新创意大赛由中国机械工程学会主办，是面向全国高校机械工程领域及工学、理学、医学、管理学等门类相关专业大学生开展的一项公益性竞赛活动。自 2019 年起，大赛连续列入《全国普通高校大学生竞赛分析报告》竞赛目录。 大赛旨在促进机械设计、人工智能、机器视觉、控制技术的创新应用，通过比赛方式，提升学生专业技能，搭建物流技术领域的交流平台，推进高等教育知识与实践相结合，助推教育与产业的对接与转化，发掘学习型、知识型、创新型、复合型的技能人才，真正落实以赛促产业高质量发展的目标。 中国大学生机械工程创新创意大赛创新赛道系列赛项：物流技术创意赛创立于 2016 年，已举办 9 届。本届赛项由中国机械工程学会物流工程分会和同济大学共同承办。 2025 年度赛事主题为 “ 智举未来 配送无界 ” 。 大赛全称： 2025 年中国大学生机械工程创新创意大赛 - 物流技术创意赛 大赛官网： http://www.lei.org.cn/daxueshengcy 二、 组织单位 机械工程学院 三、 参赛对象与参赛要求 1. 鼓励控制科学与工程、电气工程、机械工程、仪表科学与工程、信息与通讯工程、计算机科技与技术等相关学科的同学组成参赛队伍报名参加大赛校内选拔赛，选拔后由学校统一推荐报名参赛 ; 2. 每支参赛队伍的学生人数不得多于 5 人，每个学生只能有一个作品参赛 ; 每支参赛队伍须指定队长 1 名，并由队长负责本参赛队伍的对外联系和赛场指挥等事宜 ; 每支参赛队伍的指导教师不得多于 2 人 ; 3. 赛事实行限额申报，每个参赛高校报名省级 / 区域选拔赛的参赛团队不超过 20 个 ; 晋级全国总决赛的独立参赛队伍不超过 6 个 ; 4. 若院校需联合组队参赛，须经双方院校教务处或相关校级职能部门盖章确认，联合组队的参赛队将占用参赛院校晋级全国总决赛的名额 ( 按冠名第一的参赛高校算 ) ，同时参赛院校晋级全国总决赛的联合组队队伍数不多于 3 支； 5. 本赛项鼓励外籍学生组队参赛，中国籍学生不超过 40% 的参赛队不占用参赛院校晋级全国总决赛的名额，各院校晋级全国总决赛的外籍学生队伍数不多于 3 支； 6. 各参赛队伍不得跨省 / 区域参赛，以本人所属高校所在地区为准，获得区域选拔赛的推荐资格后方可参加全国赛。 四、 时间安排 本届赛事实行两级赛制，即省级 / 区域选拔赛和全国总决赛。鼓励有条件的省（市）、自治区设置赛项区域赛执行委员会，组织省（市）或跨省（市）的区域选拔赛（以下简称为区域赛，区域赛实施方案另行通知）。 有关赛事工作初步安排如下： 赛程 时间 具体事项 区域选拔赛报名 2025 年 7 月 15 日截止 通过校内选拨赛后由负责老师统一报名（具体事宜群内通知） 确定区域选拔赛报名名单 2025 年 7 月 16-17 日 根据参赛高校报名名单，确定区域赛参赛名单，如有问题请及时联系。 参加区域选拔赛 2025 年 8 月 1 日 参赛高校根据区域赛通知，参加所在区域的选拔赛 ( 实物线上 / 视频比赛 ) 确定决赛名单 2025 年 8 月 2-6 日 公布晋级决赛名单 决赛报名 2025 年 8 月 2-10 日 晋级决赛的高校根据决赛通知要求， 提交 决赛报名材料 参加决赛 2025 年 8 月 22-24 日 全国总决赛 ( 实物线下比赛 ) 五、 竞赛内容 具体竞赛内容详见官网（ 或见附件 - 大赛实施方案 ） : http://www.lei.org.cn/xingyetongji/dishijiexuehuilianhui/daxueshengqizhongjichuan/2025/0401/1693.html 六、 校赛形式 （一） 选拔方式：以提交作品参加评审为基本形式，具体考核方式与考核标准以及时间待定，另行通知。 （二） 根据学生初赛的成绩，由教师评审组评定名次，择优选拔参加四川省预选赛。 七、 竞赛规则 大赛校内选拔赛由教务处牵头，机械工程学院负责组织，积极鼓励相关专业师生参与。校内选拔赛评比将遵从公平、公正、公开的竞赛精神，依据大赛规则（ 见附件 - 大赛实施方案 ），采用专家评委集体打分制，按照总分由高到低排名，从中选取优秀同学代表学校参加省赛和国赛。 八、 联系方式 校赛组织教师：机械工程学院 黄纪刚 邮箱： jigang.huang@scu.edu.cn 比赛报名通知 QQ 群： 1037034293 机械工程学院 教务处 2025 年 4 月 11 日 附件 . 大赛实施方案
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://jwc.scu.edu.cn/info/1069/9806.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

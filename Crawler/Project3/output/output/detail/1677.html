@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+life.scu.edu.cn
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+四川大学生命科学学院2024年优秀大学生夏令营招生简章
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2024-06-11
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+【学院简介】 四川大学生命科学学院历史悠久，始建于 1916年。现有生物学和生态学2个一级学科博士授权点及植物学、遗传学两个国家重点学科，生物学在教育部学科评估中保持A-类。本科专业设有生物科学（含生物科学基地、生物技术基地和生物科学拔尖班）、生态学和交叉办学计算生物学专业。学院拥有一支实力雄厚的师资队伍，至2023年，学院国字号人才达到28人次，高级职称有115人，其中博士生导师61人，教育部生物学、生态学教学指导委员会成员5人、生物学学科评议组成员1人。国字号人才占专任教师比例超过20%。 在科学研究方面，学院现拥有生物资源与生态环境教育部重点实验室（ 2016,2021评估优秀）、四川省濒危野生动物保护生物学部省共建实验室、能源植物生物燃油制备及利用国家地方联合工程实验室和6个省级重点实验室。学院所属专业学科中的生物学与生物化学、分子生物学与遗传学、植物学与动物学、农业科学、生态学与环境科学进入ESI世界前0.5%，微生物学进入ESI世界前1%。在第二轮双一流大学建设中，将重点建设“资源生物学与高原生态”一流学科，做好西部独有生态系统和特色生物资源的基础研究、应用研究和产业化开发研究，为建设创新型国家作出新的贡献。 【活动简介】 为了让全国优秀大学生更多地了解四川大学生命科学学院，了解生命科学国际前沿动态，吸引优秀大学生来我院深造、圆梦，我院将于 2024年7月8日至10日举办“2024年生命科学学院优秀大学生暑期夏令营”。夏令营期间将进行一系列活动，如学院及学科介绍、专家讲坛、营员与导师交流、参观实验室及四川大学博物馆等活动。同时组织拟推免或报考我院研究生的营员进行提前考核，考核优秀的营员，获得推免资格且满足学校接收推免生条件者，在推免系统及时响应填报我院即可免复试予以录取；未能获得推免资格但第一志愿报考我院的优秀营员（统考报考专业需与夏令营考核专业相同），同等条件下优先录取。 现面向全国高水平院校招收营员 100名，相关安排及注意事项公告如下： 【申请条件】 1.全国高水平院校生物学、生态学、林业等相关学科专业2025年应届本科毕业生。 2.学习成绩良好。 3.英语四级成绩在425分以上，通过英语六级者优先考虑；有专利成果、论文发表或特殊专业特长的学生优先考虑。 4.具有一定的学术科研能力或潜力。 5.遵守学术道德规范。 【申请材料】 1.申请表（报名成功后由系统自动生成，报名网址：https://yz.scu.edu.cn/xly）； 2.本科成绩单和专业排名证明（各1份，需加盖所在学校教务处公章）； 3.相关获奖证书复印件、学术成果复印件等。 【申请方法】 1.2024年6月25日24:00前，申请人登录四川大学研究生招生信息网夏令营网报平台（https://yz.scu.edu.cn/xly ）进行报名，并将申请表、本科成绩单、专业排名证明、相关获奖证书复印件、学术成果复印件等材料按次序扫描汇总成一个 PDF 文件，以附件形式上传至网报平台（使用报名系统用户名 和 密码，再进去修改报名信息就可以提交包含申请表的附件） 。 2.与意向导师联系，进行初步沟通。学院导师联系方式及简介见学院网站[http://life.scu.edu.cn/szdw/jzyg1.htm] 本次活动申请期间无须提交纸质版本申请材料，纸质材料待夏令营报道时再行提交。 【录取办法】 6月26日起，学院审核申请人材料，根据申请人情况及意向导师意见择优录取，录取名单会公示于学院官网，届时未接到录取通知的同学皆为未入选者，不再另行通知。如果录取，请及时在系统中确认是否同意参加。 【注意事项】 1 、申请者应保证所提交的所有材料的真实性、有效性、完整性，若在任何阶段发现申请材料不真实、不准确，或有弄虚作假、违纪作弊等行为的，即取消申请人一切资格，一切后果自负； 2、营员报到时需携带身份证、学生证。营员前来参加夏令营活动，需告知所在学校和父母知晓情况，并注意出行安全； 3、营员报名请考虑好自己的时间安排，被录取后无特殊情况不得随意放弃；如遇不可抗拒因素不能参加，请第一时间与我院沟通；一旦报到，无特殊情况须全程参加夏令营。在营期间，营员必须遵守四川大学的相关规定； 4、在营期间进行的相关面试考核，禁止录音录像； 四川大学生命科学学院 2024年6月11日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://life.scu.edu.cn/info/1019/4726.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../../js/back.js"></script>
+
+</body>
+
+
+</html>
