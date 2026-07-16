@@ -1,6 +1,0 @@
-D:\11111111\Project3\x64\Release\libcurl.dll
-D:\11111111\Project3\x64\Release\z.dll
-D:\11111111\Project3\x64\Release\sqlite3.dll
-D:\11111111\Project3\x64\Release\tidy.dll
-D:\11111111\Project3\Project3\x64\Release\Project3.vcxproj.Up2Date
-D:\11111111\Project3\Project3\x64\Release\Project3.exe

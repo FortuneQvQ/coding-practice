@@ -1,5 +1,0 @@
-D:\11111111\Project3\Project3\x64\Debug\libcurl-d.dll
-D:\11111111\Project3\Project3\x64\Debug\zd.dll
-D:\11111111\Project3\Project3\x64\Debug\sqlite3.dll
-D:\11111111\Project3\Project3\x64\Debug\tidyd.dll
-D:\11111111\Project3\Project3\Project3\x64\Debug\Project3.vcxproj.Up2Date

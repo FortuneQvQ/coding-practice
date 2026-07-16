@@ -1,9 +1,0 @@
-[2026-07-14 22:19:35][INFO] 从配置加载了 8 个种子URL
-[2026-07-14 22:19:37][INFO] 抓取成功 [https://lib.scu.edu.cn/engine2/general/more?t=F57A69106191DD965423809764CFC5638A8F128ED85D558B2D8C238D4A0982084DC002EC23052A466F0BF22339F28A2C] 332200 bytes
-[2026-07-14 22:19:43][INFO] 抓取成功 [https://jwc.scu.edu.cn/info/1069/10736.htm] 33211 bytes
-[2026-07-14 22:19:46][INFO] 抓取成功 [https://jwc.scu.edu.cn/info/1069/10733.htm] 39437 bytes
-[2026-07-14 22:19:49][INFO] 抓取成功 [https://jwc.scu.edu.cn/info/1069/10732.htm] 23739 bytes
-[2026-07-14 22:19:51][INFO] 抓取成功 [https://jwc.scu.edu.cn/info/1069/10731.htm] 40710 bytes
-[2026-07-14 22:19:54][INFO] 抓取成功 [https://jwc.scu.edu.cn/info/1069/10724.htm] 70238 bytes
-[2026-07-14 22:19:59][INFO] 抓取成功 [https://jwc.scu.edu.cn/info/1069/10721.htm] 39947 bytes
-[2026-07-14 22:20:02][INFO] 抓取成功 [https://jwc.scu.edu.cn/info/1069/10710.htm] 60440 bytes
