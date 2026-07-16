@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于教职工2020年暑假期间疫情防控常态化管理要求的通知 - 四川大学商学院
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+关于2020年暑假期间疫情防控常态化管理要求的通知<br>
+2020-07-13 本站 2485次<br>
+关于2020年暑假期间疫情防控常态化管理要求的通知<br>
+全院教职工：<br>
+根据学校规定，结合学院实际，经学院党政联席会议讨论决定，现将商学院教职工暑假期间疫情防控常态化管理要求通知如下：<br>
+1.全院教职工继续保持在每天中午12点以前完成微服务打卡。如需离蓉前往境内低风险区，请通过微服务打卡（定位）报备去向。<br>
+2.教职工原则上不要前往境内中高风险区（范围以国家实时发布的为准，查询网址：http://bmfw.www.gov.cn/yqfxdjcx/index.html）或境外；如确因重要事项需前往境内中高风险区或境外，出发前应完成报批手续（报批流程http://bs.scu.edu.cn/xwxueyuantongzhi/202004/6421.html），返蓉时应提前向学院和所在社区报备，并按有关要求执行核酸检测及隔离观察等措施。<br>
+3.教职工应注意做好自身及家人的安全防护工作。<br>
+4.全院教职工于2020年8月27日开始上班，请提前规划好返蓉行程。<br>
+特此通知。<br>
+中共四川大学商学院委员会<br>
+四川大学商学院<br>
+2020年7月13日<br>
+关于2020年暑假期间疫情防控常态化管理要求的通知 2020-07-13 本站 2485次<br>
+&amp;nbsp;&amp;nbsp;关于2020年暑假期间疫情防控常态化管理要求的通知&amp;nbsp;全院教职工：根据学校规定，结合学院实际，经学院党政联席会议讨论决定，现将商学院教职工暑假期间疫情防控常态化管理要求通知如下：1.全院教职工继续保持在每天中午12点以前完成微服务打卡。如需离蓉前往境内低风险区，请通过微服务打卡（定位）报备去向。2.教职工原则上不要前往境内中高风险区（范围以国家实时发布的为准，查询网址：http://bmfw.www.gov.cn/yqfxdjcx/index.html）或境外；如确因重要事项需前往境内中高风险区或境外，出发前应完成报批手续（报批流程http://bs.scu.edu.cn/xwxueyuantongzhi/202004/6421.html），返蓉时应提前向学院和所在社区报备，并按有关要求执行核酸检测及隔离观察等措施。3.教职工应注意做好自身及家人的安全防护工作。4.全院教职工于2020年8月27日开始上班，请提前规划好返蓉行程。特此通知。&amp;nbsp;&amp;nbsp;中共四川大学商学院委员会四川大学商学院2020年7月13日&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<br>
+上一条：关于开展四川省教书育人名师遴选工作的通知[转] 下一条：2020年商学院教职工政治学习（11）返回列表<br>
+
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://bs.scu.edu.cn/xwxueyuantongzhi/202007/6595.html">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

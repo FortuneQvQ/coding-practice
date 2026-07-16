@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于加强2024年寒假期间实验室安全管理工作的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2024-01-22
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+院内各单位各课题组： 为确保2024年寒假期间院内安全工作以及维持院内正常秩序，现将有关事宜通知如下： 一、高度重视寒假期间实验室安全工作 1.各课题组在节前给学生强调实验安全并加强教育，并进行组内值班的安排； 2.重点检查安全隐患部位，如水管、电路、化学试剂及危险品的存放、房屋漏雨等。确保假期不用的水、电、气处于关闭状态； 3.检查门、窗是否完好，有无损坏。如有损坏，请及时维修； 4.在寒假期间进行实验的实验室务必注意安全，防止意外突发事件的发生。禁止一个人在实验室从事实验操作，禁止一个人开展通宵实验或实验期间无人值守，坚决杜绝人与实验分开； 5.各实验室要加强对现金、票证、物资、设备、贵重物品（笔记本、手机等）的管理，离开实验室必须锁门，不得存放现金过夜，不得存放私人贵重物品； 6.各实验室、教研室、课题组在寒假期间发现问题应及时与实验室及设备管理处联系； 7.加强实验室管理，责任明确到人，禁止在实验室、办公室等场所私拉乱接及使用违章电器；禁止设备在工作状态时，实验室人员擅离职守； 8.加强对易燃易爆化学品、气体钢瓶的管理，禁止在实验室、办公室等场所超量存放易燃易爆化学品，及时处理实验废弃物、废液，严禁将易燃易爆化学品和硬纸板、木箱、泡沫塑料等可燃物混合堆放； 9.检查实验室内消防设施、器材，保证设施、器材的完好，检查灭火器的有效使用期，并及时更换； 10.检查有无封堵、占用疏散通道和锁闭、遮挡安全出口情况； 11.实验室工作人员对本实验室负有防火安全责任，对不利于安全的情况和行为，有责任及时发现、纠正或制止； 12.各实验室在装修施工前，施工队必须在施工进场前到保卫处签订《施工单位安全责任书》，方可进场施工。 实验室在消防及安全检查中（自查）发现的问题，应立即予以解决。 二、寒假期间危化品购置的注意事项 1.各课题组务必严格执行各级管理部门和学校的相关规定，继续规范危化品的使用和储存，确保危化品全过程安全； 2.寒假期间（2024年1月24日-2月21日），“实验技术物资网上服务平台”将持续提供服务。 但具体商品配送时间按各商家配送时间要求为准，下单前请先咨询商家确定配送时间，以免造成配送时间信息误差； 3.针对寒假期间管控类危化品（易制毒+易制爆）的采购： 2月1日截止订单（注意：此时间为订单OA申请通过后的时间，非下订单时间）； 2月2日进行寒假期间最后一批管控危化品的申购工作； 基于易制毒危化品准购证存在有效期，所采购易制毒危化品的配送时间请先与商家协商好，尽量在商家放假前配送接收完毕。下一批次管控危化品的采购将于下学期开学后再进行办理。 三、寒假期间实验室危废物收储的注意事项 1.院内各课题组妥善管理保存实验危废，做好危废送存安排，防止安全事故的发生。 2.【望江校区】危废物回收信息 实验室危险废物集中收集时间：1月26日、2月2日、2月23日下午15:00-17:00； 收集区域位于望江东区第一理科楼正门对面大路上（靠近荷花池一侧）； 3.【江安校区】危废物回收信息 实验室危险废物暂存库房开放时间为：1月25日、2月1日上午9:30-11:00。 若有重大安全隐患问题应及时报校保卫处、实验室及设备管理处由学校统一协调解决。 学院值班电话：85405222；85850992；85990908； 设备处安全值班电话：85405149；85405919；85401207；13308015307（赵老师）；13980849945（翟老师） 保卫处值班室电话：85460110（望江校区24小时110求助报警电话）；85501098（华西校区24小时值班电话）；85996110（江安校区24小时值班电话） 化学工程学院 2024年1月
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://ce.scu.edu.cn/info/1013/13830.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

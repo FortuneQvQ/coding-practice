@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于2024年“五一节”实验室安全的温馨提示
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2024-04-26
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+院内各单位、各课题组： 为确保“五一节”期间院内安全工作以及维持院内正常秩序，现将有关事宜通知如下： 一、重点检查安全隐患部位，如水管、电路、化学药品试剂及危险品的存放等。确保假期不使用的水、电、气处于关闭状态； 二、在“五一节”期间进行实验的实验室务必注意安全，防止意外突发事件的发生。禁止实验期间无人值守，禁止一个人开展通宵实验（通宵实验需提前向学院报备）； 三、各课题组要强调实验人员严格遵守实验操作规程。加强对现金、票证、物资、设备、贵重物品（笔记本、手机等）的管理，离开实验室必须锁门； 四、各课题组在“五一节”期间发现问题应及时与学院值班人员联系； 五、加强实验室管理，责任明确到人，禁止在实验室、办公室等场所私拉乱接及使用违章电器；禁止设备在工作状态时，实验室人员擅离职守； 六、重点加强各类重要危险源(有毒有害化学品、气体钢瓶、放射性同位素、射线装置、强电强磁设备、特种设备、病原微生物等)的规范管理。禁止在实验室、办公室等场所超量存放易燃易爆化学品，及时处理实验废弃物、废液，严禁将易燃易爆化学品与硬纸板、木箱、泡沫塑料等可燃物混合堆放。 七、检查实验房间内消防设施、器材，保证设施、器材的完好，检查灭火器的有效使用期，并及时更换； 八、检查有无封堵、占用疏散通道和锁闭、遮挡安全出口情况； 九、实验室工作人员对本实验室负有防火安全责任，对不利于安全的情况和行为，有责任及时发现、纠正或制止； 十、各课题组在装修施工前，施工队必须在施工进场前到保卫处签订《施工单位安全责任书》，方可进场施工。实验室在消防及安全检查中（自查）发现的问题，应立即予以解决。 若有重大安全隐患问题应及时报学院、校保卫处、实验室及设备管理处由学校统一协调解决。 学院值班电话 ：85405222，85850992，85990908 设备处值班电话 ：85405149，85405919，85401207，85402050，13308015307（赵老师），13980849945（翟老师） 保卫处值班室电话 ：85460110（望江校区24小时110求助报警电话），85501098（华西校区24小时值班电话），85996110（江安校区24小时值班电话）。 化学工程学院 2024年4月
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://ce.scu.edu.cn/info/1013/14034.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

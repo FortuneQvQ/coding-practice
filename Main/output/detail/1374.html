@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+教务处 · 竞赛比赛
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于组织教师参加四川省教育厅首届教师人工智能应用能力大赛的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-07-09
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+校内各单位： 为深入贯彻全国、全省教育大会精神，全面落实《中共中央国务院关于弘扬教育家精神加强新时代高素质专业化教师队伍建设的意见》《教育部等九部门关于加快推进教育数字化的意见》，大力弘扬教育家精神，提高教师数字素养和人工智能应用能力，按照《教育强国建设规划纲要（ 2024-2035 年）》《教育强省建设规划纲要（ 2025-2035 年）》关于“促进人工智能助力教育变革”有关战略部署和教育部《教师数字素养标准》及联合国教科文组织《教师人工智能能力框架》的有关要求，四川省教育厅决定举办全省教师人工智能应用能力大赛。现将参赛相关事宜通知如下： 一、大赛主题 AI 赋能教师专业发展，数智创变未来课堂。 二、参赛对象 一线教师和管理人员。 三、比赛内容 方向一（个体参赛）：人工智能教学创新应用课例。聚焦“数字化应用”，突出生成式人工智能与教学设计、实施、评价和育人等多场景融合创新应用，通过教学课例展示教师在真实教学场景中融合人工智能开展教学实践与创新应用的能力。作品要求和评审标准请查阅附件 1 。 方向二（个体 / 团体参赛）： AI 教育智能体设计与创新应用。聚焦教师数字技术与技能，围绕“数字教学创变、教育智能治理、 AI 扩优提质”主线，通过 AI 智能体研发与应用实践，推进 AI 智能体在教育教学全流程的融合创新实践应用。作品要求和评审标准请查阅附件 2 。 方向三（个体 / 团体参赛）： AI 赋能教师专业发展典型案例。聚焦教师“专业发展”，围绕智能时代“数字化学习与研修、数字化研究与创新”主线，通过教师个人成长故事、学校或区域典型案例等呈现人工智能促进教师专业发展的优秀案例。作品要求和评审标准请查阅附件 3 。 四、省赛安排及奖项设置 大赛分为校级初赛、省级决赛、省级展示交流、省级推广应用四个阶段。比赛根据进入四川省省级决赛教师数量，按照特等奖（ 5% ）、一等奖（ 10% ）、二等奖（ 20% ）、三等奖（ 30% ）的比例开展评审和公示，并由四川省教育厅颁发获奖证书。 五、申报方式及学校申报推荐工作安排 （一）单位提交参赛作品名单 每个单位可根据三个参赛方向推荐名额，每个单位每个方向不超过 1 个作品。请各单位于 7 月 11 日中午 12 点前将《参赛作品报送表》（附件 4 ）及签字盖章扫描版，以 “ 学院 + 首届教师人工智能应用能力大赛 ” 为邮件主题，发送至邮箱： cta@scu.edu.cn 。逾期发送视为不申报。 （二）选手提交参赛作品 请参赛选手于 7 月 14 日中午 12 点前将参赛作品及《作品诚信承诺书》（附件 5 ）提交至四川省教育厅首届教师人工智能应用能力大赛系统，网址： http://5ibopqnp.mh.chaoxing.com 。操作手册请见附件 6 。逾期提交视为不申报。 （三）学校推选 学校根据单位推荐候选人情况，将组织专家对被推荐作品进行校内评审，遴选出 6 个作品（每个方向 2 名）代表学校参加省级决赛。 竞赛联系人：林祎 85401114 系统技术联系人：邓敏 13730658293 教务处（招生办公室） 2025 年 7 月 8 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://jwc.scu.edu.cn/info/1069/10063.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

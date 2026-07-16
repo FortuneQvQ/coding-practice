@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+四川大学华西幼儿园教师招聘公告
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-07-09
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+【园所简介】 “百年广益·人文华幼” ，四川大学华西幼儿园创办于1952年，是一所具有74年光荣历史的高品质幼儿园，是成都市唯一一所以历史古建筑为园址的幼儿园。是成都市示范性幼儿园、成都市一级一等幼儿园， “中国优生科学协会儿童健康管理示范基地”“儿童身高促进示范幼儿园” “全国幼儿体育（球类·足球）活动实验园” ， 教育部授予的 “全国足球特色幼儿园” 。 百年华西医学底蕴赋予了华幼古今文化融合传承、古今建筑和谐共生的教育气质。传承民族精神，践行华幼文化，秉持着 “欢享健康生活·奠基健康人格·成就健康人生” 的办园理念，构建了 “和童心之乐·合智慧之源” 的 和合童心 园本课程，高品质、专业化地为儿童提供融 “健康保障、健康服务、健康教育和健康评价” 为一体的健康保障体系，打造了 “高品质·精服务·靓特色·共发展” 与川大创建世界双一流大学的总目标相统一与融合的、具有学前教育行业影响力的学前教育品牌,为每一个华幼儿童的生命成长奠基！ 【职业发展】 园本自主研发的具有丰富内涵的幼儿园 教师专业成长PCK 园本 研培课程 和培训体系 ，构建了 通识教育、专业教育、生涯教育 三位一体的“ 和合 ” 型人才培养模式。在这里，有浓厚的园本教研氛围与经验丰富的骨干教师团队引领你，在日常教学中实现最扎实的专业成长；在这里，你的教育实践研究成果将会在省市区学前教育行业得以展示或获得价值体现。 具体招聘事宜如下： 一、 招聘 岗位及人数 岗位名称：幼儿园专任教师 招募人数：3名（专职幼儿教师2名、专职幼儿助教1名） 工作地点：四川大学华西幼儿园（大学路12号附22号） 二、 招聘对象： 四川大学附属幼儿园在职在岗教师 三、 我们期待这样的你 师德为先：热爱幼教事业，责任心强，具有良好的团队协作精神，近一年在原园所无教学事故及违纪记录。 专业扎实：具有学前教育专业全日制本科及以上学历，持有幼儿园教师资格证，具备独立带班能力，具有较强的计算机操作能力和文书编辑能力，熟练掌握互联网应用。 适应力强：能够快速融入新班级的幼儿与家长群体，具备良好的沟通能力与抗压能力。 优先条件：在幼儿园内部获得过“优秀教师”“优秀班主任”等荣誉，或在区级以上教学比赛中获奖者，同等条件下优先录用。 四、报名及选拔流程 1.个人申报 有意向的老师请填写《后勤保障部应聘人员登记表（附件1）》，发送电子版至邮箱：706400284@qq.com。截止日期：2026年7月12日 联系电话：13568998883 联系人：钟老师 2.园所沟通 华西幼儿园园长将与原园所园长进行内部沟通，确认调动可行性及交接安排。 3.面谈交流 华西幼儿园将组织简短的面谈交流（以了解教育理念、沟通风格及职业规划为主）。 4.公示与调动 确定拟调动人选后在四川大学后勤保障部幼教中心内部进行公示（公示期5个工作日），无异议后由四川大学后勤保障部人力资源部统一办理跨园调动手续。
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://hqbzb.scu.edu.cn/info/1024/12993.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

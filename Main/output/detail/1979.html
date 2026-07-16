@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于做好“五一”节期间消防安全检查工作的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2023-04-19
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+校内各单位： 2023 年 4 月 17 日 14 时 04 分浙江金华武义县泉溪镇凤凰山工业区青云路 68 号浙江伟嘉利工贸有限公司一厂房起火，致使 11 人遇难 ;4 月 18 日 12 ： 57 分，北京丰台区长峰医院因住院部内部改造施工作业过程中产生的火花引燃现场可燃涂料的挥发物所致造成火灾，已致 29 人遇难。 校内各单位要吸取以上两起火灾事故的深刻教训，认真落实本单位的消防安全主体责任，按照国家《消防法》等法律、法规和《四川大学消防安全管理规定》等规定要求，结合本单位的实际情况，认真做好节日期间消防安全检查工作，确保师生平安度过“五一”劳动节假期，现将节日期间开展消防安全检查工作通知如下： 一、 普及消防及安全知识教育，提高人员安全意识 各单位在“五一”劳动节放假前后，须对本单位的教职工和学生进行消防及安全知识教育，要求本单位所有人员必须达到“四个能力”要求。（ 即：检查消除火灾隐患的能力、组织扑救初起火灾的能力、组织人员疏散逃生的能力、消防宣传教育培训的能力。） 二、认真做好消防安全隐患的检查和整改工作 放假前，各单位须对本单位所辖区域全面进行一次消防安全检查，对检查出的各种安全隐患须及时整改。 人员密集场所如教学、科研实验大楼、学生宿舍、 临时工集体宿舍、 食堂、医院、宾馆、幼儿园等区域的管理人员要认真做好区域内的消防安全工作，严格遵守巡查制度，每次巡查都要做好记录，发现问题立即纠正、整改。 学校住宅区、商业店铺管理单位，须加大防火和安全宣传力度，严禁堵塞消防通道，对家用电器、电气线路、燃气管道进行一次全面检查，及时消除隐患，避免发生火灾事故。 各单位在“五一”劳动节期间组织的举办的节庆、体育、文化、娱乐和其他人员聚集活动，必须严格制定消防安全预案， 向保卫部（处）提出书面申请，待批准后方可举办。 校内装饰装修及改造工程和需动火要严格落实备案报备制度。 三、 加强应急值守工作 ， 落实责任制和责任追究制 节日期间，各单位要明确各项消防安全工作的具体任务和责任人，层层落实，细化责任，进一步明确单位消防安全责任制，建立健全各种规章制度和应急预案。 各重点要害单位（部位）要坚持二十四小时领导带班值班制度， 值班人员要坚持每日巡查记录制度和严格执行交接班签字制度， 一旦发生事故或紧急情况，有关领导要及时赶赴现场组织抢险和处置，妥善处理事故善后工作，切实做到反应灵敏、响应快速、组织得力、施救有效，最大限度减少事故损失。 对由于责任不落实、检查不认真、整改不过关、教育不到位而造成火灾事故或其他严重后果的，学校将依法、依纪追究有关领导和责任人的责任。 四、学校值班电话 学校总值班电话： 85995000 保卫处值班电话： 85460110 （望江校区） 85501098 （华西校区） 85996110 （江安校区） 四川大学党委保卫部（处） 2023 年 4 月 19 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://bwc.scu.edu.cn/info/1004/2711.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+学校召开新学期工作布置会
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2026-03-13
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+3月13日，学校在望江校区笃行楼召开新学期工作布置会。校长汪劲松部署新学期工作，常务副校长褚良银主持会议，在校校领导，院士、杰出教授等专家学者代表，全体中层干部等参加会议。 汪劲松指出，2026年是“十五五”开局起步之年，也是学校建校130周年，做好今年工作对于学校发展具有重要意义。学校围绕贯彻落实中央决策部署，聚焦建设中国特色世界一流大学，研究制订了《2026年工作要点》，明确了年度重点工作任务。全校各单位、各部门要根据学校安排扎实推进、全面落实。他强调，新学期学校要扎实开展树立和践行正确政绩观学习教育，确保学习教育见行见效，加强党的全面领导，深入开展“三个一流”创建活动，抓好意识形态和安全稳定工作，确保校园持续安全稳定。要积极抓好新一轮“双一流”建设，坚持提升医科、突破工科、做优文理的学科发展导向，深耕优势领域，做强特色学科；持续推进“十五五”规划编制，高标准推进各项目标任务落地实施。同时，要有力有序推进教育教学、人才育引、科技创新、哲学社会科学发展、开放办学、服务师生等重点工作。要精心筹备130周年校庆，办好校庆活动，做好校友工作，广泛凝聚海内外校友和社会各界力量，为学校高质量发展注入强劲动力。全校上下要以钉钉子精神扎实推动各项任务落地见效，确保“十五五”良好开局，奋力谱写学校高质量发展新篇章。 校领导褚良银、李正赤、赵长生、刘晓虎、黄园分别围绕科学制定“十五五”规划、全力推进130周年校庆工作、加强师德师风建设、推进新时代立德树人工程、加强干部队伍建设等作具体部署。 会议期间，与会人员围绕本次会议精神进行了分组讨论。会上，党委宣传部常务副部长李栓久、物理学院党委书记严成辉、化学工程学院党委书记李天友、华西临床医学院院长兼华西医院院长罗凤鸣、文学与新闻学院（新闻学院、出版学院）院长罗鹭、后勤保障部党委书记韩杰分别作交流发言。大家表示将聚焦学校“双一流”建设目标和“十五五”规划要求，结合本单位实际，扎实推进新学期各项工作，锐意进取、真抓实干，奋力答好“强国建设、川大有为”的时代答卷。 标签：
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://www.hxkq.org/Html/News/Articles/18027.html">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

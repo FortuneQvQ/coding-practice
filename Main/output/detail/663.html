@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+我院第三期住院医师胜任力特训营圆满落幕
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+重点新闻<br>
+院内动态<br>
+信息公开<br>
+2026年7月9日，我院第三期数字化修复住院医师胜任力特训营顺利举办。本次活动由修复科、牙体牙髓病科联合主办，分为理论授课与实操展演两大环节，聚焦数字化修复临床能力提升。<br>
+特训营正式开营，口腔修复科王剑主任主持仪式。院党委副书记、纪委书记沈颉飞教授致辞，鼓励学员深耕临床、精进前沿技术。毕业后医学教育办公室梁新华教授强调，熟练运用 CAD/CAM 数字化修复技术，是青年医师不可或缺的核心执业技能。<br>
+随后，首都医科大学附属北京口腔医院修复科主任江青松教授、上海交通大学医学院附属第九人民医院口腔修复科主任胥春教授、西安交通大学口腔医学院牙体牙髓科主任董茜茜教授、中山大学附属口腔医院牙体牙髓病科教学副主任麦穗教授、我院董博主管技师开展专题授课，围绕数字化修复全流程、天然牙美学修复、瓷嵌体标准化预备、冠根一体化修复及数字化设备实操等核心内容展开讲解。我院口腔修复科孟玉坤教授总结授课内容，强调课程融合微创、美学与多学科诊疗理念，助力青年医师标准化临床诊疗。<br>
+下午，实操展演正式启动，本次展演设置磨牙瓷嵌体、全瓷冠预备两大考核项目，50名规培医师现场实操。孟玉坤教授牵头制定考核标准，专家组从洞型设计、边缘制备、组织保护等维度现场指导点评。<br>
+经综合评审，本次展演评选出多项优秀展演奖项。我院将持续优化课程体系、深化多学科协作，打造特色住培教学品牌，持续推动青年口腔医师临床胜任力稳步提升。<br>
+下一篇：我院开展“一带一路”国家唇腭裂先进技术国际培训班中外文化交流活动<br>
+// jQuery(function () { if ($(&#39;#left_1&#39;)) { $(&quot;#left_p_1&quot;).addClass(&quot;current&quot;); if($(&quot;#left_ul_1&quot;).length&gt;0) { $(&quot;#left_p_1&quot;).addClass(&quot;show&quot;); $(&quot;#left_ul_1&quot;).show(); } } if ($(&#39;#left_185&#39;)) { $(&quot;#left_p_185&quot;).addClass(&quot;current&quot;); if($(&quot;#left_ul_185&quot;).length&gt;0) { $(&quot;#left_p_185&quot;).addClass(&quot;show&quot;); $(&quot;#left_ul_185&quot;).show(); } } if ($(&#39;#left_196&#39;)) { $(&quot;#left_p_196&quot;).addClass(&quot;current&quot;); if($(&quot;#left_ul_196&quot;).length&gt;0) { $(&quot;#left_p_196&quot;).addClass(&quot;show&quot;); $(&quot;#left_ul_196&quot;).show(); } } if ($(&#39;#left_199&#39;)) { $(&quot;#left_p_199&quot;).addClass(&quot;current&quot;); if($(&quot;#left_ul_199&quot;).length&gt;0) { $(&quot;#left_p_199&quot;).addClass(&quot;show&quot;); $(&quot;#left_ul_199&quot;).show(); } } }); //新闻中心重点新闻院内动态信息公开<br>
+院内动态我院第三期住院医师胜任力特训营圆满落幕浏览次数： // GetAjaxContentByUrl(&#39;ajax_div__GetArticleViewCount_0_18671_0_8976&#39;, &#39;/PartialView/_Plugin/_GetArticleViewCount/18671?isPlus=True&#39;); //发布时间：2026-07-142026年7月9日，我院第三期数字化修复住院医师胜任力特训营顺利举办。本次活动由修复科、牙体牙髓病科联合主办，分为理论授课与实操展演两大环节，聚焦数字化修复临床能力提升。 特训营正式开营，口腔修复科王剑主任主持仪式。院党委副书记、纪委书记沈颉飞教授致辞，鼓励学员深耕临床、精进前沿技术。毕业后医学教育办公室梁新华教授强调，熟练运用 CAD/CAM 数字化修复技术，是青年医师不可或缺的核心执业技能。 随后，首都医科大学附属北京口腔医院修复科主任江青松教授、上海交通大学医学院附属第九人民医院口腔修复科主任胥春教授、西安交通大学口腔医学院牙体牙髓科主任董茜茜教授、中山大学附属口腔医院牙体牙髓病科教学副主任麦穗教授、我院董博主管技师开展专题授课，围绕数字化修复全流程、天然牙美学修复、瓷嵌体标准化预备、冠根一体化修复及数字化设备实操等核心内容展开讲解。我院口腔修复科孟玉坤教授总结授课内容，强调课程融合微创、美学与多学科诊疗理念，助力青年医师标准化临床诊疗。 下午，实操展演正式启动，本次展演设置磨牙瓷嵌体、全瓷冠预备两大考核项目，50名规培医师现场实操。孟玉坤教授牵头制定考核标准，专家组从洞型设计、边缘制备、组织保护等维度现场指导点评。 经综合评审，本次展演评选出多项优秀展演奖项。我院将持续优化课程体系、深化多学科协作，打造特色住培教学品牌，持续推动青年口腔医师临床胜任力稳步提升。分享到：下一篇：我院开展“一带一路”国家唇腭裂先进技术国际培训班中外文化交流活动<br>
+院内动态我院第三期住院医师胜任力特训营圆满落幕浏览次数： // GetAjaxContentByUrl(&#39;ajax_div__GetArticleViewCount_0_18671_0_8976&#39;, &#39;/PartialView/_Plugin/_GetArticleViewCount/18671?isPlus=True&#39;); //发布时间：2026-07-142026年7月9日，我院第三期数字化修复住院医师胜任力特训营顺利举办。本次活动由修复科、牙体牙髓病科联合主办，分为理论授课与实操展演两大环节，聚焦数字化修复临床能力提升。 特训营正式开营，口腔修复科王剑主任主持仪式。院党委副书记、纪委书记沈颉飞教授致辞，鼓励学员深耕临床、精进前沿技术。毕业后医学教育办公室梁新华教授强调，熟练运用 CAD/CAM 数字化修复技术，是青年医师不可或缺的核心执业技能。 随后，首都医科大学附属北京口腔医院修复科主任江青松教授、上海交通大学医学院附属第九人民医院口腔修复科主任胥春教授、西安交通大学口腔医学院牙体牙髓科主任董茜茜教授、中山大学附属口腔医院牙体牙髓病科教学副主任麦穗教授、我院董博主管技师开展专题授课，围绕数字化修复全流程、天然牙美学修复、瓷嵌体标准化预备、冠根一体化修复及数字化设备实操等核心内容展开讲解。我院口腔修复科孟玉坤教授总结授课内容，强调课程融合微创、美学与多学科诊疗理念，助力青年医师标准化临床诊疗。 下午，实操展演正式启动，本次展演设置磨牙瓷嵌体、全瓷冠预备两大考核项目，50名规培医师现场实操。孟玉坤教授牵头制定考核标准，专家组从洞型设计、边缘制备、组织保护等维度现场指导点评。 经综合评审，本次展演评选出多项优秀展演奖项。我院将持续优化课程体系、深化多学科协作，打造特色住培教学品牌，持续推动青年口腔医师临床胜任力稳步提升。分享到：下一篇：我院开展“一带一路”国家唇腭裂先进技术国际培训班中外文化交流活动<br>
+我院第三期住院医师胜任力特训营圆满落幕浏览次数： // GetAjaxContentByUrl(&#39;ajax_div__GetArticleViewCount_0_18671_0_8976&#39;, &#39;/PartialView/_Plugin/_GetArticleViewCount/18671?isPlus=True&#39;); //发布时间：2026-07-142026年7月9日，我院第三期数字化修复住院医师胜任力特训营顺利举办。本次活动由修复科、牙体牙髓病科联合主办，分为理论授课与实操展演两大环节，聚焦数字化修复临床能力提升。 特训营正式开营，口腔修复科王剑主任主持仪式。院党委副书记、纪委书记沈颉飞教授致辞，鼓励学员深耕临床、精进前沿技术。毕业后医学教育办公室梁新华教授强调，熟练运用 CAD/CAM 数字化修复技术，是青年医师不可或缺的核心执业技能。 随后，首都医科大学附属北京口腔医院修复科主任江青松教授、上海交通大学医学院附属第九人民医院口腔修复科主任胥春教授、西安交通大学口腔医学院牙体牙髓科主任董茜茜教授、中山大学附属口腔医院牙体牙髓病科教学副主任麦穗教授、我院董博主管技师开展专题授课，围绕数字化修复全流程、天
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+<img class="news-image" src="../images/663.jpg" alt="新闻图片" loading="lazy">
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://www.hxkq.org/Html/News/Articles/18671.html">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

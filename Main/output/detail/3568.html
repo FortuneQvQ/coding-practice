@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+第17届全国现代逻辑学术研讨会（2023年10月更新）
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+主办单位：中国逻辑学会现代逻辑专业委员会<br>
+承办单位：四川大学哲学系，四川大学逻辑、科学与文化研究所<br>
+协办单位：四川省逻辑学会<br>
+会议时间：2023年10月20日-22日（10月19日可签到，晚上设有教学环节报告）<br>
+会场地址：<br>
+10月20日、10月22日，祥宇宾馆祥顺厅（ 四川省成都市武侯区新南路103号）<br>
+10月21日，四川大学望江校区（望江校区东三教演播厅）<br>
+会议不收取注册费；参会者需自理差旅和食宿。<br>
+会议详细日程安排见附件。<br>
+委员会（以下均为姓名音序）：<br>
+本地组织委员会（均来自四川大学）<br>
+主席：刘佶鑫（xuetian997@scu.edu.cn）<br>
+委员：陈以森、陈钰、任晓明、徐召清、曾怡<br>
+程序委员会<br>
+主席：杨睿之（复旦大学，yangruizhi@fudan.edu.cn）<br>
+俞珺华（清华大学，junhua.yu.thu@139.com）<br>
+委员：丁一峰、董惠敏、范杰、方良达、高坤、郭佳宏、郭美云、郝兆宽、何家亮、贾青、琚凤魁、李延军、梁飞、林翰迪、林哲、刘婵娟、刘虎、刘佶鑫、刘明明、刘新文、任远、荣立武、申国桢、沈榆平、石辰威、苏庆辉、孙鑫、王文方、王彦晶、王轶、文学锋、邢滔滔、熊明、熊作军、徐召清、杨帆、杨睿之、杨跃、姚宁远、叶峰、俞珺华、喻良、张寄冀、张立英、张炎、赵希顺、赵贤、钟盛阳。<br>
+特邀报告人：<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 丁龙云(南开大学数学科学学院)<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 刘咏梅(中山大学计算机学院)<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 张德学(四川大学数学学院)<br>
+教学环节报告人：<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 郝兆宽（复旦大学哲学学院）<br>
+住宿地点：祥宇宾馆（ 四川省成都市武侯区新南路103号）<br>
+交通信息：（地铁时刻表：https://www.chengdurail.com/ckfw/smbcskb.htm）<br>
+1.双流机场到祥宇宾馆<br>
+出租车：约50元<br>
+地铁：乘坐地铁10号线，到达太平园站；<br>
+换乘地铁3号线，到达磨子桥站；<br>
+步行约200米，到达终点。<br>
+2.成都东站到祥宇宾馆<br>
+出租车：约30元<br>
+地铁：乘坐地铁2号线，到达春熙路站<br>
+换乘3号线，到达磨子桥站；<br>
+步行约200米，到达终点。<br>
+3.天府机场到祥宇宾馆（很远）<br>
+出租车：约200元<br>
+地铁：乘坐地铁18号线，到达世纪城站<br>
+换乘1号线，到达省体育馆站；<br>
+换乘3号线，到达磨子桥站；<br>
+步行约200米，到达终点。<br>
+会议日程见下表（附件为详细版会议手册）&amp;nbsp;<br>
+上一条：第17届全国现代逻辑学术研讨会征稿启事（第二轮）<br>
+下一条：四川大学哲学系2023年优秀大学生暑期云夏令营入营通知<br>
+【关闭】<br>
+第17届全国现代逻辑学术研讨会（2023年10月更新） 发布时间：2023-07-05&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;编辑：哲学系新闻中心&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;点击量： _showDynClicks(&quot;wbnews&quot;, 1638079077, 3047) 次&amp;nbsp;主办单位：中国逻辑学会现代逻辑专业委员会承办单位：四川大学哲学系，四川大学逻辑、科学与文化研究所协办单位：四川省逻辑学会会议时间：2023年10月20日-22日（10月19日可签到，晚上设有教学环节报告）会场地址：10月20日、10月22日，祥宇宾馆祥顺厅（ 四川省成都市武侯区新南路103号）10月21日，四川大学望江校区（望江校区东三教演播厅）会议不收取注册费；参会者需自理差旅和食宿。会议详细日程安排见附件。委员会（以下均为姓名音序）：本地组织委员会（均来自四川大学）主席：刘佶鑫（xuetian997@scu.edu.cn）委员：陈以森、陈钰、任晓明、徐召清、曾怡程序委员会 主席：杨睿之（复旦大学，yangruizhi@fudan.edu.cn）俞珺华（清华大学，junhua.yu.thu@139.com） 委员：丁一峰、董惠敏、范杰、方良达、高坤、郭佳宏、郭美云、郝兆宽、何家亮、贾青、琚凤魁、李延军、梁飞、林翰迪、林哲、刘婵娟、刘虎、刘佶鑫、刘明明、刘新文、任远、荣立武、申国桢、沈榆平、石辰威、苏庆辉、孙鑫、王文方、王彦晶、王轶、文学锋、邢滔滔、熊明、熊作军、徐召清、杨帆、杨睿之、杨跃、姚宁远、叶峰、俞珺华、喻良、张寄冀、张立英、张炎、赵希顺、赵贤、钟盛阳。特邀报告人： &amp;nbsp;&amp;nbsp;&amp;nbsp; 丁龙云(南开大学数学科学学院) &amp;nbsp;&amp;nbsp;&amp;nbsp; 刘咏梅(中山大学计算机学院) &amp;nbsp;&amp;nbsp;&amp;nbsp; 张德学(四川大学数学学院)教学环节报告人：&amp;nbsp;&amp;nbsp;&amp;nbsp; 郝兆宽（复旦大学哲学学院）住宿地点：祥宇宾馆（ 四川省成都市武侯区新南路103号）交通信息：（地铁时刻表：https://www.chengdurail.com/ckfw/smbcskb.htm）1.双流机场到祥宇宾馆出租车：约50元地铁：乘坐地铁10号线，到达太平园站；换乘地铁3号线，到达磨子桥站；步行约200米，到达终点。&amp;nbsp;2.成都东站到祥宇宾馆出租车：约30元地铁：乘坐地铁2号线，到达春熙路站换乘3号线，到达磨子桥站；步行约200米，到达终点。&amp;nbsp;3.天府机场到祥宇宾馆（很远）出租车：约200元地铁：乘坐地铁18号线，到达世纪城站换乘1号线，到达省体育馆站；换乘3号线，到达磨子桥站；步行约200米，到达终点。&amp;nbsp;会议日程见下表（附件为详细版会议手册）&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;附件【现代逻辑会议手册(2023.10.17).pdf】已下载 getClickTimes(13108893,1638079077,&quot;wbnewsfile&quot;,&quot;attach&quot;) 次上一条：第17届全国现代逻辑学术研讨会征稿启事（第二轮）下一条：四川大学哲学系2023年优秀大学生暑期云夏令营入营通知【关闭】<br>
+发布时间：2023-07-05&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;编辑：哲学系新闻中心&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;点击量： _showDynClicks(&quot;wbnews&quot;, 1638079077, 3047) 次<br>
+&amp;nbsp;主办单位：中国逻辑学会现代逻辑专业委员会承办单位：四川大学哲学系，四川大学逻辑、科学与文化研究所协办单位：四川省逻辑学会会议时间：2023年10月20日-22日（10月19日可签到，晚上设有教学环节报告）会场地址：10月20日、10月22日，祥宇宾馆祥顺厅（ 四川省成都市武侯区新南路103号）10月21日，四川大学望江校区（望江校区东三教演播厅）会议不收取注册费；参会者需自理差旅和食宿。会议详细日程安排见附件。委员会（以下均为姓名音序）：本地组织委员会（均来自四川大学）主席：刘佶鑫（xuetian997@scu.edu.cn）委员：陈以森、陈钰、任晓明、徐召清、曾怡程序委员会 主席：杨睿之（复旦大学，yangruizhi@fudan.edu.cn）俞珺华（清华大学，junhua.yu.thu@139.com） 委员：丁一峰、董惠敏、范杰、方良达、高坤、郭佳宏、郭美云、郝兆宽、何家亮、贾青、琚凤魁、李延军、梁飞、林翰迪、林哲、刘婵娟、刘虎、刘佶鑫、刘明明、刘新文、任远、荣立武、申国桢、沈榆平、石辰威、苏庆辉、孙鑫、王文方、王彦晶、王轶、文学锋、邢滔滔、熊明、熊作军、徐召清、杨帆、杨睿之、杨跃、姚宁远、叶峰、俞珺华、喻良、张寄冀、张立英、张炎、赵希顺、赵贤、钟盛阳。特邀报告人： &amp;nbsp;&amp;nbsp;&amp;nbsp; 丁龙云(南开大学数学科学学院) &amp;nbsp;&amp;nbsp;&amp;nbsp; 刘咏梅(中山大学计算机学院) &amp;nbsp;&amp;nbsp;&amp;nbsp; 张德学(四川大学数学学院)教学环节报告人：&amp;nbsp;&amp;nbsp;&amp;nbsp; 郝兆宽（复旦大学哲学学院）住宿地点：祥宇宾馆（ 四川省成都市武侯区新南路103号）交通信息：（地铁时刻表：https://www.chengdurail.com/ckfw/smbcskb.htm）1.双流机场到祥宇宾馆出租车：约50元地铁：乘坐地铁10号线，到达太平园站；换乘地铁3号线，到达磨子桥站；步行约200米，到达终
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+<img class="news-image" src="../images/3568.jpg" alt="新闻图片" loading="lazy">
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://zxx.scu.edu.cn/info/1016/3047.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

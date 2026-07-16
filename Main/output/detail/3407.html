@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+电子信息学院院长助理招聘公告
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+电子信息学院院长助理招聘公告<br>
+为适应学院发展新形势，促进学院工作跃上新台阶，根据工作需要，2015年3月30日经学院党政联席会研究决定，拟在学院教职工中公开选聘院长助理两名。有关事项公告如下：<br>
+一、招聘岗位<br>
+1.国际事务院长助理1名；<br>
+2.保密学院院长助理1名。<br>
+二、岗位职责<br>
+院长助理在学院党政联席会领导下开展工作，相关职责如下：<br>
+（一）国际事务院长助理<br>
+1.协助院长开展国际交流与合作工作（含教学、科研、人才培养）；<br>
+2.协助院长开展学院海外人才的招聘和引进工作。<br>
+（二）保密学院院长助理<br>
+1.协助院长开展保密学院和保密培训基地相关工作；<br>
+2.协助院长开展学院公房管理、实验室管理相关工作。<br>
+三、任职条件<br>
+（一）国际事务院长助理<br>
+1.有崇高的理想信念，爱党爱国，爱岗敬业，有强烈的事业心和责任感，清正廉洁，作风正派，具备相应的组织管理和协调能力，有较强的奉献精神、创新意识、全局观念、团队精神；<br>
+2.身体健康，年龄40周岁（截止到2015年3月31日）以下；<br>
+3.能使用英语熟练交流；<br>
+4.具有博士学位。<br>
+（二）保密学院院长助理<br>
+1.中共党员，爱岗敬业，有强烈的事业心和责任感，清正廉洁，作风正派，具备相应的组织管理和协调能力，有较强的奉献精神、创新意识、全局观念、团队精神；<br>
+2.身体健康，年龄40周岁（截止到2015年3月31日）以下；<br>
+3.具有博士学位；<br>
+4.对保密学院、保密培训基地的工作有一定了解。<br>
+四、招聘方式<br>
+1.应聘人员填写《电子信息学院选聘院长助理申报表》，并将纸质版于规定时间内交至基础教学楼A114。<br>
+2.电子信息学院成立招聘工作小组，对符合初审条件的应聘人员进行甄选，确定参加面试人员；<br>
+3.电子信息学院招聘工作小组对竞聘候选人进行面试，择优确定拟聘人员并公示。<br>
+五、报名时间：2015年3月30日～4月3日17:00点整；<br>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 联系人：侯雁红&amp;nbsp;&amp;nbsp; 电话：028-85460933。<br>
+电子信息学院&amp;nbsp;<br>
+2015年3月30日&amp;nbsp;<br>
+附件下载<br>
+电子信息学院选聘院长助理申报表.doc 下载<br>
+首页 &gt; 学院资讯 &gt; 学院通知 &gt; 正文<br>
+电子信息学院院长助理招聘公告 供稿：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;责任编辑：dbhyh&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;时间：2015-03-30&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;阅读： _showDynClicks(&quot;wbnews&quot;, 1420437151, 1129) 次电子信息学院院长助理招聘公告&amp;nbsp; 为适应学院发展新形势，促进学院工作跃上新台阶，根据工作需要，2015年3月30日经学院党政联席会研究决定，拟在学院教职工中公开选聘院长助理两名。有关事项公告如下：一、招聘岗位1.国际事务院长助理1名；2.保密学院院长助理1名。二、岗位职责院长助理在学院党政联席会领导下开展工作，相关职责如下：（一）国际事务院长助理1.协助院长开展国际交流与合作工作（含教学、科研、人才培养）；2.协助院长开展学院海外人才的招聘和引进工作。（二）保密学院院长助理1.协助院长开展保密学院和保密培训基地相关工作；2.协助院长开展学院公房管理、实验室管理相关工作。三、任职条件（一）国际事务院长助理 1.有崇高的理想信念，爱党爱国，爱岗敬业，有强烈的事业心和责任感，清正廉洁，作风正派，具备相应的组织管理和协调能力，有较强的奉献精神、创新意识、全局观念、团队精神；2.身体健康，年龄40周岁（截止到2015年3月31日）以下；3.能使用英语熟练交流；4.具有博士学位。（二）保密学院院长助理 1.中共党员，爱岗敬业，有强烈的事业心和责任感，清正廉洁，作风正派，具备相应的组织管理和协调能力，有较强的奉献精神、创新意识、全局观念、团队精神；2.身体健康，年龄40周岁（截止到2015年3月31日）以下；3.具有博士学位；4.对保密学院、保密培训基地的工作有一定了解。四、招聘方式1.应聘人员填写《电子信息学院选聘院长助理申报表》，并将纸质版于规定时间内交至基础教学楼A114。2.电子信息学院成立招聘工作小组，对符合初审条件的应聘人员进行甄选，确定参加面试人员；3.电子信息学院招聘工作小组对竞聘候选人进行面试，择优确定拟聘人员并公示。五、报名时间：2015年3月30日～4月3日17:00点整； &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 联系人：侯雁红&amp;nbsp;&amp;nbsp; 电话：028-85460933。&amp;nbsp;电子信息学院&amp;nbsp;2015年3月30日&amp;nbsp;附件下载 电子信息学院选聘院长助理申报表.doc 下载<br>
+供稿：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;责任编辑：dbhyh&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;时间：2015-03-30&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;阅读： _showDynClicks(&quot;wbnews&quot;, 1420437151, 1129) 次<br>
+电子信息学院院长助理招聘公告&amp;nbsp; 为适应学院发展新形势，促进学院工作跃上新台阶，根据工作需要，2015年3月30日经学院党政联席会研究决定，拟在学院教职工中公开选聘院长助理两名。有关事项公告如下：一、招聘岗位1.国际事务院长助理1名；2.保密学院院长助理1名。二、岗位职责院长助理在学院党政联席会领导下开展工作，相关职责如下：（一）国际事务院长助理1.协助院长开展国际交流与合作工作（含教学、科研、人才培养）；2.协助院长开展学院海外人才的招聘和引进工作。（二）保密学院院长助理1.协助院长开展保密学院和保密培训基地相关工作；2.协助院长开展学院公房管理、实验室管理相关工作。三、任职条件（一）国际事务院长助理 1.有崇高的理想信念，爱党爱国，爱岗敬业，有强烈的事业心和责任感，清正廉洁，作风正派，具备相应的组织管理和协调能力，有较强的奉献精神、创新意识、全局观念、团队精神；2.身体健康，年龄40周岁（截止到2015年3月31日）以下；3.能使用英语熟练交流；4.具有博士学位。（二）保密学院院长助理 1.中共党员，爱岗敬业，有强烈的事业心和责任感，清正廉洁，作风正派，具备相应的组织管理和协调能力，有较强的奉献精神、创新意识、全局观念、团队精神；2.身体健康，年龄40周岁（截止到2015年3月31日）以下；3.具有博士学位；4.对保密学院、保密培训基地的工作有一定了解。四、招聘方式1.应聘人员填写《电子信息学院选聘院长助理申报表》，并将纸质版于规定时间内交至基础教学楼A114。2.电子信息学院成立招聘工作小组，对符合初审条件的应聘人员进行甄选，确定参加面试人员；3.电子信息学院招聘工作小组对竞聘候选人进行面试，择优确定拟聘人员并公示。五、报名时间：2015年3月30日～4月3日17:00点整； &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 联系人：侯雁红&amp;nbsp;&amp;nbsp; 电话：028-85460933。&amp;nbsp;电子信息学院&amp;nbsp;2015年3月30日&amp;nbsp;附件下载 电子信息学院选聘院长助理申报表.doc 下载<br>
+电子信息学院院长助理招聘公告&amp;nbsp; 为适应学院发展新形势，促进学院工作跃上新台阶，根据工作需要，2015年3月30日经学院党政联席会研究决定，拟在学院教职工中公开选聘院长助理
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://eie.scu.edu.cn/info/1019/1129.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

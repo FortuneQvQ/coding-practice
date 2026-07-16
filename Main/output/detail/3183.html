@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+【大川视界】关于开展香港大学（HKUSI）暑期学院2024暑期课程报名工作的通知（非学分）
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2024-03-05
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各学院（系）、全校同学： 为拓展学生国际视野、提高国际胜任力，学校决定从即日起启动香港大学暑期学院（HKUSI）2024暑期课程项目（2024年度&amp;ldquo;大川视界&amp;rdquo;暑期非学分项目）报名工作，现就有关事项通知如下： 一、学校介绍 香港大学（The University of Hong Kong），简称&amp;ldquo;港大&amp;rdquo;（HKU），成立于1911年有亚洲&amp;ldquo;常春藤&amp;rdquo;之称。2024年QS世界大学排名，香港大学位列全球第26位，亚洲第1位。 二、项目简介 港大（HKUSI）2024暑期项目分暑期课程及垮地夏令营两种： 1 . 暑期课程 涵盖多个学科，包括AI、商业、创意工业、可持续发展等领域 时间：2024年6月17日至8月2日 地点：香港 名额：不限 费用：学费及其他信息见官网: https://www.summerinstitute.hku.hk/，我校学生享受九折优惠，不含住宿费，往返交通费、生活费及签注申请、游览等费用自理。 2.跨地夏令营 （主题： 可持续发展） 时间：2024年7月14日至8月3日 地点：中国香港大学、泰国朱拉隆功大学、日本北海道大学 名额：5名 费用： 学费3900美金，跨地项目不享受优惠，不含交通费、生活费及签注申请、游览等费用自理。具体费用情况请详见项目官网： https://summerinstitute.hku.hk/programmes/detail/sium2412 三、项目起止时间 2024年6月-8月 四、报名条件： 1.思想政治：拥护中国共产党的领导、热爱祖国、品德优良、身心健康，遵守国家法律法规、学校规章制度，无纪律处分； 2.年级专业：全日制在校本科学生，专业不限，本科二年级至三年级（出行前须年满18周岁，五年制为本科二年级至四年级）； 3.语言能力：IELTS 6.0或同等水平，由香港大学择优录取； 4.综合素质：成绩优异，需具备一定的独立生活能力、开放积极的交流心态。修读期间，应尊重当地风俗文化，遵守相关的法律法规和双方学校规章制度，愿意服从两校的统一管理。 五、报名流程： 需在两校先后报名 1. 学生需在我校学工部和香港大学先后报名，校内报名流程如下，本科生校内报名：填写附件1（&amp;ldquo;大川视界&amp;rdquo;非学分项目申请表），经学院审核签字盖章后，将申报单电子档（扫描件）及相关英语成绩支撑材 料发送至xgb-fzzx1@scu.edu.cn，报名成功信息以邮件通知为准。 校内报名截止日期3月31日16：00点 2.港大报名截止日期：2024年3月31日。项目信息请至网站https://www.summerinstitute.hku.hk/， https://summerinstitute.hku.hk/programmes/detail/sium2412 。如有问题， 请电邮至 ugsummer@hku.hk。 3.通行证及签注办理：报名期间可先同步办理通行证，待报名成功后持港大出具的邀请材料办理签注。因办理签证时间较长，建议有意参加的同学请尽早报名。 4.项目咨询： 港澳台办张老师 85404131 报名咨询： 学工部郭老师 85460907 六、外方学校项目宣讲会 为了帮助同学们更深入了解港大的课程，港大暑期学院安排了三场线上宣讲会，将详细介绍今年的课程內容、住宿安排、申请流程等。宣讲会将以普通话进行，并现场解答同学们的问题。欢迎同学可以选择以下任一时段登录 https://hku.zoom.us/j/96937360213 参加宣讲会： 3月5日（星期二）晚上7时 - 8时 3月7日（星期四）晚上7时 - 8时 (公开场) 党委学生工作部 国际合作与交流处、港澳台事务办公室 2024年3月1日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://global.scu.edu.cn/?notice/_/3831">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

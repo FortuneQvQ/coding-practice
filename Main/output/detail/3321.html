@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 科研创新
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+2020年四川省社科规划重大项目申报通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2020-11-12
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各相关单位： 　　经省社科联党组批准，即日起在全省发布《2020年四川省社科规划重大项目申报指南》，现将有关事项通知如下： 　　一、本次课题属于省级重大课题，立项总数为10项左右，每项资助金额5万元。 　　二、申报单位与个人须按照《2020年四川省社科规划重大项目申报指南》（见附件1）确定的课题方向选择申报。申报课题要充分反映本学科及相关研究领域的新进展，立足学科前沿，倡导原创性和开拓性研究，避免低水平重复。 　　三、申报责任单位须具备：在相关研究领域具有较强的科研力量和深厚的学术积累；设有专门负责科研管理工作的职能部门；能够为开展重大项目研究工作提供良好条件。 　　申报人须具备：遵守中华人民共和国宪法和法律，遵守四川省社科规划各项管理规定；在相关研究领域具有深厚的学术造诣和丰富的科研经验，社会责任感强，学风优良；具有正高级专业技术职称或厅局级以上（含）领导职务，能够承担实质性研究工作并担负科研组织指导职责；每个申报项目的负责人只能为一人，且不能参与本次申报的其他课题。子课题负责人须具有副高级（含）以上职称，在本批次申报中只能参与一个课题，课题组成员最多参与两个课题。 　　在研的国家社科基金重大项目、省社科规划重大项目负责人不得申请；曾经承担国家社科基金、省社科规划项目被撤项未满5年或终止未满3年的不得申报。 　　四、各申报单位科研管理部门要加强对项目申报工作的组织和指导，保证申报质量。对申请人承诺和申请书内容要严格把关，特别是选题的政治方向、课题设计的科学性和可行性、课题负责人是否符合申报条件、课题组是否具备完成研究任务的条件等，要进行认真审核并签署明确意见后报送省社科规划办。申请书封面的“申报指南编号”务必按照《申报指南》的序号用阿拉伯数字填写。 　　报送材料包括： 　　1.审查合格的申请书(纸质材料，见附件2)一式6份(含原件一份)。申请书用A3纸双面打印，中缝装订。 　　2.申请书电子档（word格式）及申报汇总表电子档（excel格式，见附件3）由科研管理部门统一发送到scghpjb@163.com,主题标注“XX单位2020年四川四川省社科规划重大项目申报材料”。 　　五、报送材料截止时间为2020年11月30日，逾期不予受理。 　　联 系 人： 刘 莎 　　联系电话： 64237791 　　通讯地址：成都市大石西路科联街19号省社科规划办 　　邮政编码：610071 　　附件：    1. 2020年四川省社科规划重大项目申报指南    2. 四川省社会科学规划重大课题申请书    3. 申报汇总表 　　四川省社会科学规划办公室 　　2020年11月11日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://historytourism.scu.edu.cn/info/1036/2581.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

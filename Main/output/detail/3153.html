@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+教务处 · 竞赛比赛
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于举办2025年“学创杯”全国大学生创业综合模拟大赛四川大学选拔赛的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-03-17
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各学院及相关同学： 为深入贯彻落实习近平总书记在全国教育大会上的讲话精神，按照《国务院办公厅关于深化高等学校创新创业教育改革的实施意见》（国办发 [2015]36 号）、《国务院关于推动创新创业高质量发展打造“双创”升级版的意见》（国发 [2018]32 号）等文件要求，进一步提升我校大学生创新创业能力，做好“学创杯”全国大学生创业综合模拟大赛预选工作，四川大学商学院决定举办 2025 年“学创杯”全国大学生创业综合模拟大赛四川大学选拔赛。 现将有关事项通知如下： 一、组织单位 主办单位：四川大学商学院 技术支持单位：杭州贝腾科技有限公司 二、参赛对象 四川大学全日制在校本科生 三、竞赛内容 本次大赛分为三个赛项，分别是创业综合模拟赛项、数字营销模拟赛项、财务决策模拟赛项。 创业综合模拟赛项在创业之星软件上进行，检验创业团队的初创企业管理能力、创新性、商业性以及团队竞争力。 数字营销模拟赛项在营销之道软件上进行，通过在虚拟仿真的市场环境中开展营销模拟实战，检验创业团队的营销推广能力。 财务决策模拟赛项在理财之道软件上进行，模拟企业发展中的各项财务金融工作、财务工具模型运用及各方面的经营决策，团队成员根据团队财务与市场发展与竞争形势的变化做出决策。 各赛项参赛细则详见附件 1 。 四、时间安排 1 ．大赛报名：即日起至 2025 年 3 月 21 日，加入 QQ 群组队报名。 参赛队伍必须于 2025 年 3 月 19 日（周三） 9 点前加入 QQ 群 884328100 ，每个同学仅能报名一个赛项。 2 ．练习赛： 2025 年 3 月 22 日—— 2025 年 4 月 11 日，网络远程方式。 3 ．预赛： 创业管理模拟竞赛预赛： 2025 年 4 月 12 日（周六） 数字营销模拟竞赛预赛： 2025 年 4 月 12 日（周六） 财务决策模拟竞赛预赛： 2025 年 4 月 12 日（周六） 商学院实验中心线下进行。 4 ．决赛： 创业管理模拟竞赛决赛： 2025 年 4 月 19 日（周六） 创业营销模拟竞赛决赛： 2025 年 4 月 19 日（周六） 数字营销模拟竞赛决赛： 2025 年 4 月 19 日（周六） 商学院实验中心线下进行。 若赛项报名团队不足 30 只队伍，则该赛项不设置决赛，以预赛成绩作为评奖依据。 5 ．决赛结果将在 4 月 25 日前公布。 五、参赛方式 1 ．本次竞赛要求参赛者自行组成团队，以团队的形式参赛。 2 ．参赛团队的成员人数 3 名，每个学生只能参加一个团队。 3. 参赛团队只能选择参加创业管理模拟竞赛、创业营销模拟竞赛及财务决策模拟竞赛其中一项比赛。 六、竞赛规则 1. 参赛学生应携带一卡通或身份证，经检查无误，方可参加竞赛。 2. 其他规则详见赛项 QQ 群中通知。 七、奖项设置 校内选拔赛设一等奖、二等奖、三等奖，各赛项决赛综合成绩排名前 50% 的参赛团队可获得奖项。 八、联系方式 电话： 028-85415451 麻老师 九、其他 未尽事宜及上级赛事要求变化，另行通知。 附件： 2025 年“学创杯”全国大学生创业综合模拟大赛四川大学选拔赛参赛细则 商学院 教务处 2025 年 3 月 17 日
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://jwc.scu.edu.cn/info/1069/9723.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

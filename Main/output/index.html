@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>校园资讯聚合系统</title>
+
+
+<style>
+
+/* 全局 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "微软雅黑", Arial, sans-serif;
+
+    color: #333;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+}
+
+
+/* 顶部 */
+
+.header {
+
+    padding: 40px;
+
+    text-align: center;
+
+}
+
+
+.header h1 {
+
+    font-size: 36px;
+
+    color: #2d6a4f;
+
+}
+
+
+.header p {
+
+    margin-top: 10px;
+
+    color: #666;
+
+}
+
+
+/* 搜索区域 */
+
+
+.search-box {
+
+    width:60%;
+
+    margin:20px auto 10px;
+
+    display:flex;
+
+}
+
+
+
+.search-form {
+
+    width:100%;
+
+    display:flex;
+
+}
+
+
+
+.search-box input {
+
+
+    flex:1;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:20px 0 0 20px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+
+
+.search-box button {
+
+
+    width:90px;
+
+    border:none;
+
+    background:#40916c;
+
+    color:white;
+
+    border-radius:0 20px 20px 0;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+}
+
+
+/* 内容 */
+
+.container {
+
+    width: 70%;
+
+    margin:auto;
+
+}
+
+
+.section-title {
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* 新闻卡片 */
+
+.news-card {
+
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+ 
+}
+
+
+
+.news-source {
+
+
+    color:#40916c;
+
+    font-size:14px;
+
+}
+
+
+.news-title {
+
+
+    font-size:22px;
+
+    margin:10px 0;
+
+}
+
+
+
+.news-time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+}
+
+
+
+.news-abstract {
+
+
+    margin-top:15px;
+
+    line-height:1.7;
+
+}
+
+
+
+.detail-btn {
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:8px 18px;
+
+    background:#40916c;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+}
+
+.button {
+            
+    display:block;
+
+    width:fit-content;
+
+    margin:40px auto 40px;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 一站式校园信息平台
+</p>
+
+
+
+<div class="search-box">
+
+<input
+id="search-input"
+placeholder="在所有新闻中进行搜索">
+
+
+<button
+id="search-button"
+type="button">
+搜索
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+最新资讯
+
+</div>
+
+    <!-- C++生成新闻列表 -->
+     <div class="news-list">
+
+        <div class="news-card"><div class="news-source">学院通知 · 校园活动</div><div class="news-title">我院开展2026年教职工子女暑期乐学探索课堂活动</div><div class="news-time">发布时间：2026/07/14</div><div class="news-abstract">近期，我院举办了“乐学课堂 智慧启航”--2026年华西口腔教职工子女暑期乐学探索课堂活动。本次活动围绕科学启蒙、自然认知、工程技术、语言艺术和手工创作等多元领域，融合口腔医学特色科普、校园文博参观、趣味实践实操等沉浸式体验环节，覆盖不同年龄段职工子女成长需求。 在为期两天的活动中，孩子们走进物理与生物趣味课堂，探索了空气动力学和两栖动物的科学奥秘；在四川大学电气信息学院感受了高压放电奏乐的震撼，通过操控无人机并与智能机器人互动，感受了现代科技与人工智能的创新发展；在四川著名</div><a class="detail-btn" href="detail/1523.html?from=index">查看详情</a></div><div class="news-card"><div class="news-source">学院通知 · 教学通知</div><div class="news-title">我院与德国弗莱堡大学牙医学院开展AR口腔数字化交流活动</div><div class="news-time">发布时间：2026/07/09</div><div class="news-abstract">2026年6月30日，四川省卫生健康委员会党组成员、副主任、机关党委书记张峰率团赴德国交流访问，我院副院长朱桂全教授随团参加，并与弗莱堡大学牙医学院共同举行AR口腔数字化交流活动，正式启动基于我院原创的AR口腔种植导航系统的临床研究和教育培训合作项目。弗莱堡大学医学中心副院长Rainer Schmelzeisen教授、牙医学院院长Katja Nelson教授等德方代表出席活动。 活动期间，朱桂全副院长介绍了华西口腔在学科建设、临床研究、医学教育及成果转化方面的进展，双方围绕A</div><a class="detail-btn" href="detail/1524.html?from=index">查看详情</a></div><div class="news-card"><div class="news-source">学院通知 · 教学通知</div><div class="news-title">我院院领导赴越西县开展定点帮扶工作调研</div><div class="news-time">发布时间：2026/07/09</div><div class="news-abstract">为进一步落实驻村帮扶工作，助力推进乡村全面振兴， 7月2日，我院党委书记谭静同志一行赴越西县书古镇斯拉村，调研推进乡村全面振兴与定点帮扶工作。 在斯拉村，谭静书记与当地干部进行交流座谈。越西县委常委、组织部部长周平对谭静书记一行的到来表示热烈欢迎，对我院及驻村工作队的帮扶工作表达诚挚谢意。谭静书记表示，我院将立足斯拉村的发展实际与群众的现实需求，充分发挥我院专业优势，扎实推进定点帮扶各项工作落细落实，全心守护当地群众民生福祉，践行国家队公立医院责任担当。 会上，驻村工作队围绕</div><a class="detail-btn" href="detail/1527.html?from=index">查看详情</a></div>
+
+     </div>
+
+    <!-- 更多新闻 -->
+
+    <div class="more">
+
+
+        <a class="button" href="category_index.html">
+
+            查看更多新闻与分类
+
+        </a>
+
+
+    </div>
+
+</div>
+
+<script>
+
+let input = document.getElementById("search-input");
+let button = document.getElementById("search-button");
+
+button.addEventListener("click", function(){
+
+    let keyword = input.value;
+
+    if(keyword.trim() === ""){
+        alert("请输入搜索关键词");
+        return;
+    }
+
+    window.location.href =
+    "search.html?keyword=" 
+    + encodeURIComponent(keyword);
+
+});
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+教务处 · 校园活动
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+走进莎剧：“通识+专业”经典阅读推广活动成功举行
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-11-27 17:44:36
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+​ 11月23日，由四川大学教务处、文学与新闻学院、外国语学院与图书馆联合主办的“通识+专业”经典阅读推广活动在江安图书馆明远学堂成功举办。本次活动以“生命意义的舞台呈现：莎剧的历史意识与人文精神”为主题，特邀文学与新闻学院王晓路教授与外国语学院廖运刚副教授联袂主讲，吸引了150余名师生参与，现场座无虚席。 王晓路教授首先从AI时代我们为什么要回看莎剧的问题切入，以跨学科视角深入解析了莎士比亚戏剧的历史生成语境。他指出，文艺复兴时期英国的经济转型、文化思潮与社会结构变革，为莎翁创作提供了丰沃土壤。王教授通过具体案例阐释了莎剧如何通过个体命运与时代洪流的交织，折射出早期现代欧洲的人文觉醒，并强调莎剧所预示的现代人所必然经历的困境这一命题，使其不仅在经典化中不断获得阐释与重构，而且持续构成新的学术论域和知识资源。在此基础上他以莎剧的舞台、电影及电子游戏中的改编为例，呈现了莎剧的当代生命力，并提出“人生是需要自己完成的演出”这一观点，鼓励青年学子从莎剧人物身上汲取面对命运抉择的勇气。 随后，廖运刚副教授对《威尼斯商人》中的关键片段进行了文本分析。他通过语言修辞、角色互动与法律隐喻的层层剖析，揭示了莎翁对人性复杂性的深刻探讨。廖老师认为，剧中鲍西娅的形象不仅展现了文艺复兴时期女性智慧的闪光，更体现了莎翁对人性议题的精准把握，这一解读深化了观众对戏剧冲突的理解，彰显了莎剧跨越时空的伦理思考价值。 在提问环节，同学们围绕莎剧经典台词的解读及其与现代价值观的契合等问题踊跃发言。两位老师以生动案例和理论视角逐一解答，现场气氛热烈。 活动尾声，图书馆馆长兰利琼与党委副书记兼纪委书记、副馆长杜小军向王晓路、廖运刚颁发“书香川大·阅读推广大使”聘书，感谢他们为推广经典阅读所做的贡献。主持人、图书馆馆员郑杨晓涵总结指出，本次活动以莎剧为桥梁，融合多学科视角，体现了图书馆“通识+专业”经典阅读推广系列活动推动跨学科对话的宗旨。 “通识+专业”经典阅读推广活动是图书馆进一步贯彻落实党的二十大关于“深化全民阅读活动”和党的二十届四中全会关于“推进书香社会建设”的部署，并切实执行《四川大学“阅读+”与写作能力提升行动实施方案》（川大教〔2025〕号）的重要举措，也是学校文化品牌建设项目——四川大学“通识+专业”经典阅读推广的重要内容。未来，图书馆将持续深入推进“通识+专业”经典阅读推广，让经典阅读成为连接不同学科、激发创新思维的源泉。 文字：资源建设中心 郑杨晓涵 图片：图书馆志愿者队 罗柳吉
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+<img class="news-image" src="https://p.cldisk.com/star3/origin/5a963909edfccddd638fad3e148d701d.jpg?rw=777&amp;rh=438&amp;_fileSize=105307&amp;_orientation=1" alt="新闻图片" loading="lazy" onerror="this.remove()">
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://lib.scu.edu.cn/engine2/d/65180963/12827113/0/12172124?t=-1&amp;p=1">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

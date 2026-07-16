@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+教务处 · 竞赛比赛
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+关于举办2025年全国大学生测绘学科创新创业智能大赛校内选拔赛的通知
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-04-02
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+各学院（系）、各位同学： 为深入学习宣传贯彻党的二十大精神，有效激发学生积极参与科技创新实践的热情，提升测绘类专业大学生创新创业意识和能力，培养创新型、复合型的测绘地理信息人才，按照《关于举办 2025 年全国大学生测绘学科创新创业智能大赛的一号通知》（详见： https://smt.whu.edu.cn/info/1009/6522.htm ），现举办“ 2025 年全国大学生测绘学科创新创业智能大赛校内选拔赛”暨“ 2025 年四川大学大学生测绘学科创新创业智能大赛”。校赛结束后按照国赛名额规定，择优推荐选手参加国赛，现将校赛有关事项通知如下： 一、组织单位 水利水电学院 二、参赛对象 四川大学全日制本科生 三、赛事安排 （一）赛项 根据国赛要求，我校学生可参加测绘技能竞赛（非专业组）。测绘技能竞赛分四个赛项：数字测图仿真比赛、测绘程序设计比赛、无人机航测仿真比赛、机载激光雷达仿真比赛。比赛规程及说明见附件 1 。 （二）比 赛时间 2025 年 5 月中下旬（具体时间另行通知）。 （三） 赛事安排 1. 赛前将组织培训，培训时间和地点另行通知。 2. 每个参赛组由 1 名选手和 1 名指导教师组成，不得同时参加多项比赛。根据报名情况确定详细校赛规则，择优确定国赛参赛选手。 四、奖项设置 校赛设置校级一等奖、二等奖、三等奖。 五、报名方法 （一）报名截止日期 2025 年 4 月 15 日 （二）报名方式 在四川大学竞赛管理系统进入此赛项登记报名，网 址 https://xkjs.scu.edu.cn/home/homepa ge ，按照赛事要求上传资格认证材料。系统使用说明见附件 2 。 （三）加入校赛 Q Q 群 群号： 1044432436 群名片格式：学号 - 姓名 - 参赛项目（示例： 2023141450001- 张三 - 数字测图仿真比赛）。 六、联系方式 联系人 ：水利水电学院 赵璐、曾俊 电 话 ： 028-85401025 水利水电学院 教务处 2025 年 4 月 2 日 附件 1. 2025 年全国大学生测绘学科创新创业智能大赛一号通知的相关附件 .pdf 附件 2. 竞赛管理系统学生端操作手册
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://jwc.scu.edu.cn/info/1069/9787.htm">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>

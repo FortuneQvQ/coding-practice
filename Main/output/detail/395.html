@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>新闻详情</title>
+
+
+<style>
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:"微软雅黑",Arial,sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #d8f3dc,
+        #ffffff
+    );
+
+    color:#333;
+
+    min-height:100vh;
+
+}
+
+
+
+/* 顶部标题 */
+
+.header {
+
+
+    text-align:center;
+
+    padding:35px;
+
+
+}
+
+
+
+.header h1 {
+
+
+    color:#2d6a4f;
+
+    font-size:32px;
+
+
+}
+
+
+
+.header p {
+
+
+    color:#666;
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+/* 内容主体 */
+
+.container {
+
+
+    width:70%;
+
+    margin:20px auto;
+
+
+}
+
+
+
+.news-box {
+
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+/* 来源 */
+
+
+.source {
+
+
+    color:#40916c;
+
+    font-size:15px;
+
+
+}
+
+
+
+/* 标题 */
+
+.title {
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+/* 时间 */
+
+
+.time {
+
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* 图片 */
+
+
+.news-image {
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+}
+
+
+
+
+/* 正文 */
+
+
+.content {
+
+
+    font-size:17px;
+
+    line-height:2;
+
+    text-indent:2em;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* 原文链接 */
+
+
+.origin {
+
+
+    margin-top:35px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+
+}
+
+
+
+.origin a {
+
+
+    color:#40916c;
+
+    text-decoration:none;
+
+
+}
+
+
+
+.back {
+
+
+    display:block;
+
+    width:fit-content;
+
+    margin:30px auto 0;
+
+    background:#40916c;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    user-select: none;  
+
+
+}
+
+/* 底部按钮 */
+
+
+.bottom-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:80px;
+
+
+    margin:40px auto;
+
+
+}
+
+
+
+.button {
+
+
+    display:block;
+
+
+    padding:10px 30px;
+
+
+    background:#40916c;
+
+
+    color:white;
+
+
+    border-radius:20px;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+
+
+<h1>
+校园资讯聚合系统
+</h1>
+
+
+<p>
+Campus News Hub · 新闻详情
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+<div class="news-box">
+
+
+
+<!-- 来源 -->
+
+<div class="source">
+
+学院通知 · 教学通知
+
+</div>
+
+
+
+
+<!-- 标题 -->
+
+<div class="title">
+
+“大川视界”寒暑假校级项目一览表（持续更新中）
+
+</div>
+
+
+
+
+
+<!-- 时间 -->
+
+<div class="time">
+
+发布时间：2025-10-27
+
+</div>
+
+
+
+
+
+<!-- 正文 -->
+
+
+<div class="content">
+
+
+项目名称 项目通知链接 项目申请对象 项目申请截止日期 项目状态 2026年暑期德国海德堡大学&amp;middot;新时代全球视野与社会理解力菁英计划（学分） https://global.scu.edu.cn/?notice/_/4318 全日制在校本科生、研究生 （非毕业年级） 5月31日 已截止 2026年暑期&amp;ldquo;名校进名企&amp;rdquo;项目（韩国首尔）（非学分） https://global.scu.edu.cn/?notice/_/4286 全日制在校本科生、研究生 （非毕业年级） 5月20日 已截止 2026年暑期&amp;ldquo;名校进名企&amp;rdquo;项目（新加坡）（非学分） https://global.scu.edu.cn/?notice/_/4280 全日制在校本科生、研究生 （非毕业年级） 5月20日 已截止 2026年暑假中希文明互鉴青年行学分项目 https://global.scu.edu.cn/?notice/_/4308 全日制在校本科生、研究生 （非毕业年级） 5月17日 已截止 2026年暑期香港卓越工程师创新实践项目（非学分） https://global.scu.edu.cn/?notice/_/4303 全日制在校本科生、研究生 （非毕业年级） 5月15日 已截止 2026年剑桥大学国际组织暑期项目（非学分） https://global.scu.edu.cn/?notice/_/4276 全日制在校本科生、研究生 （非毕业年级） 4月28日 已截止 2026年暑假伦敦国王学院暑假学分项目 https://global.scu.edu.cn/?notice/_/4274 全日制在校本科生、研究生 （非毕业年级） 4月8日 已截止 2026年法国巴黎政治大学暑假学分项目 https://global.scu.edu.cn/?notice/_/4271 全日制在校本科生、研究生 （非毕业年级） 4月7日 已截止 2026年德国亚琛工业大学暑假学分项目 https://global.scu.edu.cn/?notice/_/4269 全日制在校本科生、研究生 （非毕业年级） 3月31日 已截止 2026年意大利圣心大学暑假学分项目 https://global.scu.edu.cn/?notice/_/4264 全日制在校本科生、研究生 （非毕业年级） 3月29日 已截止 2026年牛津大学奥利尔学院暑假学分课程项目 https://global.scu.edu.cn/?notice/_/4262 全日制在校本科生、研究生 （非毕业年级） 3月29日 已截止 美国德州大学奥斯汀分校2026年暑假学分课程项目 https://global.scu.edu.cn/?notice/_/4260 全日制在校本科生、研究生 （非毕业年级） 3月26日 已截止 加拿大英属哥伦比亚大学2026暑期（第二轮报名） https://global.scu.edu.cn/?notice/_/4258 全日制在校本科生、研究生 （非毕业年级） 3月16日 已截止 香港理工大学2026暑期 https://jwc.scu.edu.cn/info/1069/10432.htm 全日制在校本科生、研究生 （非毕业年级） 2026年1月22日 已截止 西班牙巴塞罗那自治大学2026暑期 https://global.scu.edu.cn/?channel/712/718/720/4240 全日制在校本科生、研究生 （非毕业年级） 2026年1月20日 已截止 加拿大英属哥伦比亚大学2026暑期 https://global.scu.edu.cn/?notice/_/4239 全日制在校本科生、研究生 （非毕业年级） 2026年1月21日24点 已截止 &amp;ldquo;名校进名企&amp;rdquo;项目（新加坡）（非学分）2026寒假 https://global.scu.edu.cn/?notice/_/4205 全日制在校本科生、研究生 2025年11月25日 已截止 香港卓越工程师创新实践项目（非学分）2026寒假 https://global.scu.edu.cn/?notice/_/4204 全日制在校本科生、研究生 2025年11月21日 已截止 中希文明互鉴青年行学分项目2026寒假 https://global.scu.edu.cn/?notice/_/4211 全日制在校本科生、研究生 2025年11月10日 已截止 德国亚琛工业大学2026年寒假学分项目 https://global.scu.edu.cn/?notice/_/4203 全日制在校本科生、研究生 2025年10月26日 已截止 美国德州大学奥斯汀分校2026年寒假学分项目 https://global.scu.edu.cn/?notice/_/4198 全日制在校本科生、研究生 2025年10月18日 已截止 &lt;!--
+
+
+</div>
+
+
+
+
+
+<!-- 新闻图片 -->
+
+
+
+
+
+
+
+
+<!-- 原文链接 -->
+
+
+<div class="origin">
+
+
+原文链接：
+
+<a href="https://global.scu.edu.cn/?notice/_/4214">
+
+点击查看官网原文
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="bottom-buttons" class="bottom-buttons">
+
+    
+</div>
+
+
+
+</div>
+
+<script src="../js/back.js"></script>
+
+</body>
+
+
+</html>
